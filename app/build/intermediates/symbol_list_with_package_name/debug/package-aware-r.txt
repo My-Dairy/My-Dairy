@@ -2252,6 +2252,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id activity_indicator
 id add
 id adjust_height
 id adjust_width
@@ -2280,6 +2281,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btn_create_account
 id btn_sign_in_with_email
 id buttonPanel
 id cache_measures
@@ -2337,6 +2339,8 @@ id disableHome
 id disablePostScroll
 id disableScroll
 id disjoint
+id divider_line_left
+id divider_line_right
 id dragDown
 id dragEnd
 id dragLeft
@@ -2368,8 +2372,10 @@ id fixed
 id flip
 id floating
 id forever
+id forgt_pswd
 id fragment_container_view_tag
 id generate_otp_btn
+id ggl_logo
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2407,6 +2413,7 @@ id labeled
 id layout
 id left
 id leftToRight
+id let_me_in
 id light
 id line
 id line1
@@ -2493,6 +2500,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id password_box
 id password_toggle
 id path
 id pathRelative
@@ -2619,6 +2627,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id textview_log_in_with_number
+id textview_or
 id time
 id title
 id titleDividerNoCustom
@@ -2640,6 +2649,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username_box
 id view_offset_helper
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
@@ -2720,6 +2730,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_email_login
 layout activity_main
 layout activity_phone_login
 layout activity_phone_otp
@@ -2911,16 +2922,12 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
-string copy_toast_msg
 string default_web_client_id
 string dismiss_button_content_description
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
-string fallback_menu_item_copy_link
-string fallback_menu_item_open_in_browser
-string fallback_menu_item_share_link
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -3861,7 +3868,6 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable fastscroll__fastScroller fastscroll__bubbleColor fastscroll__bubbleTextAppearance fastscroll__handleColor
-xml image_share_filepaths
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

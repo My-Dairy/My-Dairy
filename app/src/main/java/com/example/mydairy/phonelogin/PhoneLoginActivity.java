@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mydairy.R;
+import com.example.mydairy.emaillogin.EmailLoginActivity;
 import com.hbb20.CountryCodePicker;
 
 public class PhoneLoginActivity extends AppCompatActivity {
@@ -50,14 +51,14 @@ public class PhoneLoginActivity extends AppCompatActivity {
                 }
             }
         });
-//
-//        Email.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent int_signup = new Intent(PhoneLoginActivity.this, EmailLoginActivity.class);
-//                startActivity(int_signup);
-//            }
-//        });
+
+        Email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int_signup = new Intent(PhoneLoginActivity.this, EmailLoginActivity.class);
+                startActivity(int_signup);
+            }
+        });
 
     }
 }
