@@ -7,10 +7,13 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mydairy.MainActivity;
 import com.example.mydairy.R;
 
 public class SplashActivity extends AppCompatActivity {
 
+//    private FirebaseAuth firebaseAuth;
+//    public static int flag_for_loc_dialog =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +25,9 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                SplashActivity.this.startActivity(intent);
+                SplashActivity.this.finish();
 //                firebaseAuth = FirebaseAuth.getInstance();
 //                FirebaseUser user = firebaseAuth.getCurrentUser();
 //                if (user == null) {
@@ -31,9 +37,7 @@ public class SplashActivity extends AppCompatActivity {
 //                }
 //                else
 //                {
-//                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-//                    SplashActivity.this.startActivity(intent);
-//                    SplashActivity.this.finish();
+//
 //                }
 
             }
