@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:ignore="AllowBackup">
-        <activity android:name=".PhoneOTPActivity"></activity>
-        <activity android:name=".PhoneLoginActivity" />
+        <activity android:name=".phonelogin.PhoneOTPActivity"></activity>
+        <activity android:name=".phonelogin.PhoneLoginActivity" />
         <activity android:name=".splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

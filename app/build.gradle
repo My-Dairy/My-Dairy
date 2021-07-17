@@ -41,6 +41,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.hbb20:ccp:2.4.5'
     implementation 'com.chaos.view:pinview:1.4.3'
+    implementation "androidx.browser:browser:1.3.0"
 }
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'

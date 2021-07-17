@@ -1,4 +1,4 @@
-package com.example.mydairy;
+package com.example.mydairy.phonelogin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mydairy.R;
 import com.hbb20.CountryCodePicker;
 
 public class PhoneLoginActivity extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class PhoneLoginActivity extends AppCompatActivity {
     Button sendotp;
     TextView Email;
     String PhoneNumber;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

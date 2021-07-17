@@ -7,8 +7,7 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mydairy.MainActivity;
-import com.example.mydairy.PhoneLoginActivity;
+import com.example.mydairy.phonelogin.PhoneLoginActivity;
 import com.example.mydairy.R;
 
 public class SplashActivity extends AppCompatActivity {

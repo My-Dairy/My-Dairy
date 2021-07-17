@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PhoneOTPActivity">
+    tools:context=".phonelogin.PhoneOTPActivity">
 
     <TextView
         android:id="@+id/textView_enter_otp"
