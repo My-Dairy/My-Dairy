@@ -38,6 +38,8 @@ public class PhoneOTPActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phone_otp);
 
+        //Initializing the variables of all the datatypes.
+
         phonenumber = getIntent().getStringExtra("mobile").toString();
         otpans = (EditText) findViewById(R.id.otp_box);
         submit = (Button) findViewById(R.id.proceed_btn);
