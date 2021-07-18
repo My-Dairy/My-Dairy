@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.mydairy.Details.UserDetails;
 import com.example.mydairy.MainActivity;
 import com.example.mydairy.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -18,6 +19,8 @@ import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.regex.Pattern;
 
@@ -30,6 +33,7 @@ public class EmailRegisterActivity extends AppCompatActivity {
     Button Register;
     EditText pwd, cnfrm;
     Button Login;
+
     private static final Pattern PASSWORD_PATTERN =
             Pattern.compile("^(?=.*[0-9])"
                     + "(?=.*[a-z])(?=.*[A-Z])"
@@ -54,6 +58,8 @@ public class EmailRegisterActivity extends AppCompatActivity {
         cnfrm = (EditText) findViewById(R.id.cnfrm);
 
         Login = (Button) findViewById(R.id.btn_log_in);
+
+
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,74 +70,84 @@ public class EmailRegisterActivity extends AppCompatActivity {
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(Email.getText().toString().isEmpty()) {
-                    Email.setError("Please Enter an email");
+
+                register_user();
+           }
+        });
+    }
+
+    private void register_user() {
+
+        if(Email.getText().toString().isEmpty()) {
+            Email.setError("Please Enter an email");
+        }
+        else {
+            if (Email.getText().toString().trim().matches(EmailPattern)) {
+                if(pwd.getText().toString().isEmpty())
+                {
+                    pwd.setError("Please enter password");
                 }
-                else {
-                    if (Email.getText().toString().trim().matches(EmailPattern)) {
-                        if(pwd.getText().toString().isEmpty())
-                        {
-                            pwd.setError("Please enter password");
-                        }
-                        else if(!PASSWORD_PATTERN.matcher(pwd.getText().toString()).matches())
-                        {
-                            pwd.setError("Password must contain 1 lowercase or uppercase, 1 digit and 1 symbol.");
-                        }
-                        else
-                        {
-                            if(cnfrm.getText().toString().equals(pwd.getText().toString()))
-                            {
-                                mAuth.createUserWithEmailAndPassword(Email.getText().toString(), pwd.getText().toString())
-                                        .addOnCompleteListener(EmailRegisterActivity.this, new OnCompleteListener<AuthResult>() {
-                                            @Override
-                                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                                if (task.isSuccessful()) {
-                                                    // Sign in success, update UI with the signed-in user's information
-                                                    FirebaseUser user = mAuth.getCurrentUser();
-                                                    user.sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
-                                                        @Override
-                                                        public void onComplete(@NonNull Task<Void> task) {
-                                                            if (task.isSuccessful()) {
-                                                                Toast.makeText(EmailRegisterActivity.this, "Verify Your email and LogIn", Toast.LENGTH_SHORT).show();
+                else if(!PASSWORD_PATTERN.matcher(pwd.getText().toString()).matches())
+                {
+                    pwd.setError("Password must contain 1 lowercase or uppercase, 1 digit and 1 symbol.");
+                }
+                else
+                {
+                    if(cnfrm.getText().toString().equals(pwd.getText().toString()))
+                    {
+                        mAuth.createUserWithEmailAndPassword(Email.getText().toString(), pwd.getText().toString())
+                                .addOnCompleteListener(EmailRegisterActivity.this, new OnCompleteListener<AuthResult>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<AuthResult> task) {
+                                        if (task.isSuccessful()) {
+                                            // Sign in success, update UI with the signed-in user's information
+                                            FirebaseUser user = mAuth.getCurrentUser();
+                                            user.sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                @Override
+                                                public void onComplete(@NonNull Task<Void> task) {
+                                                    if (task.isSuccessful()) {
+                                                        Toast.makeText(EmailRegisterActivity.this, "Verify Your email and LogIn", Toast.LENGTH_SHORT).show();
 
-                                                                if (user.isEmailVerified()) {
-                                                                    Intent int_main = new Intent(EmailRegisterActivity.this, MainActivity.class);
-                                                                    finishAffinity();
-                                                                    startActivity(int_main);
-                                                                    finish();
-                                                                } else {
-                                                                    Intent int_main = new Intent(EmailRegisterActivity.this, EmailLoginActivity.class);
-                                                                    startActivity(int_main);
-                                                                    finish();
-                                                                }
-                                                            } else {
-                                                                Toast.makeText(EmailRegisterActivity.this, "Verification Code Error.",
-                                                                        Toast.LENGTH_SHORT).show();
-                                                            }
+                                                        if (user.isEmailVerified()) {
+                                                            Intent int_main = new Intent(EmailRegisterActivity.this, MainActivity.class);
+                                                            finishAffinity();
+                                                            startActivity(int_main);
+                                                            finish();
+                                                        } else {
+                                                            Intent int_main = new Intent(EmailRegisterActivity.this, EmailLoginActivity.class);
+                                                            startActivity(int_main);
+                                                            finish();
                                                         }
-                                                    });
-
-                                                } else {
-                                                    // If sign in fails, display a message to the user.
-                                                    Toast.makeText(EmailRegisterActivity.this, "Authentication failed.",
-                                                            Toast.LENGTH_SHORT).show();
+                                                    } else {
+                                                        Toast.makeText(EmailRegisterActivity.this, "Verification Code Error.",
+                                                                Toast.LENGTH_SHORT).show();
+                                                    }
                                                 }
-                                            }
-                                        });
+                                            });
 
-                            }
-                            else
-                            {
-                                cnfrm.setError("Password does not match");
-                            }
-                        }
+                                        } else {
+                                            // If sign in fails, display a message to the user.
+                                            Toast.makeText(EmailRegisterActivity.this, "Authentication failed.",
+                                                    Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });
+
                     }
                     else
                     {
-                        Email.setError("Please Enter Valid email.");
+                        cnfrm.setError("Password does not match");
                     }
                 }
             }
-        });
+            else
+            {
+                Email.setError("Please Enter Valid email.");
+            }
+        }
+
     }
 }
+
+//metaatoz - snt,thakkar,ahmd
+

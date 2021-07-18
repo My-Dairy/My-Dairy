@@ -2290,6 +2290,7 @@ id browser_actions_menu_view
 id btn_create_account
 id btn_log_in
 id btn_sign_in_with_email
+id button
 id buttonPanel
 id cache_measures
 id cancel_action
@@ -2361,6 +2362,9 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+id editTextTextPersonName
+id editTextTextPersonName2
+id editTextTextPersonName3
 id editText_search
 id edit_query
 id elastic
@@ -2753,6 +2757,7 @@ layout activity_main
 layout activity_phone_login
 layout activity_phone_otp
 layout activity_splash
+layout activity_user_details
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog

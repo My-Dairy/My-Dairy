@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mydairy.Details.UserDetails;
 import com.example.mydairy.MainActivity;
 import com.example.mydairy.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -102,7 +103,10 @@ public class EmailLoginActivity extends AppCompatActivity {
                                         FirebaseUser user = mAuth.getCurrentUser();
 
                                         if (user.isEmailVerified()) {
-                                            Intent intent = new Intent(EmailLoginActivity.this, MainActivity.class);
+
+                                            Intent intent = new Intent(EmailLoginActivity.this, UserDetails.class);
+                                            intent.putExtra("UID",user.getUid());
+                                            System.out.println("JINIL3"+user.getUid());
                                             finishAffinity();
                                             startActivity(intent);
                                         } else {
