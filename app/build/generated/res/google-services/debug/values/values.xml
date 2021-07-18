@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">101353297340-44bimlqlrc01umk9sc3pe3tkrqn2eim8.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">101353297340</string>
+    <string name="google_api_key" translatable="false">AIzaSyDhbiAScgn4LEE7rBMc4GQdx3H7HpzlMpg</string>
+    <string name="google_app_id" translatable="false">1:101353297340:android:9d112e2998f9324b50c7b9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDhbiAScgn4LEE7rBMc4GQdx3H7HpzlMpg</string>
+    <string name="google_storage_bucket" translatable="false">my-dairy-123107.appspot.com</string>
+    <string name="project_id" translatable="false">my-dairy-123107</string>
+</resources>
