@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "101353297340-rl6fjov65oqc5gp1cmtg3s6f233apqfi.apps.googleusercontent.com",
+          "client_id": "101353297340-if072lqaat9s75tj0bb2bpig9c461mod.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.mydairy",
-            "certificate_hash": "dcd0c8404546f5eb1752aaf63d23a8b867ac2221"
+            "certificate_hash": "841879587bf01f1d46d2246d5504027fb6cc7415"
           }
         },
         {

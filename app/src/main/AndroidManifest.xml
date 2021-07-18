@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:ignore="AllowBackup">
-        <activity android:name=".emaillogin.EmailLoginActivity"></activity>
+        <activity android:name=".emaillogin.EmailRegisterActivity"></activity>
+        <activity android:name=".emaillogin.EmailLoginActivity" />
         <activity android:name=".phonelogin.PhoneOTPActivity" />
         <activity android:name=".phonelogin.PhoneLoginActivity" />
         <activity android:name=".splash.SplashActivity">

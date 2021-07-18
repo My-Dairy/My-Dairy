@@ -54,7 +54,7 @@ public class EmailLoginActivity extends AppCompatActivity {
         SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(EmailLoginActivity.this, MainActivity.class));
+                startActivity(new Intent(EmailLoginActivity.this, EmailRegisterActivity.class));
             }
         });
 
