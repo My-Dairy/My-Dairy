@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-52:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\PATEL SARTHAK\.gradle\caches\transforms-2\files-2.1\0f12eff98186791d169dd8720173cce0\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\PATEL SARTHAK\.gradle\caches\transforms-2\files-2.1\1256201b925291c10163ce61c277858a\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [com.hbb20:ccp:2.4.5] C:\Users\PATEL SARTHAK\.gradle\caches\transforms-2\files-2.1\dc391895bc9b89940e50868b80f3cc04\jetified-ccp-2.4.5\AndroidManifest.xml:2:1-11:12
@@ -77,22 +77,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\PATEL SARTHAK\.g
 MERGED from [androidx.print:print:1.0.0] C:\Users\PATEL SARTHAK\.gradle\caches\transforms-2\files-2.1\324a36e40540efe354b61fba03801630\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\PATEL SARTHAK\.gradle\caches\transforms-2\files-2.1\3e4df694e62c67b0154a9700fff0907b\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [io.michaelrocks:libphonenumber-android:8.12.13] C:\Users\PATEL SARTHAK\.gradle\caches\transforms-2\files-2.1\6c957ebafc66a535cfd2b4cf81ead3df\jetified-libphonenumber-android-8.12.13\AndroidManifest.xml:2:1-11:12
-INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:4:5-34
 		INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml
 		INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml
-		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml
-		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:2:11-69
@@ -117,7 +117,7 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] C:
 	android:name
 		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:8:5-28:19
+ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:8:5-50:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\PATEL SARTHAK\.gradle\caches\transforms-2\files-2.1\0f12eff98186791d169dd8720173cce0\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\PATEL SARTHAK\.gradle\caches\transforms-2\files-2.1\0f12eff98186791d169dd8720173cce0\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\PATEL SARTHAK\.gradle\caches\transforms-2\files-2.1\1256201b925291c10163ce61c277858a\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -181,43 +181,71 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\PA
 	android:theme
 		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:13:9-62
 activity#com.example.mydairy.Details.UserDetails
-ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:15:9-66
+ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:16:9-19:25
+	android:screenOrientation
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:17:13-49
+	tools:ignore
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:18:13-53
 	android:name
-		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:15:19-54
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:16:19-54
 activity#com.example.mydairy.emaillogin.EmailRegisterActivity
-ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:16:9-70
+ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:20:9-23:15
+	android:screenOrientation
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:21:13-49
+	tools:ignore
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:22:13-53
 	android:name
-		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:16:19-67
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:20:19-67
 activity#com.example.mydairy.emaillogin.EmailLoginActivity
-ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:17:9-67
+ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:24:9-27:15
+	android:screenOrientation
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:25:13-49
+	tools:ignore
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:26:13-53
 	android:name
-		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:17:19-64
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:24:19-64
 activity#com.example.mydairy.phonelogin.PhoneOTPActivity
-ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:18:9-65
+ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:28:9-31:15
+	android:screenOrientation
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:29:13-49
+	tools:ignore
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:30:13-53
 	android:name
-		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:18:19-62
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:28:19-62
 activity#com.example.mydairy.phonelogin.PhoneLoginActivity
-ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:19:9-67
+ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:32:9-35:15
+	android:screenOrientation
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:33:13-49
+	tools:ignore
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:34:13-53
 	android:name
-		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:19:19-64
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:32:19-64
 activity#com.example.mydairy.splash.SplashActivity
-ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:20:9-26:20
+ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:36:9-45:20
+	android:screenOrientation
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:37:13-49
+	tools:ignore
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:38:13-53
 	android:name
-		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:20:19-56
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:36:19-56
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:40:13-44:29
 action#android.intent.action.MAIN
-ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:41:17-69
 	android:name
-		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:41:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:43:17-77
 	android:name
-		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:43:27-74
 activity#com.example.mydairy.MainActivity
-ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:27:9-50
+ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:46:9-49:15
+	android:screenOrientation
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:47:13-49
+	tools:ignore
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:48:13-53
 	android:name
-		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:27:19-47
+		ADDED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:46:19-47
 uses-sdk
 INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml

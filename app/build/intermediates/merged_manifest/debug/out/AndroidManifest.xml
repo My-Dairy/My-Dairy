@@ -23,19 +23,33 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Design.Light.NoActionBar" >
-        <activity android:name="com.example.mydairy.Details.UserDetails" />
-        <activity android:name="com.example.mydairy.emaillogin.EmailRegisterActivity" />
-        <activity android:name="com.example.mydairy.emaillogin.EmailLoginActivity" />
-        <activity android:name="com.example.mydairy.phonelogin.PhoneOTPActivity" />
-        <activity android:name="com.example.mydairy.phonelogin.PhoneLoginActivity" />
-        <activity android:name="com.example.mydairy.splash.SplashActivity" >
+        <activity
+            android:name="com.example.mydairy.Details.UserDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mydairy.emaillogin.EmailRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mydairy.emaillogin.EmailLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mydairy.phonelogin.PhoneOTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mydairy.phonelogin.PhoneLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mydairy.splash.SplashActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.mydairy.MainActivity" />
+        <activity
+            android:name="com.example.mydairy.MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"

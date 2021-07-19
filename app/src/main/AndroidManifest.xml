@@ -11,20 +11,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar"
-        tools:ignore="AllowBackup">
-        <activity android:name=".Details.UserDetails"></activity>
-        <activity android:name=".emaillogin.EmailRegisterActivity" />
-        <activity android:name=".emaillogin.EmailLoginActivity" />
-        <activity android:name=".phonelogin.PhoneOTPActivity" />
-        <activity android:name=".phonelogin.PhoneLoginActivity" />
-        <activity android:name=".splash.SplashActivity">
+        tools:ignore="AllowBackup"
+        >
+        <activity android:name=".Details.UserDetails"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            ></activity>
+        <activity android:name=".emaillogin.EmailRegisterActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            />
+        <activity android:name=".emaillogin.EmailLoginActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            />
+        <activity android:name=".phonelogin.PhoneOTPActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            />
+        <activity android:name=".phonelogin.PhoneLoginActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            />
+        <activity android:name=".splash.SplashActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            />
     </application>
 
 </manifest>
