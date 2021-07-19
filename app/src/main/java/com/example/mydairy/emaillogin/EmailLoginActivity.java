@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mydairy.Details.User;
 import com.example.mydairy.Details.UserDetails;
 import com.example.mydairy.MainActivity;
 import com.example.mydairy.R;
@@ -28,6 +29,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class EmailLoginActivity extends AppCompatActivity {
 
@@ -35,11 +38,14 @@ public class EmailLoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private GoogleSignInClient googleApiClient;
     private static final int RC_SIGN_IN = 1;
+    private FirebaseDatabase database;
+    private DatabaseReference databaseReference;
     Button LetMeIn;
     TextView SignUp;
     EditText Email;
     TextView Forgot;
     TextInputLayout Password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -104,9 +110,12 @@ public class EmailLoginActivity extends AppCompatActivity {
 
                                         if (user.isEmailVerified()) {
 
+                                            database = FirebaseDatabase.getInstance();
+                                            databaseReference = FirebaseDatabase.getInstance().getReference();
+
+                                            databaseReference.child("users").child(user.getUid()).setValue(new User());
                                             Intent intent = new Intent(EmailLoginActivity.this, UserDetails.class);
                                             intent.putExtra("UID",user.getUid());
-                                            System.out.println("JINIL3"+user.getUid());
                                             finishAffinity();
                                             startActivity(intent);
                                         } else {

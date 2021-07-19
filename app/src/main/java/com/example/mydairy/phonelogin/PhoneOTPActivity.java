@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.mydairy.Details.User;
+import com.example.mydairy.Details.UserDetails;
 import com.example.mydairy.MainActivity;
 import com.example.mydairy.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,6 +24,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.concurrent.TimeUnit;
 
@@ -32,6 +36,8 @@ public class PhoneOTPActivity extends AppCompatActivity {
     String phonenumber;
     String otpref;
     FirebaseAuth mAuth;
+    private FirebaseDatabase database;
+    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,10 +112,18 @@ public class PhoneOTPActivity extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
 
                             FirebaseUser user = task.getResult().getUser();
+
+                            database = FirebaseDatabase.getInstance();
+                            databaseReference = FirebaseDatabase.getInstance().getReference();
+
+                            databaseReference.child("users").child(user.getUid()).setValue(new User());
+
                             // Update UI
+
+                            Intent intent = new Intent(PhoneOTPActivity.this, UserDetails.class);
+                            intent.putExtra("UID",user.getUid());
                             finishAffinity();
-                            startActivity(new Intent(PhoneOTPActivity.this, MainActivity.class));
-                            finish();
+                            startActivity(intent);
                         } else {
                             // Sign in failed, display a message and update the UI
 

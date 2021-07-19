@@ -17,4 +17,10 @@
     <string name="forgot_psswrd">Forgot Password?</string>
     <string name="or">OR</string>
 
+    <!--activity_user_details-->
+    <string name="next">Next</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="enter_surname">Enter your surname</string>
+    <string name="enter_city">Enter your city</string>
+
 </resources>

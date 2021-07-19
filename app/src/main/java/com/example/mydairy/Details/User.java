@@ -6,7 +6,9 @@ public class User {
 
     public User()
     {
-
+        this.name = "";
+        this.surname = "";
+        this.location = "";
     }
 
     public User(String name, String surname, String location) {

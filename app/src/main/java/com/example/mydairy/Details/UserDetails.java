@@ -68,9 +68,10 @@ public class UserDetails extends AppCompatActivity {
             }
             //String keyid = databaseReference.push().getKey();
             databaseReference.child("users").child(keyid).setValue(user); //adding user info to database
-            System.out.println("jinil: " +keyid);
-            System.out.println("jinil2"+user.getLocation());
 
+            Intent int_main = new Intent(UserDetails.this, MainActivity.class);
+            finishAffinity();
+            startActivity(int_main);
 
     }
 

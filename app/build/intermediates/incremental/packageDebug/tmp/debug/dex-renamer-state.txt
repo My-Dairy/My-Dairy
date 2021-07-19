@@ -1,4 +1,4 @@
-#Mon Jul 19 18:26:09 IST 2021
+#Mon Jul 19 23:29:44 IST 2021
 base.0=D\:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

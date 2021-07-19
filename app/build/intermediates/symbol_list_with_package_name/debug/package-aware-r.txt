@@ -2962,9 +2962,12 @@ string common_signin_button_text_long
 string confirm_password
 string default_web_client_id
 string dismiss_button_content_description
+string enter_city
 string enter_email
+string enter_name
 string enter_password
 string enter_psswrd
+string enter_surname
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3035,6 +3038,7 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string next
 string no_result_found
 string or
 string password_toggle_content_description
