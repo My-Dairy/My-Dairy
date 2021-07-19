@@ -11,4 +11,10 @@
     <string name="already_account">Already have an account?</string>
     <string name="log_in">Log in</string>
 
+    <!--activity_email_login.xml-->
+    <string name="sign_in">Sign in</string>
+    <string name="enter_psswrd">Enter your password</string>
+    <string name="forgot_psswrd">Forgot Password?</string>
+    <string name="or">OR</string>
+
 </resources>

@@ -2964,10 +2964,12 @@ string default_web_client_id
 string dismiss_button_content_description
 string enter_email
 string enter_password
+string enter_psswrd
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string forgot_psswrd
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -3034,6 +3036,7 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string no_result_found
+string or
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3044,6 +3047,7 @@ string register
 string search_hint
 string search_menu_title
 string select_country
+string sign_in
 string sign_up
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
