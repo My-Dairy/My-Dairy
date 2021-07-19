@@ -2,16 +2,6 @@ com/example/mydairy/MainActivity.java
  com.example.mydairy.MainActivity
 com/example/mydairy/Details/User.java
  com.example.mydairy.Details.User
-com/example/mydairy/phonelogin/PhoneOTPActivity.java
- com.example.mydairy.phonelogin.PhoneOTPActivity
- com.example.mydairy.phonelogin.PhoneOTPActivity$1
- com.example.mydairy.phonelogin.PhoneOTPActivity$2
- com.example.mydairy.phonelogin.PhoneOTPActivity$3
-com/example/mydairy/splash/SplashActivity.java
- com.example.mydairy.splash.SplashActivity
- com.example.mydairy.splash.SplashActivity$1
-com/example/mydairy/BuildConfig.java
- com.example.mydairy.BuildConfig
 com/example/mydairy/phonelogin/PhoneLoginActivity.java
  com.example.mydairy.phonelogin.PhoneLoginActivity
  com.example.mydairy.phonelogin.PhoneLoginActivity$1
@@ -34,3 +24,13 @@ com/example/mydairy/emaillogin/EmailRegisterActivity.java
 com/example/mydairy/Details/UserDetails.java
  com.example.mydairy.Details.UserDetails
  com.example.mydairy.Details.UserDetails$1
+com/example/mydairy/BuildConfig.java
+ com.example.mydairy.BuildConfig
+com/example/mydairy/phonelogin/PhoneOTPActivity.java
+ com.example.mydairy.phonelogin.PhoneOTPActivity
+ com.example.mydairy.phonelogin.PhoneOTPActivity$1
+ com.example.mydairy.phonelogin.PhoneOTPActivity$2
+ com.example.mydairy.phonelogin.PhoneOTPActivity$3
+com/example/mydairy/splash/SplashActivity.java
+ com.example.mydairy.splash.SplashActivity
+ com.example.mydairy.splash.SplashActivity$1

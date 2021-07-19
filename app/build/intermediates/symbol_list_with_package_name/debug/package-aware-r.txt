@@ -1238,6 +1238,7 @@ color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
 color pressed_bg
+color primary_color
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -1246,12 +1247,11 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
-color purple_200
-color purple_500
 color purple_700
 color radiobutton_themeable_attribute_color
 color ripple_material_dark
 color ripple_material_light
+color secondary_color
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -1798,6 +1798,7 @@ drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
+drawable btn_login
 drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
@@ -2088,6 +2089,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable input_login
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2437,6 +2439,7 @@ id line3
 id linear
 id linear_flag_border
 id linear_flag_holder
+id linear_layout
 id listMode
 id list_item
 id masked
@@ -2637,6 +2640,7 @@ id textView_enter_otp
 id textView_noresult
 id textView_selectedCountry
 id textView_title
+id text_already
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2926,6 +2930,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string already_account
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -2954,8 +2959,11 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string confirm_password
 string default_web_client_id
 string dismiss_button_content_description
+string enter_email
+string enter_password
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2969,6 +2977,7 @@ string hello_sp
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string log_in
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -3031,9 +3040,11 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
+string register
 string search_hint
 string search_menu_title
 string select_country
+string sign_up
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

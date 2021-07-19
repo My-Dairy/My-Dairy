@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mydairy.Details.UserDetails;
@@ -32,7 +33,7 @@ public class EmailRegisterActivity extends AppCompatActivity {
     TextInputLayout Confirm;
     Button Register;
     EditText pwd, cnfrm;
-    Button Login;
+    TextView Login;
 
     private static final Pattern PASSWORD_PATTERN =
             Pattern.compile("^(?=.*[0-9])"
@@ -57,7 +58,7 @@ public class EmailRegisterActivity extends AppCompatActivity {
         pwd = (EditText) findViewById(R.id.pwd);
         cnfrm = (EditText) findViewById(R.id.cnfrm);
 
-        Login = (Button) findViewById(R.id.btn_log_in);
+        Login = (TextView) findViewById(R.id.btn_log_in);
 
 
         Login.setOnClickListener(new View.OnClickListener() {

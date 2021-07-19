@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\A\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Nitin\\.gradle\\caches\\transforms-2\\files-2.1\\a7ee0c0a8534ca9a520b9e7a4209f52d\\jetified-play-services-auth-19.0.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\PATEL SARTHAK\\.gradle\\caches\\transforms-2\\files-2.1\\a7ee0c0a8534ca9a520b9e7a4209f52d\\jetified-play-services-auth-19.0.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Nitin\\.gradle\\caches\\transforms-2\\files-2.1\\dcef7ae6485cb2ad368badb5b2d5f526\\appcompat-1.3.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\PATEL SARTHAK\\.gradle\\caches\\transforms-2\\files-2.1\\dcef7ae6485cb2ad368badb5b2d5f526\\appcompat-1.3.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

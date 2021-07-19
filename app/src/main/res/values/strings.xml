@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">My Dairy</string>
     <string name="hello_sp">Hello SP</string>
+
+    <!--activity_email_register.xml-->
+    <string name="sign_up">Sign up with email</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_password">Enter new password</string>
+    <string name="confirm_password">Confirm your password</string>
+    <string name="register">Register</string>
+    <string name="already_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
+
 </resources>
