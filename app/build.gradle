@@ -7,6 +7,8 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
+
+        resConfigs "en", "hi", "gu"
         applicationId "com.example.mydairy"
         minSdkVersion 23
         targetSdkVersion 30
@@ -43,6 +45,8 @@ dependencies {
     implementation 'com.chaos.view:pinview:1.4.3'
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
     implementation 'com.firebaseui:firebase-ui-database:7.1.1'
+    implementation 'io.michaelrocks:libphonenumber-android:8.12.27'
+
 }
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'

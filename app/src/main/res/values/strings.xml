@@ -3,7 +3,6 @@
     <string name="hello_sp">Hello SP</string>
 
     <!--activity_email_register.xml-->
-    <string name="sign_up">Sign up with email</string>
     <string name="enter_email">Enter your email</string>
     <string name="enter_password">Enter new password</string>
     <string name="confirm_password">Confirm your password</string>
@@ -22,5 +21,8 @@
     <string name="enter_name">Enter your name</string>
     <string name="enter_surname">Enter your surname</string>
     <string name="enter_city">Enter your city</string>
+    <string name="sign_up">Sign up with Email</string>
+    <string name="login_with_email">Login with email</string>
+    <string name="login_with_phone_number">Login With Phone Number</string>
 
 </resources>

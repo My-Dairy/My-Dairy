@@ -135,6 +135,7 @@
     <orderEntry type="library" name="Gradle: androidx.print:print:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation-experimental:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.hbb20:ccp:2.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: io.michaelrocks:libphonenumber-android:8.12.27@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.chaos.view:pinview:1.4.3@aar" level="project" />
   </component>
 </module>
