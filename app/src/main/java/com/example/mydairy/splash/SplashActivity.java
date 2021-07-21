@@ -107,28 +107,6 @@ public class SplashActivity extends AppCompatActivity {
 
     }
 
-//    public void setLocale(String lang) {
-//        Log.i("Snt","Ahhiya2");
-//        Locale locale = new Locale(lang);
-//        Locale.setDefault(locale);
-//        Configuration configuration = new Configuration();
-//        configuration.locale=locale;
-//        getBaseContext().getResources().updateConfiguration(configuration,getBaseContext().getResources().getDisplayMetrics());
-//        SharedPreferences.Editor editor = getSharedPreferences("Settings",MODE_PRIVATE).edit();
-//        editor.putString("My_Lang", lang);
-//
-//        System.out.println("jk " +lang);
-//        editor.apply();
-//        //Intent refresh = new Intent(this, PhoneLoginActivity.class);
-//        //finish();
-//        //startActivity(refresh);
-//    }
-//    public void loadLocale()
-//    {
-//        SharedPreferences preferences =  getSharedPreferences("Settings",Activity.MODE_PRIVATE);
-//        String language = preferences.getString("My_Lang","");
-//        setLocale(language);
-//    }
 
     private void setLocale(String localeCode){
         System.out.println("jk" + localeCode);
