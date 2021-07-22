@@ -1,0 +1,23 @@
+<resources>
+
+
+    <string name="app_name">મારી ડેરી</string>
+    <string name="hello_sp">હેલો એસપી</string>
+    <string name="sign_up">ઇમેઇલ સાથે સાઇન અપ કરો</string>
+    <string name="enter_email">તમારું ઈમેલ એડ્રેસ લખો</string>
+    <string name="enter_password">નવો પાસવર્ડ દાખલ કરો</string>
+    <string name="confirm_password">તમારા પાસવર્ડની ખાતરી કરો</string>
+    <string name="register">નોંધણી કરો</string>
+    <string name="already_account">પહેલેથી ખાતું છે?</string>
+    <string name="log_in">પ્રવેશ કરો</string>
+    <string name="sign_in">સાઇન ઇન કરો</string>
+    <string name="enter_psswrd">તમારો પાસવર્ડ નાખો</string>
+    <string name="forgot_psswrd">પાસવર્ડ ભૂલી ગયા છો?</string>
+    <string name="or">અથવા</string>
+    <string name="next">આગળ</string>
+    <string name="enter_name">તમારું નામ દાખલ કરો</string>
+    <string name="enter_surname">તમારી અટક દાખલ કરો</string>
+    <string name="enter_city">તમારું શહેર દાખલ કરો</string>
+    <string name="login_with_email">ઇમેઇલ સાથે પ્રવેશ કરો</string>
+    <string name="login_with_phone_number">ફોન નંબર સાથે  પ્રવેશ કરો</string>
+</resources>
