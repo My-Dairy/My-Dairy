@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_user_details.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_user_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_main.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_share.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_gallery.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\app_bar_main.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_slideshow.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_feedback.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_feedback.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_email_login.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_email_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_phone_login.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_phone_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_phone_otp.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_phone_otp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_email_register.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_email_register.xml"
+    }
+]
