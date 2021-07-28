@@ -1,18 +1,13 @@
 com/example/mydairy/MainActivity.java
  com.example.mydairy.MainActivity
- com.example.mydairy.MainActivity$1
+com/example/mydairy/ui/Dashboard/HomeViewModel.java
+ com.example.mydairy.ui.Dashboard.HomeViewModel
 com/example/mydairy/BuildConfig.java
  com.example.mydairy.BuildConfig
 com/example/mydairy/databinding/FragmentShareBinding.java
  com.example.mydairy.databinding.FragmentShareBinding
-com/example/mydairy/databinding/FragmentSettingsBinding.java
- com.example.mydairy.databinding.FragmentSettingsBinding
-com/example/mydairy/ui/Dashboard/GalleryFragment.java
- com.example.mydairy.ui.Dashboard.GalleryFragment
-com/example/mydairy/ui/Dashboard/GalleryViewModel.java
- com.example.mydairy.ui.Dashboard.GalleryViewModel
-com/example/mydairy/Fragements/Settings.java
- com.example.mydairy.Fragements.Settings
+com/example/mydairy/databinding/NavHeaderSidebarBinding.java
+ com.example.mydairy.databinding.NavHeaderSidebarBinding
 com/example/mydairy/splash/SplashActivity.java
  com.example.mydairy.splash.SplashActivity
  com.example.mydairy.splash.SplashActivity$1
@@ -20,18 +15,18 @@ com/example/mydairy/splash/SplashActivity.java
  com.example.mydairy.splash.SplashActivity$3
 com/example/mydairy/databinding/ActivityPhoneOtpBinding.java
  com.example.mydairy.databinding.ActivityPhoneOtpBinding
-com/example/mydairy/databinding/ContentMainBinding.java
- com.example.mydairy.databinding.ContentMainBinding
-com/example/mydairy/ui/Graph/SlideshowFragment.java
- com.example.mydairy.ui.Graph.SlideshowFragment
 com/example/mydairy/databinding/ActivityEmailRegisterBinding.java
  com.example.mydairy.databinding.ActivityEmailRegisterBinding
+com/example/mydairy/databinding/FragmentSettingBinding.java
+ com.example.mydairy.databinding.FragmentSettingBinding
+com/example/mydairy/Fragment/help.java
+ com.example.mydairy.Fragment.help
+com/example/mydairy/ui/Report/SlideshowFragment.java
+ com.example.mydairy.ui.Report.SlideshowFragment
 com/example/mydairy/phonelogin/PhoneLoginActivity.java
  com.example.mydairy.phonelogin.PhoneLoginActivity
  com.example.mydairy.phonelogin.PhoneLoginActivity$1
  com.example.mydairy.phonelogin.PhoneLoginActivity$2
-com/example/mydairy/databinding/FragmentHomeBinding.java
- com.example.mydairy.databinding.FragmentHomeBinding
 com/example/mydairy/emaillogin/EmailLoginActivity.java
  com.example.mydairy.emaillogin.EmailLoginActivity
  com.example.mydairy.emaillogin.EmailLoginActivity$1
@@ -47,43 +42,55 @@ com/example/mydairy/emaillogin/EmailRegisterActivity.java
  com.example.mydairy.emaillogin.EmailRegisterActivity$2
  com.example.mydairy.emaillogin.EmailRegisterActivity$3
  com.example.mydairy.emaillogin.EmailRegisterActivity$3$1
-com/example/mydairy/Details/UserDetails.java
- com.example.mydairy.Details.UserDetails
- com.example.mydairy.Details.UserDetails$1
-com/example/mydairy/databinding/FragmentSlideshowBinding.java
- com.example.mydairy.databinding.FragmentSlideshowBinding
-com/example/mydairy/databinding/NavHeaderMainBinding.java
- com.example.mydairy.databinding.NavHeaderMainBinding
-com/example/mydairy/Fragements/feedback.java
- com.example.mydairy.Fragements.feedback
-com/example/mydairy/Fragements/share.java
- com.example.mydairy.Fragements.share
+com/example/mydairy/databinding/AppBarSidebarBinding.java
+ com.example.mydairy.databinding.AppBarSidebarBinding
+com/example/mydairy/DataBindingTriggerClass.java
+ com.example.mydairy.DataBindingTriggerClass
+com/example/mydairy/ui/Graph/GalleryFragment.java
+ com.example.mydairy.ui.Graph.GalleryFragment
+com/example/mydairy/ui/Report/SlideshowViewModel.java
+ com.example.mydairy.ui.Report.SlideshowViewModel
+com/example/mydairy/Fragment/share.java
+ com.example.mydairy.Fragment.share
 com/example/mydairy/phonelogin/PhoneOTPActivity.java
  com.example.mydairy.phonelogin.PhoneOTPActivity
  com.example.mydairy.phonelogin.PhoneOTPActivity$1
  com.example.mydairy.phonelogin.PhoneOTPActivity$2
  com.example.mydairy.phonelogin.PhoneOTPActivity$3
-com/example/mydairy/databinding/FragmentFeedbackBinding.java
- com.example.mydairy.databinding.FragmentFeedbackBinding
 com/example/mydairy/databinding/ActivityEmailLoginBinding.java
  com.example.mydairy.databinding.ActivityEmailLoginBinding
 com/example/mydairy/Details/User.java
  com.example.mydairy.Details.User
-com/example/mydairy/ui/Report/HomeViewModel.java
- com.example.mydairy.ui.Report.HomeViewModel
+com/example/mydairy/databinding/ContentSidebarBinding.java
+ com.example.mydairy.databinding.ContentSidebarBinding
+com/example/mydairy/databinding/FragmentGraphBinding.java
+ com.example.mydairy.databinding.FragmentGraphBinding
+com/example/mydairy/ui/Dashboard/HomeFragment.java
+ com.example.mydairy.ui.Dashboard.HomeFragment
+com/example/mydairy/databinding/FragmentHelpBinding.java
+ com.example.mydairy.databinding.FragmentHelpBinding
+com/example/mydairy/Fragment/setting.java
+ com.example.mydairy.Fragment.setting
+com/example/mydairy/databinding/ActivitySidebarBinding.java
+ com.example.mydairy.databinding.ActivitySidebarBinding
 com/example/mydairy/databinding/ActivityUserDetailsBinding.java
  com.example.mydairy.databinding.ActivityUserDetailsBinding
-com/example/mydairy/databinding/AppBarMainBinding.java
- com.example.mydairy.databinding.AppBarMainBinding
-com/example/mydairy/databinding/FragmentGalleryBinding.java
- com.example.mydairy.databinding.FragmentGalleryBinding
-com/example/mydairy/ui/Report/HomeFragment.java
- com.example.mydairy.ui.Report.HomeFragment
+com/example/mydairy/databinding/FragmentReportBinding.java
+ com.example.mydairy.databinding.FragmentReportBinding
+com/example/mydairy/databinding/FragmentDashboardBinding.java
+ com.example.mydairy.databinding.FragmentDashboardBinding
+com/example/mydairy/ui/Graph/GalleryViewModel.java
+ com.example.mydairy.ui.Graph.GalleryViewModel
 com/example/mydairy/databinding/ActivitySplashBinding.java
  com.example.mydairy.databinding.ActivitySplashBinding
-com/example/mydairy/ui/Graph/SlideshowViewModel.java
- com.example.mydairy.ui.Graph.SlideshowViewModel
 com/example/mydairy/databinding/ActivityMainBinding.java
  com.example.mydairy.databinding.ActivityMainBinding
 com/example/mydairy/databinding/ActivityPhoneLoginBinding.java
  com.example.mydairy.databinding.ActivityPhoneLoginBinding
+com/example/mydairy/Details/UserDetails.java
+ com.example.mydairy.Details.UserDetails
+ com.example.mydairy.Details.UserDetails$1
+com/example/mydairy/SidebarActivity.java
+ com.example.mydairy.SidebarActivity
+ com.example.mydairy.SidebarActivity$1
+ com.example.mydairy.SidebarActivity$2

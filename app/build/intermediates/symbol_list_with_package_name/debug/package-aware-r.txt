@@ -2321,7 +2321,7 @@ id all
 id always
 id animateToEnd
 id animateToStart
-id app_bar_main
+id app_bar_sidebar
 id arc
 id asConfigured
 id async
@@ -2385,6 +2385,7 @@ id custom
 id customPanel
 id cut
 id dark
+id dataBinding
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -2554,10 +2555,10 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
 id nav_dashboard
-id nav_feedback
 id nav_graph
+id nav_help
 id nav_host_fragment_container
-id nav_host_fragment_content_main
+id nav_host_fragment_content_sidebar
 id nav_report
 id nav_settings
 id nav_share
@@ -2576,6 +2577,8 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id onAttachStateChangeListener
+id onDateChanged
 id otp_box
 id outline
 id outward
@@ -2706,7 +2709,10 @@ id textView_enter_otp
 id textView_noresult
 id textView_selectedCountry
 id textView_title
+id textWatcher
 id text_already
+id text_gallery
+id text_home
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2829,12 +2835,13 @@ layout activity_email_register
 layout activity_main
 layout activity_phone_login
 layout activity_phone_otp
+layout activity_sidebar
 layout activity_splash
 layout activity_user_details
-layout app_bar_main
+layout app_bar_sidebar
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
-layout content_main
+layout content_sidebar
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2852,12 +2859,12 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fastscroll__default_bubble
-layout fragment_feedback
-layout fragment_gallery
-layout fragment_home
-layout fragment_settings
+layout fragment_dashboard
+layout fragment_graph
+layout fragment_help
+layout fragment_report
+layout fragment_setting
 layout fragment_share
-layout fragment_slideshow
 layout layout_code_picker
 layout layout_full_width_code_picker
 layout layout_picker_dialog
@@ -2905,7 +2912,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
-layout nav_header_main
+layout nav_header_sidebar
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -2940,8 +2947,8 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-menu activity_main_drawer
-menu main
+menu activity_sidebar_drawer
+menu sidebar
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation mobile_navigation
@@ -3011,6 +3018,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
 string already_account
 string app_name
 string appbar_scrolling_view_behavior
@@ -3059,6 +3067,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hello_sp
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
@@ -3086,6 +3095,12 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string menu_dashboard
+string menu_graph
+string menu_help
+string menu_report
+string menu_settings
+string menu_share
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_content_description
@@ -3123,6 +3138,11 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string nav_header_desc
+string nav_header_subtitle
+string nav_header_title
+string navigation_drawer_close
+string navigation_drawer_open
 string next
 string no_result_found
 string or
@@ -3139,6 +3159,7 @@ string select_country
 string sign_in
 string sign_up
 string status_bar_notification_info_overflow
+string title_activity_sidebar
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -3147,6 +3168,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppBarOverlay
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -3381,6 +3403,7 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style NoActionBar
 style PinWidget
 style PinWidget_PinView
 style Platform_AppCompat
@@ -3397,6 +3420,7 @@ style Platform_V21_AppCompat_Light
 style Platform_V25_AppCompat
 style Platform_V25_AppCompat_Light
 style Platform_Widget_AppCompat_Spinner
+style PopupOverlay
 style RtlOverlay_DialogWindowTitle_AppCompat
 style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem
 style RtlOverlay_Widget_AppCompat_DialogTitle_Icon

@@ -19,7 +19,7 @@ public final class ActivityMainBinding implements ViewBinding {
   private final DrawerLayout rootView;
 
   @NonNull
-  public final AppBarMainBinding appBarMain;
+  public final AppBarSidebarBinding appBarSidebar;
 
   @NonNull
   public final DrawerLayout drawerLayout;
@@ -27,10 +27,11 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final NavigationView navView;
 
-  private ActivityMainBinding(@NonNull DrawerLayout rootView, @NonNull AppBarMainBinding appBarMain,
-      @NonNull DrawerLayout drawerLayout, @NonNull NavigationView navView) {
+  private ActivityMainBinding(@NonNull DrawerLayout rootView,
+      @NonNull AppBarSidebarBinding appBarSidebar, @NonNull DrawerLayout drawerLayout,
+      @NonNull NavigationView navView) {
     this.rootView = rootView;
-    this.appBarMain = appBarMain;
+    this.appBarSidebar = appBarSidebar;
     this.drawerLayout = drawerLayout;
     this.navView = navView;
   }
@@ -62,12 +63,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.app_bar_main;
-      View appBarMain = rootView.findViewById(id);
-      if (appBarMain == null) {
+      id = R.id.app_bar_sidebar;
+      View appBarSidebar = rootView.findViewById(id);
+      if (appBarSidebar == null) {
         break missingId;
       }
-      AppBarMainBinding binding_appBarMain = AppBarMainBinding.bind(appBarMain);
+      AppBarSidebarBinding binding_appBarSidebar = AppBarSidebarBinding.bind(appBarSidebar);
 
       DrawerLayout drawerLayout = (DrawerLayout) rootView;
 
@@ -77,7 +78,7 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((DrawerLayout) rootView, binding_appBarMain, drawerLayout,
+      return new ActivityMainBinding((DrawerLayout) rootView, binding_appBarSidebar, drawerLayout,
           navView);
     }
     String missingId = rootView.getResources().getResourceName(id);

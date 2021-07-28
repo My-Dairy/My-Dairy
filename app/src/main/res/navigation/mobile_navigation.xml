@@ -7,35 +7,39 @@
 
     <fragment
         android:id="@+id/nav_dashboard"
-        android:name="com.example.mydairy.ui.Dashboard.GalleryFragment"
-        android:label="Dashboard"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_report"
-        android:name="com.example.mydairy.ui.Report.HomeFragment"
-        android:label="Reports"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.example.mydairy.ui.Dashboard.HomeFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/nav_graph"
-        android:name="com.example.mydairy.ui.Graph.SlideshowFragment"
-        android:label="Graphs"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.example.mydairy.ui.Graph.GalleryFragment"
+        android:label="@string/menu_graph"
+        tools:layout="@layout/fragment_graph" />
+
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.example.mydairy.ui.Report.SlideshowFragment"
+        android:label="@string/menu_report"
+        tools:layout="@layout/fragment_report" />
+
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.example.mydairy.Fragements.Settings"
-        android:label="Settings"
-        tools:layout="@layout/fragment_settings" />
+        android:name="com.example.mydairy.Fragment.setting"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_setting" />
 
     <fragment
         android:id="@+id/nav_share"
-        android:name="com.example.mydairy.Fragements.share"
-        android:label="Share"
+        android:name="com.example.mydairy.Fragment.share"
+        android:label="@string/menu_share"
         tools:layout="@layout/fragment_share" />
+
     <fragment
-        android:id="@+id/nav_feedback"
-        android:name="com.example.mydairy.Fragements.feedback"
-        android:label="Help .amp Feedback"
-        tools:layout="@layout/fragment_feedback" />
+        android:id="@+id/nav_help"
+        android:name="com.example.mydairy.Fragment.help"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help" />
+
+
 </navigation>

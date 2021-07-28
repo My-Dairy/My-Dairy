@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.example.mydairy.MainActivity;
 import com.example.mydairy.R;
+import com.example.mydairy.SidebarActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -69,7 +70,7 @@ public class UserDetails extends AppCompatActivity {
             //String keyid = databaseReference.push().getKey();
             databaseReference.child("users").child(keyid).setValue(user); //adding user info to database
 
-            Intent int_main = new Intent(UserDetails.this, MainActivity.class);
+            Intent int_main = new Intent(UserDetails.this, SidebarActivity.class);
             finishAffinity();
             startActivity(int_main);
 
