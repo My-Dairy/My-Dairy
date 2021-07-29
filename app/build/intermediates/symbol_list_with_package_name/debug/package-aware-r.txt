@@ -2835,7 +2835,6 @@ layout activity_email_register
 layout activity_main
 layout activity_phone_login
 layout activity_phone_otp
-layout activity_sidebar
 layout activity_splash
 layout activity_user_details
 layout app_bar_sidebar

@@ -13,10 +13,6 @@
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".SidebarActivity"
-            android:label="@string/title_activity_sidebar"
-            android:theme="@style/NoActionBar"></activity>
-        <activity
             android:name=".Details.UserDetails"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />

@@ -24,10 +24,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.Design.Light.NoActionBar" >
         <activity
-            android:name="com.example.mydairy.SidebarActivity"
-            android:label="@string/title_activity_sidebar"
-            android:theme="@style/NoActionBar" />
-        <activity
             android:name="com.example.mydairy.Details.UserDetails"
             android:screenOrientation="portrait" />
         <activity
