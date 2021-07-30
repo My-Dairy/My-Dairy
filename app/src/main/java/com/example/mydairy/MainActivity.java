@@ -9,6 +9,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -18,10 +19,15 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.mydairy.databinding.ActivityMainBinding;
+import com.example.mydairy.ui.Dashboard.HomeFragment;
+import com.example.mydairy.ui.Graph.GalleryFragment;
+import com.example.mydairy.ui.Report.SlideshowFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
-public class MainActivity extends AppCompatActivity {
+import org.jetbrains.annotations.NotNull;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
@@ -57,44 +63,84 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_sidebar);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        //navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
 
-                int i = item.getItemId();
-                if(i==R.id.nav_dashboard)
-                {
-                    Toast.makeText(getApplicationContext(),"Dashboard",Toast.LENGTH_LONG).show();
-                    drawer.closeDrawer(GravityCompat.START);
-                }
-                else if(i==R.id.nav_graph)
-                {
-                    Toast.makeText(getApplicationContext(),"Graph",Toast.LENGTH_SHORT).show();
-                    drawer.closeDrawer(GravityCompat.START);
-                }
-                else if(i==R.id.nav_report)
-                {
-                    Toast.makeText(getApplicationContext(),"Reports",Toast.LENGTH_SHORT).show();
-                    drawer.closeDrawer(GravityCompat.START);
-                }
-                else if(i==R.id.nav_settings)
-                {
-                    Toast.makeText(getApplicationContext(),"Settings",Toast.LENGTH_SHORT).show();
-                    drawer.closeDrawer(GravityCompat.START);
-                }
-                else if(i==R.id.nav_share)
-                {
-                    Toast.makeText(getApplicationContext(),"Share",Toast.LENGTH_SHORT).show();
-                    drawer.closeDrawer(GravityCompat.START);
-                }
-                else if(i==R.id.nav_help)
-                {
-                    Toast.makeText(getApplicationContext(),"Help",Toast.LENGTH_SHORT).show();
-                    drawer.closeDrawer(GravityCompat.START);
-                }
-                return true;
-            }
-        });
+//            @Override
+//            public boolean onNavigationItemSelected(MenuItem item) {
+//                switch (item.getItemId()) {
+//                    case R.id.nav_dashboard:
+//                        startActivity(new Intent(MainActivity.this, HomeFragment.class));
+//                        break;
+//                    case R.id.nav_graph:
+//                        startActivity(new Intent(MainActivity.this, GalleryFragment.class));
+//                        break;
+//                }
+//                drawer.closeDrawer(GravityCompat.START);
+//                return true;
+//
+////                int i = item.getItemId();
+////                if(i==R.id.nav_dashboard)
+////                {
+////                    Intent intent = new Intent(MainActivity.this, HomeFragment.class);
+////                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+////                    MainActivity.this.startActivity(intent);
+////                    //startActivity(new Intent(this, HomeFragment.class));
+////                    //startActivity(new Intent(this, HomeFragment.class));
+////                    //Toast.makeText(getApplicationContext(),"Dashboard",Toast.LENGTH_LONG).show();
+////                    //drawer.closeDrawer(GravityCompat.START);
+////                    drawer.closeDrawer(GravityCompat.START);
+////                    return true;
+////
+////                }
+////                if(i==R.id.nav_graph)
+////                {
+////                    Intent intent = new Intent(MainActivity.this, GalleryFragment.class);
+////                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+////                    MainActivity.this.startActivity(intent);
+////                    //Toast.makeText(getApplicationContext(),"Graph",Toast.LENGTH_SHORT).show();
+////                    //drawer.closeDrawer(GravityCompat.START);
+////                }
+////                if(i==R.id.nav_report)
+////                {
+////                    Intent intent = new Intent(MainActivity.this, SlideshowFragment.class);
+////                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+////                    MainActivity.this.startActivity(intent);
+////
+//////                    Intent it = new Intent(MainActivity.this, SlideshowFragment.class);
+//////                    startActivity(it);
+////                    //Toast.makeText(getApplicationContext(),"Reports",Toast.LENGTH_SHORT).show();
+////                    //drawer.closeDrawer(GravityCompat.START);
+////                }
+////                if(i==R.id.nav_settings)
+////                {
+////
+//////                    Intent it = new Intent(MainActivity.this, HomeFragment.class);
+//////                    startActivity(it);
+////                    //Toast.makeText(getApplicationContext(),"Settings",Toast.LENGTH_SHORT).show();
+////                    //drawer.closeDrawer(GravityCompat.START);
+////                }
+////                if(i==R.id.nav_share)
+////                {
+////
+//////                    Intent it = new Intent(MainActivity.this, HomeFragment.class);
+//////                    startActivity(it);
+////                    //Toast.makeText(getApplicationContext(),"Share",Toast.LENGTH_SHORT).show();
+////                    //drawer.closeDrawer(GravityCompat.START);
+////                }
+////                if(i==R.id.nav_help)
+////                {
+////
+//////                    Intent it = new Intent(MainActivity.this, HomeFragment.class);
+//////                    startActivity(it);
+////                    //Toast.makeText(getApplicationContext(),"Help",Toast.LENGTH_SHORT).show();
+////                    //drawer.closeDrawer(GravityCompat.START);
+////                }
+////
+////                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+////                drawer.closeDrawer(GravityCompat.START);
+////                return true;
+//            }
+ //       });
     }
 
     @Override
@@ -109,5 +155,32 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_sidebar);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        Intent intent = null;
+        if(item.getItemId() == R.id.nav_dashboard)
+        {
+            intent = new Intent(this,HomeFragment.class);
+            startActivity(intent);
+            return true;
+        }
+        if(item.getItemId() == R.id.nav_graph)
+        {
+            intent = new Intent(this,GalleryFragment.class);
+            startActivity(intent);
+            return true;
+        }
+        if(item.getItemId() == R.id.nav_report)
+        {
+            intent = new Intent(this,SlideshowFragment.class);
+            startActivity(intent);
+            return true;
+        }
+
+
+        return false;
     }
 }
