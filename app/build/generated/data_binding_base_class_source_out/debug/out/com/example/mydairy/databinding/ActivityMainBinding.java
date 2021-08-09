@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
@@ -20,9 +21,6 @@ public final class ActivityMainBinding implements ViewBinding {
   private final DrawerLayout rootView;
 
   @NonNull
-  public final AppBarSidebarBinding appBarSidebar;
-
-  @NonNull
   public final DrawerLayout drawerLayout;
 
   @NonNull
@@ -31,14 +29,17 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final NavigationView navView;
 
-  private ActivityMainBinding(@NonNull DrawerLayout rootView,
-      @NonNull AppBarSidebarBinding appBarSidebar, @NonNull DrawerLayout drawerLayout,
-      @NonNull FrameLayout flframelayout, @NonNull NavigationView navView) {
+  @NonNull
+  public final Toolbar toolbar;
+
+  private ActivityMainBinding(@NonNull DrawerLayout rootView, @NonNull DrawerLayout drawerLayout,
+      @NonNull FrameLayout flframelayout, @NonNull NavigationView navView,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.appBarSidebar = appBarSidebar;
     this.drawerLayout = drawerLayout;
     this.flframelayout = flframelayout;
     this.navView = navView;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -68,13 +69,6 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.app_bar_sidebar;
-      View appBarSidebar = rootView.findViewById(id);
-      if (appBarSidebar == null) {
-        break missingId;
-      }
-      AppBarSidebarBinding binding_appBarSidebar = AppBarSidebarBinding.bind(appBarSidebar);
-
       DrawerLayout drawerLayout = (DrawerLayout) rootView;
 
       id = R.id.flframelayout;
@@ -89,8 +83,14 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((DrawerLayout) rootView, binding_appBarSidebar, drawerLayout,
-          flframelayout, navView);
+      id = R.id.toolbar;
+      Toolbar toolbar = rootView.findViewById(id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((DrawerLayout) rootView, drawerLayout, flframelayout, navView,
+          toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

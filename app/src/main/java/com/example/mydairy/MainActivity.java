@@ -1,7 +1,9 @@
 package com.example.mydairy;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
@@ -28,10 +30,11 @@ import com.example.mydairy.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
 
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+    private DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,43 +44,65 @@ public class MainActivity extends AppCompatActivity{
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.appBarSidebar.toolbar);
-        getSupportActionBar().setBackgroundDrawable(
-                new ColorDrawable(Color.parseColor("#5e9c00")));
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer = findViewById(R.id.drawer_layout);
         NavigationView bottomNav = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_dashboard, R.id.nav_graph, R.id.nav_report, R.id.nav_settings, R.id.nav_share, R.id.nav_help)
-                .setDrawerLayout(drawer)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_sidebar);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(bottomNav, navController);
+        bottomNav.setNavigationItemSelectedListener(this);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
+                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
 
-        bottomNav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        if (savedInstanceState == null) {
+            openFragment(new HomeFragment());
+            bottomNav.setCheckedItem(R.id.nav_dashboard);
+        }
 
-                if(item.getItemId() == R.id.nav_share)
-                {
-                    drawer.closeDrawer(GravityCompat.START);
-                    Intent int_share = new Intent(Intent.ACTION_SEND);
-                    int_share.setType("text/plain");
-                    int_share.putExtra(Intent.EXTRA_SUBJECT, "My-Dairy App");
-                    String message = "https://play.google.com/store/apps/details?="+BuildConfig.APPLICATION_ID+"\n\n";
-                    int_share.putExtra(Intent.EXTRA_TEXT, message);
-                    startActivity(Intent.createChooser(int_share,"Share via"));
-                    return true;
-                }
+    }
 
-                return false;
-            }
-        });
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
+        switch (item.getItemId())
+        {
+            case R.id.nav_share:
+                drawer.closeDrawer(GravityCompat.START);
+                Intent int_share = new Intent(Intent.ACTION_SEND);
+                int_share.setType("text/plain");
+                int_share.putExtra(Intent.EXTRA_SUBJECT, "My-Dairy App");
+                String message = "https://play.google.com/store/apps/details?="+BuildConfig.APPLICATION_ID+"\n\n";
+                int_share.putExtra(Intent.EXTRA_TEXT, message);
+                startActivity(Intent.createChooser(int_share,"Share via"));
+                break;
 
+            case R.id.nav_dashboard:
+                openFragment(new HomeFragment());
+                break;
+
+            case R.id.nav_graph:
+                openFragment(new GraphsFragment());
+                break;
+
+            case R.id.nav_report:
+                openFragment(new ReportsFragment());
+                break;
+
+            case R.id.nav_help:
+                openFragment(new HelpFragment());
+                break;
+
+            case R.id.nav_settings:
+                openFragment(new SettingsFragment());
+                break;
+
+            default:
+                break;
+
+        }
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 
     @Override

@@ -12,10 +12,6 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_settings_24.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
-    },
-    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_sidebar.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\nav_header_sidebar.xml"
     },
