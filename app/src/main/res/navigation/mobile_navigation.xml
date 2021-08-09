@@ -7,39 +7,32 @@
 
     <fragment
         android:id="@+id/nav_dashboard"
-        android:name="com.example.mydairy.ui.Dashboard.HomeFragment"
+        android:name="com.example.mydairy.Fragment.HomeFragment"
         android:label="@string/menu_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_graph"
-        android:name="com.example.mydairy.ui.Graph.GalleryFragment"
+        android:name="com.example.mydairy.Fragment.GraphsFragment"
         android:label="@string/menu_graph"
-        tools:layout="@layout/fragment_graph" />
+        tools:layout="@layout/fragment_graphs" />
 
     <fragment
         android:id="@+id/nav_report"
-        android:name="com.example.mydairy.ui.Report.SlideshowFragment"
+        android:name="com.example.mydairy.Fragment.ReportsFragment"
         android:label="@string/menu_report"
-        tools:layout="@layout/fragment_report" />
+        tools:layout="@layout/fragment_reports" />
 
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.example.mydairy.Fragment.setting"
+        android:name="com.example.mydairy.Fragment.SettingsFragment"
         android:label="@string/menu_settings"
-        tools:layout="@layout/fragment_setting" />
-
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.mydairy.Fragment.share"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        tools:layout="@layout/fragment_settings" />
 
     <fragment
         android:id="@+id/nav_help"
-        android:name="com.example.mydairy.Fragment.help"
+        android:name="com.example.mydairy.Fragment.HelpFragment"
         android:label="@string/menu_help"
         tools:layout="@layout/fragment_help" />
-
 
 </navigation>

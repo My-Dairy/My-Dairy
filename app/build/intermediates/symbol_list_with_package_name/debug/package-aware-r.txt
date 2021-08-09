@@ -2433,7 +2433,6 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id fab
 id fade
 id fastscroll
 id fill
@@ -2442,6 +2441,7 @@ id fill_vertical
 id filled
 id fitToContents
 id fixed
+id flframelayout
 id flip
 id floating
 id forever
@@ -2711,12 +2711,9 @@ id textView_selectedCountry
 id textView_title
 id textWatcher
 id text_already
-id text_gallery
-id text_home
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
-id text_slideshow
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2858,12 +2855,11 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fastscroll__default_bubble
-layout fragment_dashboard
-layout fragment_graph
+layout fragment_graphs
 layout fragment_help
-layout fragment_report
-layout fragment_setting
-layout fragment_share
+layout fragment_home
+layout fragment_reports
+layout fragment_settings
 layout layout_code_picker
 layout layout_full_width_code_picker
 layout layout_picker_dialog

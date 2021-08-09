@@ -8,6 +8,12 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+    <FrameLayout
+        android:id="@+id/flframelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
     <include
         android:id="@+id/app_bar_sidebar"
         layout="@layout/app_bar_sidebar"
@@ -22,4 +28,5 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_sidebar"
         app:menu="@menu/activity_sidebar_drawer" />
+
 </androidx.drawerlayout.widget.DrawerLayout>

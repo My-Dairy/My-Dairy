@@ -4,6 +4,7 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -25,14 +26,18 @@ public final class ActivityMainBinding implements ViewBinding {
   public final DrawerLayout drawerLayout;
 
   @NonNull
+  public final FrameLayout flframelayout;
+
+  @NonNull
   public final NavigationView navView;
 
   private ActivityMainBinding(@NonNull DrawerLayout rootView,
       @NonNull AppBarSidebarBinding appBarSidebar, @NonNull DrawerLayout drawerLayout,
-      @NonNull NavigationView navView) {
+      @NonNull FrameLayout flframelayout, @NonNull NavigationView navView) {
     this.rootView = rootView;
     this.appBarSidebar = appBarSidebar;
     this.drawerLayout = drawerLayout;
+    this.flframelayout = flframelayout;
     this.navView = navView;
   }
 
@@ -72,6 +77,12 @@ public final class ActivityMainBinding implements ViewBinding {
 
       DrawerLayout drawerLayout = (DrawerLayout) rootView;
 
+      id = R.id.flframelayout;
+      FrameLayout flframelayout = rootView.findViewById(id);
+      if (flframelayout == null) {
+        break missingId;
+      }
+
       id = R.id.nav_view;
       NavigationView navView = rootView.findViewById(id);
       if (navView == null) {
@@ -79,7 +90,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((DrawerLayout) rootView, binding_appBarSidebar, drawerLayout,
-          navView);
+          flframelayout, navView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
