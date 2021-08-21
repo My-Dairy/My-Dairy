@@ -23,6 +23,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Design.Light.NoActionBar" >
+        <activity android:name="com.example.mydairy.entry.DailyEntryActivity" />
         <activity
             android:name="com.example.mydairy.Details.UserDetails"
             android:screenOrientation="portrait" />
@@ -49,6 +50,9 @@
         </activity>
         <activity
             android:name="com.example.mydairy.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mydairy.specific.GraphSpecific"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"

@@ -6,9 +6,10 @@
     tools:context=".Fragment.GraphsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/list_graph"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/menu_graph" />
+        />
 
 </FrameLayout>

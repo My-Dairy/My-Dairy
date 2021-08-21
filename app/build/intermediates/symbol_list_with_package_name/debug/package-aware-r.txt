@@ -2301,6 +2301,7 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
+id action_favorite
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -2319,6 +2320,7 @@ id alertTitle
 id aligned
 id all
 id always
+id amount
 id animateToEnd
 id animateToStart
 id arc
@@ -2349,6 +2351,7 @@ id cache_measures
 id cancel_action
 id cancel_button
 id cardViewRoot
+id card_0
 id ccp
 id center
 id center_horizontal
@@ -2385,7 +2388,9 @@ id customPanel
 id cut
 id dark
 id dataBinding
+id date
 id date_picker_actions
+id day
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -2434,6 +2439,7 @@ id expand_activities_button
 id expanded_menu
 id fade
 id fastscroll
+id fat
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2495,6 +2501,9 @@ id linear_flag_border
 id linear_flag_holder
 id linear_layout
 id listMode
+id list_graph
+id list_graphimg
+id list_graphtxt
 id list_item
 id masked
 id material_clock_display
@@ -2567,6 +2576,7 @@ id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
 id never
+id night
 id noScroll
 id none
 id normal
@@ -2601,6 +2611,7 @@ id proceed_btn
 id progress_circular
 id progress_horizontal
 id pwd
+id quantity
 id radio
 id ratio
 id rectangle
@@ -2654,6 +2665,7 @@ id snap
 id snapMargins
 id spacer
 id special_effects_controller_view_tag
+id specific_graph
 id spline
 id split_action_bar
 id spread
@@ -2725,6 +2737,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id title_view
 id toggle
 id toolbar
 id top
@@ -2825,11 +2838,13 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_daily_entry
 layout activity_email_login
 layout activity_email_register
 layout activity_main
 layout activity_phone_login
 layout activity_phone_otp
+layout activity_specific_graph
 layout activity_splash
 layout activity_user_details
 layout app_bar_sidebar
@@ -2921,6 +2936,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout row_graph_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2941,6 +2957,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu activity_sidebar_drawer
+menu menu_save
 menu sidebar
 mipmap ic_launcher
 mipmap ic_launcher_round
