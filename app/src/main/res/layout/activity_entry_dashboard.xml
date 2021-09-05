@@ -12,10 +12,11 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_margin="12dp"
-        android:text="CARD VIEW DESIGN"
-        android:textColor="#fff"
+        android:text="DATA ENTRY"
+        android:textColor="#000"
         android:textSize="30sp"
         android:textStyle="bold" />
+
 
     <GridLayout
         android:layout_width="match_parent"
@@ -53,13 +54,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="HOME"
+                    android:text="Daily Entry"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -85,13 +87,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LANGUAGE"
+                    android:text="Dava/Daru(E)"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -117,13 +120,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CHAT"
+                    android:text="Dan/Khan(E)"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -149,7 +153,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CALENDAR"
+                    android:text="Labour Charge"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -157,6 +161,7 @@
 
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="2"
@@ -182,13 +187,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="WIDGETS"
+                    android:text="Returns Of Investment"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="2"
@@ -214,13 +220,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="INFO"
+                    android:text="GassCharo"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="3"
@@ -246,13 +253,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="INFO"
+                    android:text="Miscellaneous"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="3"
@@ -278,12 +286,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="INFO"
+                    android:text="Development/Investment"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
-
 
 </RelativeLayout>

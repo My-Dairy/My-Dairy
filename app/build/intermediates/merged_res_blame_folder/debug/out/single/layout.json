@@ -12,12 +12,12 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_email_login.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\nav_header_sidebar.xml",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\nav_header_sidebar.xml"
-    },
-    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\nav_header_sidebar.xml",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\nav_header_sidebar.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
@@ -40,16 +40,12 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_phone_otp.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_dashboard.xml",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_dashboard.xml"
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_specific_graph.xml",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_specific_graph.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_sidebar.xml",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\content_sidebar.xml"
-    },
-    {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_specific_graph.xml",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_specific_graph.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_help.xml",
@@ -64,10 +60,6 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_graphs.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_report.xml",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_report.xml"
-    },
-    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_phone_login.xml",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_phone_login.xml"
     },
@@ -80,19 +72,31 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\app_bar_sidebar.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_share.xml",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_share.xml"
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_labour_entry.xml",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_labour_entry.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_graph.xml",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_graph.xml"
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_miscellaneous_entry.xml",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_miscellaneous_entry.xml"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_r_o_i_entry.xml",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_r_o_i_entry.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_settings.xml",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_setting.xml",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_setting.xml"
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_dev_inv.xml",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dev_inv.xml"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_dava_daru_entry.xml",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dava_daru_entry.xml"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_dan_khan_entry.xml",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dan_khan_entry.xml"
     }
 ]

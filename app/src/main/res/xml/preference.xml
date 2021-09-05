@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+
+        <SwitchPreference
+            android:title="Dark Theme"
+            android:key="DARK_THEME"
+            android:defaultValue="false"
+            android:id="@+id/switcher"
+            />
+
+        <ListPreference
+            android:key="LANGUAGE"
+            android:title="Language"
+            android:summary="English"
+            android:dialogTitle="Choose language"
+            android:entries="@array/language"
+            android:entryValues="@array/language"/>
+
+
+        <CheckBoxPreference
+            android:key="NOTIFICATION"
+            android:title="Notification"/>
+
+        <Preference
+            android:key="RESET"
+            android:title="Backup and reset" />
+
+        <Preference
+            android:key="SIGN OUT"
+            android:title="Sign out" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

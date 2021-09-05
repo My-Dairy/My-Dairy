@@ -5,5 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.HomeFragment">
 
+    <Button
+        android:id="@+id/btn_entry"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:text="Open Entry"
+        />
 
 </FrameLayout>
