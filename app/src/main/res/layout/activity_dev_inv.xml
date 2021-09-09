@@ -6,94 +6,157 @@
     android:layout_height="match_parent"
     tools:context=".entry.DevInvActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/first_box"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140px"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_color"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        >
+        />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:text="Cow Purchase"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Enter the price paid"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/second_box"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140px"
-        app:layout_constraintTop_toBottomOf="@+id/first_box"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         >
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:text="Cow Vechan"
-            />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            >
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Enter the price at which cow sold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/cow_purchase_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cow Purchase"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/hint_dark"
+                    />
+
+                <EditText
+                    android:id="@+id/cow_purchase_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter the amount"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingStart="20dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/input_login"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                >
+
+                <TextView
+                    android:id="@+id/cow_selling_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cow Selling"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/hint_dark"
+                    />
+
+                <EditText
+                    android:id="@+id/cow_selling_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter the amount"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingStart="20dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/input_login"
+                    />
+
+            </LinearLayout>
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+                <TextView
+                    android:id="@+id/expansion_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expansion"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/hint_dark"
+                    />
+
+                <EditText
+                    android:id="@+id/expansion_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Specify the details"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingStart="20dp"
+                    android:background="@drawable/input_login"
+                    />
+
+                <EditText
+                    android:id="@+id/expansion_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter the amount"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/input_login"
+                    android:layout_marginBottom="100dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140px"
-        app:layout_constraintTop_toBottomOf="@+id/second_box"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_login"
+        android:text="SAVE"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:text="Expansion"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Please Specify the expansion"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

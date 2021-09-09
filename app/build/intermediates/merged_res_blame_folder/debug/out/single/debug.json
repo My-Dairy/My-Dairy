@@ -12,12 +12,12 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_settings_24.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_login.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\btn_login.xml"
-    },
-    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_login.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\btn_login.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -214,6 +214,10 @@
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_gass_charo_entry.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_gass_charo_entry.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

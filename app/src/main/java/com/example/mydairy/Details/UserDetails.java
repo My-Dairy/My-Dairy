@@ -38,8 +38,6 @@ public class UserDetails extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference();
 
 
-
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

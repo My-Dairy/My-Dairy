@@ -24,7 +24,7 @@
 14-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\PATEL SARTHAK\.gradle\caches\transforms-2\files-2.1\e9b032cd6efe8860a2b31960410d1d3f\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:26:22-107
 15
 16    <application
-16-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:8:5-61:19
+16-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:8:5-62:19
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 17-->[androidx.core:core:1.5.0] C:\Users\PATEL SARTHAK\.gradle\caches\transforms-2\files-2.1\529042315385d8413ce2368d9dfa18df\core-1.5.0\AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
@@ -37,92 +37,94 @@
 22-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:11:9-54
 23        android:supportsRtl="true"
 23-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:12:9-35
-24        android:testOnly="true"
-25        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" >
-25-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:13:9-74
+24        android:theme="@style/Theme.Design.Light.NoActionBar" >
+24-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:13:9-62
+25        <activity android:name="com.example.mydairy.entry.GassCharoEntryActivity" />
+25-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:15:9-75
+25-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:15:19-63
 26        <activity android:name="com.example.mydairy.entry.LabourEntryActivity" />
-26-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:15:9-72
-26-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:15:19-60
+26-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:16:9-63
+26-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:16:19-60
 27        <activity android:name="com.example.mydairy.entry.ROIEntryActivity" />
-27-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:16:9-60
-27-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:16:19-57
+27-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:17:9-60
+27-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:17:19-57
 28        <activity android:name="com.example.mydairy.entry.MiscellaneousEntryActivity" />
-28-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:17:9-70
-28-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:17:19-67
+28-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:18:9-70
+28-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:18:19-67
 29        <activity android:name="com.example.mydairy.entry.DanKhanEntryActivity" />
-29-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:18:9-64
-29-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:18:19-61
+29-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:19:9-64
+29-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:19:19-61
 30        <activity android:name="com.example.mydairy.entry.DavaDaruEntryActivity" />
-30-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:19:9-65
-30-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:19:19-62
+30-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:20:9-65
+30-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:20:19-62
 31        <activity android:name="com.example.mydairy.entry.DevInvActivity" />
-31-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:20:9-58
-31-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:20:19-55
+31-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:21:9-58
+31-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:21:19-55
 32        <activity android:name="com.example.mydairy.entry.EntryDashboardActivity" />
-32-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:21:9-66
-32-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:21:19-63
+32-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:22:9-66
+32-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:22:19-63
 33        <activity android:name="com.example.mydairy.entry.DailyEntryActivity" />
-33-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:22:9-62
-33-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:22:19-59
+33-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:23:9-62
+33-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:23:19-59
 34        <activity
-34-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:23:9-26:56
+34-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:24:9-27:56
 35            android:name="com.example.mydairy.Details.UserDetails"
-35-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:24:13-48
+35-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:25:13-48
 36            android:screenOrientation="portrait" />
-36-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:25:13-49
+36-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:26:13-49
 37        <activity
-37-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:27:9-30:56
+37-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:28:9-31:56
 38            android:name="com.example.mydairy.emaillogin.EmailRegisterActivity"
-38-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:28:13-61
+38-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:29:13-61
 39            android:screenOrientation="portrait" />
-39-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:29:13-49
+39-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:30:13-49
 40        <activity
-40-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:31:9-34:56
+40-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:32:9-35:56
 41            android:name="com.example.mydairy.emaillogin.EmailLoginActivity"
-41-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:32:13-58
+41-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:33:13-58
 42            android:screenOrientation="portrait" />
-42-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:33:13-49
+42-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:34:13-49
 43        <activity
-43-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:35:9-38:56
+43-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:36:9-39:56
 44            android:name="com.example.mydairy.phonelogin.PhoneOTPActivity"
-44-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:36:13-56
+44-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:37:13-56
 45            android:screenOrientation="portrait" />
-45-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:37:13-49
+45-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:38:13-49
 46        <activity
-46-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:39:9-42:56
+46-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:40:9-43:56
 47            android:name="com.example.mydairy.phonelogin.PhoneLoginActivity"
-47-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:40:13-58
+47-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:41:13-58
 48            android:screenOrientation="portrait" />
-48-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:41:13-49
+48-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:42:13-49
 49        <activity
-49-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:43:9-52:20
+49-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:44:9-53:20
 50            android:name="com.example.mydairy.splash.SplashActivity"
-50-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:44:13-50
+50-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:45:13-50
 51            android:screenOrientation="portrait" >
-51-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:45:13-49
+51-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:46:13-49
 52            <intent-filter>
-52-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:47:13-51:29
+52-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:48:13-52:29
 53                <action android:name="android.intent.action.MAIN" />
-53-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:48:17-69
-53-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:48:25-66
+53-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:49:17-69
+53-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:49:25-66
 54
 55                <category android:name="android.intent.category.LAUNCHER" />
-55-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:50:17-77
-55-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:50:27-74
+55-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:51:17-77
+55-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:51:27-74
 56            </intent-filter>
 57        </activity>
 58        <activity
-58-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:53:9-56:56
+58-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:54:9-57:56
 59            android:name="com.example.mydairy.MainActivity"
-59-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:54:13-41
+59-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:55:13-41
 60            android:screenOrientation="portrait" />
-60-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:55:13-49
+60-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:56:13-49
 61        <activity
-61-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:57:9-60:56
+61-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:58:9-61:56
 62            android:name="com.example.mydairy.specific.GraphSpecific"
-62-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:58:13-51
+62-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:59:13-51
 63            android:screenOrientation="portrait" />
-63-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:59:13-49
+63-->D:\BOOKS\My-Dairy\app\src\main\AndroidManifest.xml:60:13-49
 64        <activity
 64-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\PATEL SARTHAK\.gradle\caches\transforms-2\files-2.1\3958a2b47a9322b6e9bcdab60aac72ff\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
 65            android:name="com.google.firebase.auth.internal.GenericIdpActivity"

@@ -37,4 +37,30 @@
     <string name="menu_share">Share</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--activity_daily_entry.xml-->
+    <string name="enter_date">તારીખ દાખલ કરો</string>
+    <string name="morning">સવાર</string>
+    <string name="evening">સાંજ</string>
+    <string name="select_choice">તમારી પસંદગી પસંદ કરો</string>
+    <string name="enter_fat">ચરબી(fat) દાખલ કરો</string>
+    <string name="enter_amount">રકમ દાખલ કરો</string>
+    <string name="enter_qty">જથ્થો દાખલ કરો</string>
+
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
 </resources>
