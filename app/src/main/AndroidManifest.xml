@@ -12,8 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:ignore="AllowBackup">
-        <activity android:name=".entry.GassCharoEntryActivity"></activity>
         <activity android:name=".entry.LabourEntryActivity" />
+        <activity android:name=".entry.GassCharoEntryActivity" />
         <activity android:name=".entry.ROIEntryActivity" />
         <activity android:name=".entry.MiscellaneousEntryActivity" />
         <activity android:name=".entry.DanKhanEntryActivity" />

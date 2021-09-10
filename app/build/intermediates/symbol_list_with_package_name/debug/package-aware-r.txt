@@ -2312,7 +2312,6 @@ id SLOVENIAN
 id SPANISH
 id SWEDISH
 id SYM
-id SalaryMonthly
 id TAGALOG
 id TOLL_FREE
 id TOP_END
@@ -2391,6 +2390,7 @@ id aligned
 id all
 id always
 id amount
+id amount_editText
 id animateToEnd
 id animateToStart
 id arc
@@ -2400,6 +2400,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id balance_editText
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2495,6 +2496,8 @@ id disjoint
 id divider
 id divider_line_left
 id divider_line_right
+id dose_external
+id dose_from_dairy
 id dragDown
 id dragEnd
 id dragLeft
@@ -2625,6 +2628,9 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id media_actions
+id medical_visit_dairy
+id medical_visit_external
+id medicine_external
 id message
 id middle
 id mini
@@ -2634,6 +2640,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
+id monthly_editText
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -2732,6 +2739,14 @@ id rectangles
 id recycler_countryDialog
 id recycler_view
 id register_btn
+id report_card_0
+id report_card_1
+id report_card_2
+id report_card_3
+id report_card_4
+id report_card_5
+id report_card_6
+id report_card_7
 id resend_otp_textview
 id reverseSawtooth
 id right
@@ -2871,6 +2886,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id typeOfWork_editText
 id unchecked
 id uniform
 id unlabeled
@@ -2885,6 +2901,7 @@ id visible
 id visible_removing_fragment_view_tag
 id wide
 id withText
+id withdraw_editText
 id withinBounds
 id wrap
 id wrap_content
@@ -3323,6 +3340,7 @@ string preference_copied
 string project_id
 string register
 string reply_title
+string salary
 string search_hint
 string search_menu_title
 string select_choice
@@ -3330,6 +3348,7 @@ string select_country
 string sign_in
 string sign_up
 string signature_title
+string signout
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
 string sync_header

@@ -1,5 +1,6 @@
 package com.example.mydairy.Fragment;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,9 +13,15 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
 
+import com.example.mydairy.MainActivity;
 import com.example.mydairy.R;
+import com.example.mydairy.phonelogin.PhoneLoginActivity;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class SettingsFragment extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener {
+
+    Preference signout;
+    private FirebaseAuth mAuth;
 
     private ListPreference mListPreference;
 
@@ -53,6 +60,21 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
                 setPreferenceSummary(p, value);
             }
         }
+        signout  = findPreference(getString(R.string.signout));
+        signout.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                mAuth.getInstance().signOut();
+                Intent intent = new Intent(getContext(), PhoneLoginActivity.class);
+                getActivity().finishAffinity();
+                startActivity(intent);
+
+                return true;
+
+            }
+        });
+
+
     }
 
     @Override

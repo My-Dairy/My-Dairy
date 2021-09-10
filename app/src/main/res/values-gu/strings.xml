@@ -28,7 +28,8 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
+    <string name="salary">Salary</string>
+    <string name="signout">Signout</string>
     <string name="menu_dashboard">Dashboard</string>
     <string name="menu_graph">Graph</string>
     <string name="menu_report">Report</string>

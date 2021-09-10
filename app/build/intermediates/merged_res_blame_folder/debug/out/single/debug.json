@@ -1,226 +1,226 @@
 [
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_reports.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_reports.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_graphs.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_graphs.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_settings_24.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_settings_24.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_phone_otp.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_phone_otp.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input_login.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable\\input_login.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_login.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\btn_login.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_r_o_i_entry.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_r_o_i_entry.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dev_inv.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dev_inv.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_cow1.jpeg.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\cow1.jpeg"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input_login.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\input_login.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_help.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_help.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_reports.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_reports.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_email_login.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_email_login.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_help.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_help.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_bar_chart_24.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_bar_chart_24.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_splash.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_dashboard_24.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_dashboard_24.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_storage_24.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_storage_24.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_daily_entry.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_daily_entry.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_sidebar.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\nav_header_sidebar.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_bar_chart_24.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_bar_chart_24.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_account_circle_24.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_account_circle_24.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dan_khan_entry.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dan_khan_entry.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_save.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\menu\\menu_save.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_email_login.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_email_login.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_account_circle_24.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_account_circle_24.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_phone_login.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_phone_login.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_user_details.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_user_details.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_sidebar_drawer.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\menu\\activity_sidebar_drawer.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_daily_entry.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_daily_entry.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_settings.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_settings.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_background.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_sidebar.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\app_bar_sidebar.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_graphs.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_graphs.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_feedback_24.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_feedback_24.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_sidebar.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\content_sidebar.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\xml_preference.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\xml\\preference.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_graph_item.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\row_graph_item.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_home.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_specific_graph.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_specific_graph.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_labour_entry.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_labour_entry.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_entry_dashboard.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_entry_dashboard.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_specific_graph.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_specific_graph.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_sidebar.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\nav_header_sidebar.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_sidebar.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\content_sidebar.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_entry_dashboard.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_entry_dashboard.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_email_register.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_email_register.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_settings.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_save.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\menu\\menu_save.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_user_details.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_user_details.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_labour_entry.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_labour_entry.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_cow1.jpeg.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\cow1.jpeg"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_phone_otp.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_phone_otp.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_feedback_24.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_feedback_24.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dava_daru_entry.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dava_daru_entry.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_settings_24.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_settings_24.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_r_o_i_entry.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_r_o_i_entry.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_share_24.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_share_24.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_email_register.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_email_register.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_background.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_launcher_background.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dava_daru_entry.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dava_daru_entry.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\xml_preference.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\xml\\preference.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_share_24.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_share_24.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\menu_sidebar.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\menu\\sidebar.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_miscellaneous_entry.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_miscellaneous_entry.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dan_khan_entry.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dan_khan_entry.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dev_inv.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dev_inv.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_sidebar.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\app_bar_sidebar.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_miscellaneous_entry.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_miscellaneous_entry.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_graph_item.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\row_graph_item.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_login.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable\\btn_login.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_dashboard_24.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_dashboard_24.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_storage_24.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_storage_24.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_phone_login.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_phone_login.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\menu_sidebar.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\menu\\sidebar.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_sidebar_drawer.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\menu\\activity_sidebar_drawer.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_gass_charo_entry.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_gass_charo_entry.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_gass_charo_entry.xml.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\layout\\activity_gass_charo_entry.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "E:\\A\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "E:\\A\\My-Dairy\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
 ]

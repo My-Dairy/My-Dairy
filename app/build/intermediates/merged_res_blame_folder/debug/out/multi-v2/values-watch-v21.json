@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
+            "outputFile": "E:\\A\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\PATEL SARTHAK\\.gradle\\caches\\transforms-2\\files-2.1\\dcef7ae6485cb2ad368badb5b2d5f526\\appcompat-1.3.0\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\Nitin\\.gradle\\caches\\transforms-2\\files-2.1\\dcef7ae6485cb2ad368badb5b2d5f526\\appcompat-1.3.0\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

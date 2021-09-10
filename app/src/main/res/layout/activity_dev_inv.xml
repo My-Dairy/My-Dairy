@@ -53,7 +53,7 @@
                     />
 
                 <EditText
-                    android:id="@+id/cow_purchase_edit"
+                    android:id="@+id/cow_purchase_editText"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:hint="Enter the amount"
@@ -84,7 +84,7 @@
                     />
 
                 <EditText
-                    android:id="@+id/cow_selling_edit"
+                    android:id="@+id/cow_selling_editText"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:hint="Enter the amount"
@@ -116,7 +116,7 @@
                     />
 
                 <EditText
-                    android:id="@+id/expansion_details"
+                    android:id="@+id/expansion_details_editText"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:hint="Specify the details"
@@ -126,7 +126,7 @@
                     />
 
                 <EditText
-                    android:id="@+id/expansion_edit"
+                    android:id="@+id/expansion_amount_editText"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:hint="Enter the amount"
@@ -145,7 +145,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/save"
+        android:id="@+id/save_btn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/btn_login"

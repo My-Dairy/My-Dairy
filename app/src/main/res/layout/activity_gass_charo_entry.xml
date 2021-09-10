@@ -66,6 +66,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="60dp"
                     android:text="Guno"
+                    android:id="@+id/cb_1"
                     android:textSize="16sp"
                     android:textColor="@color/hint"/>
 
@@ -75,6 +76,7 @@
                     android:layout_marginStart="60dp"
                     android:text="Makaiyu"
                     android:textSize="16sp"
+                    android:id="@+id/cb_2"
                     android:textColor="@color/hint"/>
                 <CheckBox
                     android:layout_width="match_parent"
@@ -82,15 +84,18 @@
                     android:layout_marginStart="60dp"
                     android:text="Guvariyu"
                     android:textSize="16sp"
+                    android:id="@+id/cb_3"
                     android:textColor="@color/hint"/>
                 <CheckBox
                     android:layout_width="match_parent"
+                    android:id="@+id/cb_4"
                     android:layout_height="match_parent"
                     android:layout_marginStart="60dp"
                     android:text="Sidhiyu"
                     android:textSize="16sp"
                     android:textColor="@color/hint"/>
                 <CheckBox
+                    android:id="@+id/cb_5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="60dp"
@@ -119,6 +124,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:hint="Enter here"
+                        android:id="@+id/quantity_editText"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
                         android:inputType="number"
@@ -147,6 +153,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        android:id="@+id/sukocharoAmount_editText"
                         android:hint="Enter the amount"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
@@ -201,6 +208,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        android:id="@+id/tractorCharge_editText"
                         android:hint="Enter the amount"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
@@ -230,6 +238,7 @@
 
                     <EditText
                         android:layout_width="match_parent"
+                        android:id="@+id/seeds_editText"
                         android:layout_height="50dp"
                         android:hint="Enter the amount"
                         android:layout_marginHorizontal="20dp"
@@ -259,6 +268,7 @@
                         />
 
                     <EditText
+                        android:id="@+id/fertilizers_editText"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:hint="Enter the amount"
@@ -291,6 +301,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        android:id="@+id/labourCharge_editText"
                         android:hint="Enter the amount"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
@@ -343,6 +354,7 @@
                         />
 
                     <EditText
+                        android:id="@+id/lilocharoSeeds_editText"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:hint="Enter the amount"
@@ -378,6 +390,7 @@
                         android:hint="Enter the amount"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
+                        android:id="@+id/lilocharoFertilizers_editText"
                         android:inputType="numberDecimal"
                         android:background="@drawable/input_login"
                         android:layout_marginBottom="20dp"
@@ -393,7 +406,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/save"
+        android:id="@+id/save_btn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/btn_login"

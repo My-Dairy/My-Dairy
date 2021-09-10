@@ -27,7 +27,7 @@
             android:title="Backup and reset" />
 
         <Preference
-            android:key="SIGN OUT"
+            android:key="@string/signout"
             android:title="Sign out" />
 
     </PreferenceCategory>

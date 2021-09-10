@@ -41,6 +41,8 @@ com/example/mydairy/entry/EntryDashboardActivity.java
  com.example.mydairy.entry.EntryDashboardActivity$6
  com.example.mydairy.entry.EntryDashboardActivity$7
  com.example.mydairy.entry.EntryDashboardActivity$8
+com/example/mydairy/Details/LabourCharge.java
+ com.example.mydairy.Details.LabourCharge
 com/example/mydairy/databinding/ActivityLabourEntryBinding.java
  com.example.mydairy.databinding.ActivityLabourEntryBinding
 com/example/mydairy/databinding/FragmentHelpBinding.java
@@ -56,10 +58,12 @@ com/example/mydairy/entry/DailyEntryActivity.java
  com.example.mydairy.entry.DailyEntryActivity$3
 com/example/mydairy/entry/DavaDaruEntryActivity.java
  com.example.mydairy.entry.DavaDaruEntryActivity
+ com.example.mydairy.entry.DavaDaruEntryActivity$1
 com/example/mydairy/databinding/RowGraphItemBinding.java
  com.example.mydairy.databinding.RowGraphItemBinding
 com/example/mydairy/entry/LabourEntryActivity.java
  com.example.mydairy.entry.LabourEntryActivity
+ com.example.mydairy.entry.LabourEntryActivity$1
 com/example/mydairy/Fragment/ReportsFragment.java
  com.example.mydairy.Fragment.ReportsFragment
 com/example/mydairy/databinding/ActivityMiscellaneousEntryBinding.java
@@ -74,6 +78,7 @@ com/example/mydairy/MainActivity.java
  com.example.mydairy.MainActivity
 com/example/mydairy/Fragment/SettingsFragment.java
  com.example.mydairy.Fragment.SettingsFragment
+ com.example.mydairy.Fragment.SettingsFragment$1
 com/example/mydairy/entry/DevInvActivity.java
  com.example.mydairy.entry.DevInvActivity
 com/example/mydairy/databinding/FragmentSettingsBinding.java
@@ -127,6 +132,8 @@ com/example/mydairy/databinding/ActivityUserDetailsBinding.java
  com.example.mydairy.databinding.ActivityUserDetailsBinding
 com/example/mydairy/Details/DailyEntry.java
  com.example.mydairy.Details.DailyEntry
+com/example/mydairy/Details/DavaDaru.java
+ com.example.mydairy.Details.DavaDaru
 com/example/mydairy/entry/MiscellaneousEntryActivity.java
  com.example.mydairy.entry.MiscellaneousEntryActivity
 com/example/mydairy/databinding/ActivitySplashBinding.java
