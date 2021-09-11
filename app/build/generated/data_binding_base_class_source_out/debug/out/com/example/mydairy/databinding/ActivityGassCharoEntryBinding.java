@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import androidx.annotation.NonNull;
@@ -21,20 +23,77 @@ public final class ActivityGassCharoEntryBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final Button save;
+  public final CheckBox cb1;
+
+  @NonNull
+  public final CheckBox cb2;
+
+  @NonNull
+  public final CheckBox cb3;
+
+  @NonNull
+  public final CheckBox cb4;
+
+  @NonNull
+  public final CheckBox cb5;
+
+  @NonNull
+  public final EditText fertilizersEditText;
+
+  @NonNull
+  public final EditText labourChargeEditText;
+
+  @NonNull
+  public final EditText lilocharoFertilizersEditText;
+
+  @NonNull
+  public final EditText lilocharoSeedsEditText;
+
+  @NonNull
+  public final EditText quantityEditText;
+
+  @NonNull
+  public final Button saveBtn;
 
   @NonNull
   public final ScrollView scrollView;
 
   @NonNull
+  public final EditText seedsEditText;
+
+  @NonNull
+  public final EditText sukocharoAmountEditText;
+
+  @NonNull
   public final Toolbar toolbar;
 
-  private ActivityGassCharoEntryBinding(@NonNull RelativeLayout rootView, @NonNull Button save,
-      @NonNull ScrollView scrollView, @NonNull Toolbar toolbar) {
+  @NonNull
+  public final EditText tractorChargeEditText;
+
+  private ActivityGassCharoEntryBinding(@NonNull RelativeLayout rootView, @NonNull CheckBox cb1,
+      @NonNull CheckBox cb2, @NonNull CheckBox cb3, @NonNull CheckBox cb4, @NonNull CheckBox cb5,
+      @NonNull EditText fertilizersEditText, @NonNull EditText labourChargeEditText,
+      @NonNull EditText lilocharoFertilizersEditText, @NonNull EditText lilocharoSeedsEditText,
+      @NonNull EditText quantityEditText, @NonNull Button saveBtn, @NonNull ScrollView scrollView,
+      @NonNull EditText seedsEditText, @NonNull EditText sukocharoAmountEditText,
+      @NonNull Toolbar toolbar, @NonNull EditText tractorChargeEditText) {
     this.rootView = rootView;
-    this.save = save;
+    this.cb1 = cb1;
+    this.cb2 = cb2;
+    this.cb3 = cb3;
+    this.cb4 = cb4;
+    this.cb5 = cb5;
+    this.fertilizersEditText = fertilizersEditText;
+    this.labourChargeEditText = labourChargeEditText;
+    this.lilocharoFertilizersEditText = lilocharoFertilizersEditText;
+    this.lilocharoSeedsEditText = lilocharoSeedsEditText;
+    this.quantityEditText = quantityEditText;
+    this.saveBtn = saveBtn;
     this.scrollView = scrollView;
+    this.seedsEditText = seedsEditText;
+    this.sukocharoAmountEditText = sukocharoAmountEditText;
     this.toolbar = toolbar;
+    this.tractorChargeEditText = tractorChargeEditText;
   }
 
   @Override
@@ -64,9 +123,69 @@ public final class ActivityGassCharoEntryBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.save;
-      Button save = rootView.findViewById(id);
-      if (save == null) {
+      id = R.id.cb_1;
+      CheckBox cb1 = rootView.findViewById(id);
+      if (cb1 == null) {
+        break missingId;
+      }
+
+      id = R.id.cb_2;
+      CheckBox cb2 = rootView.findViewById(id);
+      if (cb2 == null) {
+        break missingId;
+      }
+
+      id = R.id.cb_3;
+      CheckBox cb3 = rootView.findViewById(id);
+      if (cb3 == null) {
+        break missingId;
+      }
+
+      id = R.id.cb_4;
+      CheckBox cb4 = rootView.findViewById(id);
+      if (cb4 == null) {
+        break missingId;
+      }
+
+      id = R.id.cb_5;
+      CheckBox cb5 = rootView.findViewById(id);
+      if (cb5 == null) {
+        break missingId;
+      }
+
+      id = R.id.fertilizers_editText;
+      EditText fertilizersEditText = rootView.findViewById(id);
+      if (fertilizersEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.labourCharge_editText;
+      EditText labourChargeEditText = rootView.findViewById(id);
+      if (labourChargeEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.lilocharoFertilizers_editText;
+      EditText lilocharoFertilizersEditText = rootView.findViewById(id);
+      if (lilocharoFertilizersEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.lilocharoSeeds_editText;
+      EditText lilocharoSeedsEditText = rootView.findViewById(id);
+      if (lilocharoSeedsEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.quantity_editText;
+      EditText quantityEditText = rootView.findViewById(id);
+      if (quantityEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.save_btn;
+      Button saveBtn = rootView.findViewById(id);
+      if (saveBtn == null) {
         break missingId;
       }
 
@@ -76,14 +195,34 @@ public final class ActivityGassCharoEntryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.seeds_editText;
+      EditText seedsEditText = rootView.findViewById(id);
+      if (seedsEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.sukocharoAmount_editText;
+      EditText sukocharoAmountEditText = rootView.findViewById(id);
+      if (sukocharoAmountEditText == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = rootView.findViewById(id);
       if (toolbar == null) {
         break missingId;
       }
 
-      return new ActivityGassCharoEntryBinding((RelativeLayout) rootView, save, scrollView,
-          toolbar);
+      id = R.id.tractorCharge_editText;
+      EditText tractorChargeEditText = rootView.findViewById(id);
+      if (tractorChargeEditText == null) {
+        break missingId;
+      }
+
+      return new ActivityGassCharoEntryBinding((RelativeLayout) rootView, cb1, cb2, cb3, cb4, cb5,
+          fertilizersEditText, labourChargeEditText, lilocharoFertilizersEditText,
+          lilocharoSeedsEditText, quantityEditText, saveBtn, scrollView, seedsEditText,
+          sukocharoAmountEditText, toolbar, tractorChargeEditText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2418,7 +2418,6 @@ id btn_entry
 id btn_log_in
 id btn_sign_in_with_email
 id button
-id button2
 id buttonPanel
 id cache_measures
 id cancel_action
@@ -2432,6 +2431,11 @@ id card_4
 id card_5
 id card_6
 id card_7
+id cb_1
+id cb_2
+id cb_3
+id cb_4
+id cb_5
 id ccp
 id center
 id center_horizontal
@@ -2463,9 +2467,9 @@ id coordinator
 id cos
 id counterclockwise
 id countryCodeHolder
-id cow_purchase_edit
+id cow_purchase_editText
 id cow_purchase_txt
-id cow_selling_edit
+id cow_selling_editText
 id cow_selling_txt
 id custom
 id customPanel
@@ -2526,12 +2530,13 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id expansion_details
-id expansion_edit
+id expansion_amount_editText
+id expansion_details_editText
 id expansion_txt
 id fade
 id fastscroll
 id fat
+id fertilizers_editText
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2583,11 +2588,14 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id labeled
+id labourCharge_editText
 id layout
 id left
 id leftToRight
 id let_me_in
 id light
+id lilocharoFertilizers_editText
+id lilocharoSeeds_editText
 id line
 id line1
 id line3
@@ -2731,6 +2739,7 @@ id progress_circular
 id progress_horizontal
 id pwd
 id quantity
+id quantity_editText
 id radio
 id radiogrp
 id ratio
@@ -2758,7 +2767,6 @@ id rl_query_holder
 id rl_title
 id rounded
 id row_index_key
-id save
 id save_btn
 id save_non_transition_alpha
 id save_overlay_view
@@ -2780,6 +2788,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seeds_editText
 id seekbar
 id seekbar_value
 id select_dialog_listview
@@ -2820,6 +2829,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id sukocharoAmount_editText
 id switchWidget
 id switcher
 id tabMode
@@ -2878,6 +2888,7 @@ id toolbar
 id top
 id topPanel
 id touch_outside
+id tractorCharge_editText
 id transitionToEnd
 id transitionToStart
 id transition_current_scene

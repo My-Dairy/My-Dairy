@@ -5,7 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.EditText;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
@@ -17,24 +18,37 @@ import java.lang.String;
 
 public final class ActivityROIEntryBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
-  public final Button button2;
+  public final EditText balanceEditText;
+
+  @NonNull
+  public final EditText monthlyEditText;
+
+  @NonNull
+  public final Button saveBtn;
 
   @NonNull
   public final Toolbar toolbar;
 
-  private ActivityROIEntryBinding(@NonNull LinearLayout rootView, @NonNull Button button2,
-      @NonNull Toolbar toolbar) {
+  @NonNull
+  public final EditText withdrawEditText;
+
+  private ActivityROIEntryBinding(@NonNull RelativeLayout rootView,
+      @NonNull EditText balanceEditText, @NonNull EditText monthlyEditText, @NonNull Button saveBtn,
+      @NonNull Toolbar toolbar, @NonNull EditText withdrawEditText) {
     this.rootView = rootView;
-    this.button2 = button2;
+    this.balanceEditText = balanceEditText;
+    this.monthlyEditText = monthlyEditText;
+    this.saveBtn = saveBtn;
     this.toolbar = toolbar;
+    this.withdrawEditText = withdrawEditText;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -59,9 +73,21 @@ public final class ActivityROIEntryBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button2;
-      Button button2 = rootView.findViewById(id);
-      if (button2 == null) {
+      id = R.id.balance_editText;
+      EditText balanceEditText = rootView.findViewById(id);
+      if (balanceEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.monthly_editText;
+      EditText monthlyEditText = rootView.findViewById(id);
+      if (monthlyEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.save_btn;
+      Button saveBtn = rootView.findViewById(id);
+      if (saveBtn == null) {
         break missingId;
       }
 
@@ -71,7 +97,14 @@ public final class ActivityROIEntryBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityROIEntryBinding((LinearLayout) rootView, button2, toolbar);
+      id = R.id.withdraw_editText;
+      EditText withdrawEditText = rootView.findViewById(id);
+      if (withdrawEditText == null) {
+        break missingId;
+      }
+
+      return new ActivityROIEntryBinding((RelativeLayout) rootView, balanceEditText,
+          monthlyEditText, saveBtn, toolbar, withdrawEditText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -22,46 +22,46 @@ public final class ActivityDevInvBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText cowPurchaseEdit;
+  public final EditText cowPurchaseEditText;
 
   @NonNull
   public final TextView cowPurchaseTxt;
 
   @NonNull
-  public final EditText cowSellingEdit;
+  public final EditText cowSellingEditText;
 
   @NonNull
   public final TextView cowSellingTxt;
 
   @NonNull
-  public final EditText expansionDetails;
+  public final EditText expansionAmountEditText;
 
   @NonNull
-  public final EditText expansionEdit;
+  public final EditText expansionDetailsEditText;
 
   @NonNull
   public final TextView expansionTxt;
 
   @NonNull
-  public final Button save;
+  public final Button saveBtn;
 
   @NonNull
   public final Toolbar toolbar;
 
   private ActivityDevInvBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText cowPurchaseEdit, @NonNull TextView cowPurchaseTxt,
-      @NonNull EditText cowSellingEdit, @NonNull TextView cowSellingTxt,
-      @NonNull EditText expansionDetails, @NonNull EditText expansionEdit,
-      @NonNull TextView expansionTxt, @NonNull Button save, @NonNull Toolbar toolbar) {
+      @NonNull EditText cowPurchaseEditText, @NonNull TextView cowPurchaseTxt,
+      @NonNull EditText cowSellingEditText, @NonNull TextView cowSellingTxt,
+      @NonNull EditText expansionAmountEditText, @NonNull EditText expansionDetailsEditText,
+      @NonNull TextView expansionTxt, @NonNull Button saveBtn, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.cowPurchaseEdit = cowPurchaseEdit;
+    this.cowPurchaseEditText = cowPurchaseEditText;
     this.cowPurchaseTxt = cowPurchaseTxt;
-    this.cowSellingEdit = cowSellingEdit;
+    this.cowSellingEditText = cowSellingEditText;
     this.cowSellingTxt = cowSellingTxt;
-    this.expansionDetails = expansionDetails;
-    this.expansionEdit = expansionEdit;
+    this.expansionAmountEditText = expansionAmountEditText;
+    this.expansionDetailsEditText = expansionDetailsEditText;
     this.expansionTxt = expansionTxt;
-    this.save = save;
+    this.saveBtn = saveBtn;
     this.toolbar = toolbar;
   }
 
@@ -92,9 +92,9 @@ public final class ActivityDevInvBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.cow_purchase_edit;
-      EditText cowPurchaseEdit = rootView.findViewById(id);
-      if (cowPurchaseEdit == null) {
+      id = R.id.cow_purchase_editText;
+      EditText cowPurchaseEditText = rootView.findViewById(id);
+      if (cowPurchaseEditText == null) {
         break missingId;
       }
 
@@ -104,9 +104,9 @@ public final class ActivityDevInvBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.cow_selling_edit;
-      EditText cowSellingEdit = rootView.findViewById(id);
-      if (cowSellingEdit == null) {
+      id = R.id.cow_selling_editText;
+      EditText cowSellingEditText = rootView.findViewById(id);
+      if (cowSellingEditText == null) {
         break missingId;
       }
 
@@ -116,15 +116,15 @@ public final class ActivityDevInvBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.expansion_details;
-      EditText expansionDetails = rootView.findViewById(id);
-      if (expansionDetails == null) {
+      id = R.id.expansion_amount_editText;
+      EditText expansionAmountEditText = rootView.findViewById(id);
+      if (expansionAmountEditText == null) {
         break missingId;
       }
 
-      id = R.id.expansion_edit;
-      EditText expansionEdit = rootView.findViewById(id);
-      if (expansionEdit == null) {
+      id = R.id.expansion_details_editText;
+      EditText expansionDetailsEditText = rootView.findViewById(id);
+      if (expansionDetailsEditText == null) {
         break missingId;
       }
 
@@ -134,9 +134,9 @@ public final class ActivityDevInvBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.save;
-      Button save = rootView.findViewById(id);
-      if (save == null) {
+      id = R.id.save_btn;
+      Button saveBtn = rootView.findViewById(id);
+      if (saveBtn == null) {
         break missingId;
       }
 
@@ -146,9 +146,9 @@ public final class ActivityDevInvBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDevInvBinding((ConstraintLayout) rootView, cowPurchaseEdit, cowPurchaseTxt,
-          cowSellingEdit, cowSellingTxt, expansionDetails, expansionEdit, expansionTxt, save,
-          toolbar);
+      return new ActivityDevInvBinding((ConstraintLayout) rootView, cowPurchaseEditText,
+          cowPurchaseTxt, cowSellingEditText, cowSellingTxt, expansionAmountEditText,
+          expansionDetailsEditText, expansionTxt, saveBtn, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

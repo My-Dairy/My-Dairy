@@ -4,6 +4,7 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -51,6 +52,9 @@ public final class ActivityMiscellaneousEntryBinding implements ViewBinding {
   public final TextView othersTxt;
 
   @NonNull
+  public final Button saveBtn;
+
+  @NonNull
   public final Toolbar toolbar;
 
   private ActivityMiscellaneousEntryBinding(@NonNull RelativeLayout rootView,
@@ -58,7 +62,8 @@ public final class ActivityMiscellaneousEntryBinding implements ViewBinding {
       @NonNull EditText gasBillEdit, @NonNull TextView gasBillTxt,
       @NonNull EditText maintenanceDetails, @NonNull EditText maintenanceEdit,
       @NonNull TextView maintenanceTxt, @NonNull EditText othersDetails,
-      @NonNull EditText othersEdit, @NonNull TextView othersTxt, @NonNull Toolbar toolbar) {
+      @NonNull EditText othersEdit, @NonNull TextView othersTxt, @NonNull Button saveBtn,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.electricityBillEdit = electricityBillEdit;
     this.electricityBillTxt = electricityBillTxt;
@@ -70,6 +75,7 @@ public final class ActivityMiscellaneousEntryBinding implements ViewBinding {
     this.othersDetails = othersDetails;
     this.othersEdit = othersEdit;
     this.othersTxt = othersTxt;
+    this.saveBtn = saveBtn;
     this.toolbar = toolbar;
   }
 
@@ -160,6 +166,12 @@ public final class ActivityMiscellaneousEntryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.save_btn;
+      Button saveBtn = rootView.findViewById(id);
+      if (saveBtn == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = rootView.findViewById(id);
       if (toolbar == null) {
@@ -168,7 +180,7 @@ public final class ActivityMiscellaneousEntryBinding implements ViewBinding {
 
       return new ActivityMiscellaneousEntryBinding((RelativeLayout) rootView, electricityBillEdit,
           electricityBillTxt, gasBillEdit, gasBillTxt, maintenanceDetails, maintenanceEdit,
-          maintenanceTxt, othersDetails, othersEdit, othersTxt, toolbar);
+          maintenanceTxt, othersDetails, othersEdit, othersTxt, saveBtn, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

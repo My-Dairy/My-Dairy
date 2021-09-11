@@ -1,7 +1,10 @@
 com/example/mydairy/databinding/ActivityDevInvBinding.java
  com.example.mydairy.databinding.ActivityDevInvBinding
+com/example/mydairy/Details/GassCharo.java
+ com.example.mydairy.Details.GassCharo
 com/example/mydairy/entry/ROIEntryActivity.java
  com.example.mydairy.entry.ROIEntryActivity
+ com.example.mydairy.entry.ROIEntryActivity$1
 com/example/mydairy/BuildConfig.java
  com.example.mydairy.BuildConfig
 com/example/mydairy/splash/SplashActivity.java
@@ -79,16 +82,22 @@ com/example/mydairy/MainActivity.java
 com/example/mydairy/Fragment/SettingsFragment.java
  com.example.mydairy.Fragment.SettingsFragment
  com.example.mydairy.Fragment.SettingsFragment$1
+com/example/mydairy/Details/ROI.java
+ com.example.mydairy.Details.ROI
 com/example/mydairy/entry/DevInvActivity.java
  com.example.mydairy.entry.DevInvActivity
+ com.example.mydairy.entry.DevInvActivity$1
 com/example/mydairy/databinding/FragmentSettingsBinding.java
  com.example.mydairy.databinding.FragmentSettingsBinding
 com/example/mydairy/databinding/ActivitySpecificGraphBinding.java
  com.example.mydairy.databinding.ActivitySpecificGraphBinding
 com/example/mydairy/entry/GassCharoEntryActivity.java
  com.example.mydairy.entry.GassCharoEntryActivity
+ com.example.mydairy.entry.GassCharoEntryActivity$1
 com/example/mydairy/databinding/FragmentHomeBinding.java
  com.example.mydairy.databinding.FragmentHomeBinding
+com/example/mydairy/Details/Misc.java
+ com.example.mydairy.Details.Misc
 com/example/mydairy/emaillogin/EmailLoginActivity.java
  com.example.mydairy.emaillogin.EmailLoginActivity
  com.example.mydairy.emaillogin.EmailLoginActivity$1
@@ -126,6 +135,8 @@ com/example/mydairy/databinding/FragmentReportsBinding.java
  com.example.mydairy.databinding.FragmentReportsBinding
 com/example/mydairy/databinding/ActivityDailyEntryBinding.java
  com.example.mydairy.databinding.ActivityDailyEntryBinding
+com/example/mydairy/Details/devInv.java
+ com.example.mydairy.Details.devInv
 com/example/mydairy/databinding/ActivityROIEntryBinding.java
  com.example.mydairy.databinding.ActivityROIEntryBinding
 com/example/mydairy/databinding/ActivityUserDetailsBinding.java
@@ -136,6 +147,7 @@ com/example/mydairy/Details/DavaDaru.java
  com.example.mydairy.Details.DavaDaru
 com/example/mydairy/entry/MiscellaneousEntryActivity.java
  com.example.mydairy.entry.MiscellaneousEntryActivity
+ com.example.mydairy.entry.MiscellaneousEntryActivity$1
 com/example/mydairy/databinding/ActivitySplashBinding.java
  com.example.mydairy.databinding.ActivitySplashBinding
 com/example/mydairy/databinding/ActivityMainBinding.java
