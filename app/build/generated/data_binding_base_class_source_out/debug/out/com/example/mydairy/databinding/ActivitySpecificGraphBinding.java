@@ -4,9 +4,9 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
 import com.github.mikephil.charting.charts.LineChart;
@@ -16,12 +16,12 @@ import java.lang.String;
 
 public final class ActivitySpecificGraphBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final LineChart specificGraph;
 
-  private ActivitySpecificGraphBinding(@NonNull ConstraintLayout rootView,
+  private ActivitySpecificGraphBinding(@NonNull LinearLayout rootView,
       @NonNull LineChart specificGraph) {
     this.rootView = rootView;
     this.specificGraph = specificGraph;
@@ -29,7 +29,7 @@ public final class ActivitySpecificGraphBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -60,7 +60,7 @@ public final class ActivitySpecificGraphBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySpecificGraphBinding((ConstraintLayout) rootView, specificGraph);
+      return new ActivitySpecificGraphBinding((LinearLayout) rootView, specificGraph);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
