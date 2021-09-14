@@ -10,11 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.mydairy.R;
 import com.example.mydairy.adapter.GraphAdapter;
-import com.example.mydairy.specific.GraphSpecific;
+import com.example.mydairy.specific.GraphFat;
+import com.example.mydairy.specific.GraphQty;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -30,9 +30,9 @@ public class GraphsFragment extends Fragment {
 
     private ListView listView;
     private String GraphTitle[] = {
-            "Graph1 with average",
-            "Graph2 with average",
-            "Graph3 with average",
+            "Fat",
+            "Quantity",
+            "Amount",
             "Graph4 with average",
             "Graph5 with average",
             "Graph6 with average",
@@ -47,7 +47,6 @@ public class GraphsFragment extends Fragment {
             R.drawable.cow1,
             R.drawable.cow1,
             R.drawable.cow1
-
     };
 
     // TODO: Rename and change types of parameters
@@ -99,8 +98,22 @@ public class GraphsFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent intent = new Intent(getActivity(), GraphSpecific.class);
-                startActivity(intent);
+
+                if(position==0)
+                {
+                    Intent intent = new Intent(getActivity(), GraphFat.class);
+                    startActivity(intent);
+                }
+                else if(position==1)
+                {
+                    Intent intent = new Intent(getActivity(), GraphQty.class);
+                    startActivity(intent);
+                }
+                else
+                {
+                    Intent intent = new Intent(getActivity(), GraphFat.class);
+                    startActivity(intent);
+                }
             }
         });
 

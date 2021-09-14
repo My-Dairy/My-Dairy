@@ -2993,14 +2993,15 @@ layout activity_dev_inv
 layout activity_email_login
 layout activity_email_register
 layout activity_entry_dashboard
+layout activity_fat_graph
 layout activity_gass_charo_entry
+layout activity_graph_qty
 layout activity_labour_entry
 layout activity_main
 layout activity_miscellaneous_entry
 layout activity_phone_login
 layout activity_phone_otp
 layout activity_r_o_i_entry
-layout activity_specific_graph
 layout activity_splash
 layout activity_user_details
 layout app_bar_sidebar

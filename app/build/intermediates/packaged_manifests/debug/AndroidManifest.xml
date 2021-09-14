@@ -23,6 +23,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Design.Light.NoActionBar" >
+        <activity android:name="com.example.mydairy.specific.GraphQty" />
         <activity android:name="com.example.mydairy.entry.LabourEntryActivity" />
         <activity android:name="com.example.mydairy.entry.GassCharoEntryActivity" />
         <activity android:name="com.example.mydairy.entry.ROIEntryActivity" />
@@ -60,7 +61,7 @@
             android:name="com.example.mydairy.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.mydairy.specific.GraphSpecific"
+            android:name="com.example.mydairy.specific.GraphFat"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
