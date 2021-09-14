@@ -66,5 +66,6 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="salary">Salary</string>
     <string name="signout">sign_out</string>
+    <string name="reset_acc">reset_acc</string>
 
 </resources>

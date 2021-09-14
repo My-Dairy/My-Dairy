@@ -2798,6 +2798,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id simpleProgressBar
 id sin
 id skipCollapsed
 id slide
@@ -3353,6 +3354,7 @@ string preference_copied
 string project_id
 string register
 string reply_title
+string reset_acc
 string salary
 string search_hint
 string search_menu_title

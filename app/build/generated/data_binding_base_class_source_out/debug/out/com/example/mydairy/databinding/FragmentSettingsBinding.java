@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -20,9 +21,14 @@ public final class FragmentSettingsBinding implements ViewBinding {
   @NonNull
   public final FrameLayout preferences;
 
-  private FragmentSettingsBinding(@NonNull FrameLayout rootView, @NonNull FrameLayout preferences) {
+  @NonNull
+  public final ProgressBar simpleProgressBar;
+
+  private FragmentSettingsBinding(@NonNull FrameLayout rootView, @NonNull FrameLayout preferences,
+      @NonNull ProgressBar simpleProgressBar) {
     this.rootView = rootView;
     this.preferences = preferences;
+    this.simpleProgressBar = simpleProgressBar;
   }
 
   @Override
@@ -58,7 +64,13 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSettingsBinding((FrameLayout) rootView, preferences);
+      id = R.id.simpleProgressBar;
+      ProgressBar simpleProgressBar = rootView.findViewById(id);
+      if (simpleProgressBar == null) {
+        break missingId;
+      }
+
+      return new FragmentSettingsBinding((FrameLayout) rootView, preferences, simpleProgressBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
