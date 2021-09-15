@@ -74,11 +74,16 @@ public class GraphFat extends AppCompatActivity {
                         i=i+1;
 
                         String SV2 = ds.child("evening").child("fat").getValue().toString();
+                        if(SV2=="")
+                        {
+
+                        }
+                        else{
                         Float SensorValue2 = Float.parseFloat(SV2);
 
                         yData2.add(new Entry(i,SensorValue2));
                         xData2.add(ds.getKey());
-                        Log.i("Jinil",ds.getKey());
+                        Log.i("Jinil",ds.getKey());}
 
                     }
 
@@ -109,6 +114,7 @@ public class GraphFat extends AppCompatActivity {
                     }
                     mChart.getXAxis().setGranularityEnabled(true);
                     mChart.setNoDataText("Please add atleast 2 Entries");
+                    mChart.setDrawBorders(true);
                     mChart.notifyDataSetChanged();
                     mChart.invalidate();
 
@@ -139,6 +145,7 @@ public class GraphFat extends AppCompatActivity {
                 }
                 mChart2.getXAxis().setGranularityEnabled(true);
                 mChart2.setNoDataText("Please add atleast 2 Entries");
+                mChart2.setDrawBorders(true);
                 mChart2.notifyDataSetChanged();
                 mChart2.invalidate();
 

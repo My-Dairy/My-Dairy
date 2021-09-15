@@ -48,12 +48,12 @@
         "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_email_register.xml"
     },
     {
-        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_labour_entry.xml.flat",
-        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_labour_entry.xml"
-    },
-    {
         "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_labour_entry.xml.flat",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_labour_entry.xml"
     },
     {
         "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_entry_dashboard.xml.flat",

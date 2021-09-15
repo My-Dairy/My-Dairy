@@ -87,6 +87,7 @@ public class GraphQty extends AppCompatActivity {
                 }
 
                 final LineDataSet lineDataSet = new LineDataSet(yData,"Morning Quantity");
+                lineDataSet.setColor(Color.BLUE);
                 LineData data = new LineData(lineDataSet);
                 XAxis xaxis =mChart.getXAxis();
                 xaxis.setPosition(XAxis.XAxisPosition.BOTTOM);
@@ -112,6 +113,7 @@ public class GraphQty extends AppCompatActivity {
                 }
                 mChart.getXAxis().setGranularityEnabled(true);
                 mChart.setNoDataText("Please add atleast 2 Entries");
+                mChart.setDrawBorders(true);
                 mChart.notifyDataSetChanged();
                 mChart.invalidate();
 
@@ -142,6 +144,7 @@ public class GraphQty extends AppCompatActivity {
                 }
                 mChart2.getXAxis().setGranularityEnabled(true);
                 mChart2.setNoDataText("Please add atleast 2 Entries");
+                mChart2.setDrawBorders(true);
                 mChart2.notifyDataSetChanged();
                 mChart2.invalidate();
 

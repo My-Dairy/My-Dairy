@@ -21,9 +21,9 @@ com/example/mydairy/Details/DanKhanEntry.java
 com/example/mydairy/entry/DanKhanEntryActivity.java
  com.example.mydairy.entry.DanKhanEntryActivity
  com.example.mydairy.entry.DanKhanEntryActivity$1
-com/example/mydairy/Fragment/HomeFragment.java
- com.example.mydairy.Fragment.HomeFragment
- com.example.mydairy.Fragment.HomeFragment$1
+com/example/mydairy/Fragment/GraphsFragment.java
+ com.example.mydairy.Fragment.GraphsFragment
+ com.example.mydairy.Fragment.GraphsFragment$1
 com/example/mydairy/databinding/ActivityFatGraphBinding.java
  com.example.mydairy.databinding.ActivityFatGraphBinding
 com/example/mydairy/phonelogin/PhoneLoginActivity.java
@@ -89,8 +89,11 @@ com/example/mydairy/entry/DevInvActivity.java
  com.example.mydairy.entry.DevInvActivity$1
 com/example/mydairy/databinding/FragmentSettingsBinding.java
  com.example.mydairy.databinding.FragmentSettingsBinding
-com/example/mydairy/databinding/FragmentGraphsBinding.java
- com.example.mydairy.databinding.FragmentGraphsBinding
+com/example/mydairy/specific/GraphQty.java
+ com.example.mydairy.specific.GraphQty
+ com.example.mydairy.specific.GraphQty$1
+ com.example.mydairy.specific.GraphQty$1$1
+ com.example.mydairy.specific.GraphQty$1$2
 com/example/mydairy/entry/GassCharoEntryActivity.java
  com.example.mydairy.entry.GassCharoEntryActivity
  com.example.mydairy.entry.GassCharoEntryActivity$1
@@ -161,11 +164,8 @@ com/example/mydairy/databinding/ActivityMainBinding.java
  com.example.mydairy.databinding.ActivityMainBinding
 com/example/mydairy/databinding/ActivityPhoneLoginBinding.java
  com.example.mydairy.databinding.ActivityPhoneLoginBinding
-com/example/mydairy/Fragment/GraphsFragment.java
- com.example.mydairy.Fragment.GraphsFragment
- com.example.mydairy.Fragment.GraphsFragment$1
-com/example/mydairy/specific/GraphQty.java
- com.example.mydairy.specific.GraphQty
- com.example.mydairy.specific.GraphQty$1
- com.example.mydairy.specific.GraphQty$1$1
- com.example.mydairy.specific.GraphQty$1$2
+com/example/mydairy/databinding/FragmentGraphsBinding.java
+ com.example.mydairy.databinding.FragmentGraphsBinding
+com/example/mydairy/Fragment/HomeFragment.java
+ com.example.mydairy.Fragment.HomeFragment
+ com.example.mydairy.Fragment.HomeFragment$1
