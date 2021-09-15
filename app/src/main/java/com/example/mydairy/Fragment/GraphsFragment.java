@@ -13,6 +13,7 @@ import android.widget.ListView;
 
 import com.example.mydairy.R;
 import com.example.mydairy.adapter.GraphAdapter;
+import com.example.mydairy.specific.GraphAmt;
 import com.example.mydairy.specific.GraphFat;
 import com.example.mydairy.specific.GraphQty;
 
@@ -34,9 +35,6 @@ public class GraphsFragment extends Fragment {
             "Quantity",
             "Amount",
             "Graph4 with average",
-            "Graph5 with average",
-            "Graph6 with average",
-            "Graph7 with average",
     };
 
     private Integer GraphImage[] = {
@@ -44,9 +42,6 @@ public class GraphsFragment extends Fragment {
             R.drawable.cow1,
             R.drawable.cow1,
             R.drawable.cow1,
-            R.drawable.cow1,
-            R.drawable.cow1,
-            R.drawable.cow1
     };
 
     // TODO: Rename and change types of parameters
@@ -107,6 +102,11 @@ public class GraphsFragment extends Fragment {
                 else if(position==1)
                 {
                     Intent intent = new Intent(getActivity(), GraphQty.class);
+                    startActivity(intent);
+                }
+                else if(position==2)
+                {
+                    Intent intent = new Intent(getActivity(), GraphAmt.class);
                     startActivity(intent);
                 }
                 else

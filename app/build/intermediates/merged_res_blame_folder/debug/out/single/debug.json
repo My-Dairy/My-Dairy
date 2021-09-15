@@ -28,6 +28,10 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\cow1.jpeg"
     },
     {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_table_milk_bill.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\table_milk_bill.xml"
+    },
+    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input_login.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\input_login.xml"
     },
@@ -110,6 +114,10 @@
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_entry_dashboard.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_entry_dashboard.xml"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_graph_amt.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_graph_amt.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_sidebar.xml.flat",
@@ -212,6 +220,10 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_report_milk_bill.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_report_milk_bill.xml"
+    },
+    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\menu_sidebar.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\menu\\sidebar.xml"
     },
@@ -226,5 +238,9 @@
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_report_adapter.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_report_adapter.xml"
     }
 ]

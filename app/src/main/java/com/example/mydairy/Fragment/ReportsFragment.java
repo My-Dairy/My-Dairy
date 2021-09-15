@@ -1,5 +1,6 @@
 package com.example.mydairy.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,8 +8,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
 import com.example.mydairy.R;
+import com.example.mydairy.adapter.GraphAdapter;
+import com.example.mydairy.adapter.ReportAdapter;
+import com.example.mydairy.specific.GraphAmt;
+import com.example.mydairy.specific.GraphFat;
+import com.example.mydairy.specific.GraphQty;
+import com.example.mydairy.specific.ReportMilkBill;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +34,23 @@ public class ReportsFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private ListView listView;
+
+    private String ReportTitle[] = {
+            "Milk Bill without Bonus",
+            "Milk Bill with Bonus",
+            "Pashuahar",
+            "Grasscharo",
+    };
+
+    private Integer ReportImage[] = {
+            R.drawable.cow1,
+            R.drawable.cow1,
+            R.drawable.cow1,
+            R.drawable.cow1,
+    };
+
 
     public ReportsFragment() {
         // Required empty public constructor
@@ -61,6 +87,22 @@ public class ReportsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_reports, container, false);
+        View root = inflater.inflate(R.layout.fragment_reports, container, false);
+
+        ListView listView=(ListView)root.findViewById(R.id.list_report);
+
+        ReportAdapter customCountryList = new ReportAdapter(getActivity(), ReportTitle, ReportImage);
+        listView.setAdapter(customCountryList);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+
+                Intent intent = new Intent(getContext(), ReportMilkBill.class);
+                startActivity(intent);
+            }
+        });
+
+        return root;
     }
 }

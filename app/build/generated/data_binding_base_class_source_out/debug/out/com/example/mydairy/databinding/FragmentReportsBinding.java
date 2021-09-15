@@ -5,9 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
 import java.lang.NullPointerException;
@@ -19,42 +19,11 @@ public final class FragmentReportsBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final CardView reportCard0;
+  public final ListView listReport;
 
-  @NonNull
-  public final CardView reportCard1;
-
-  @NonNull
-  public final CardView reportCard2;
-
-  @NonNull
-  public final CardView reportCard3;
-
-  @NonNull
-  public final CardView reportCard4;
-
-  @NonNull
-  public final CardView reportCard5;
-
-  @NonNull
-  public final CardView reportCard6;
-
-  @NonNull
-  public final CardView reportCard7;
-
-  private FragmentReportsBinding(@NonNull FrameLayout rootView, @NonNull CardView reportCard0,
-      @NonNull CardView reportCard1, @NonNull CardView reportCard2, @NonNull CardView reportCard3,
-      @NonNull CardView reportCard4, @NonNull CardView reportCard5, @NonNull CardView reportCard6,
-      @NonNull CardView reportCard7) {
+  private FragmentReportsBinding(@NonNull FrameLayout rootView, @NonNull ListView listReport) {
     this.rootView = rootView;
-    this.reportCard0 = reportCard0;
-    this.reportCard1 = reportCard1;
-    this.reportCard2 = reportCard2;
-    this.reportCard3 = reportCard3;
-    this.reportCard4 = reportCard4;
-    this.reportCard5 = reportCard5;
-    this.reportCard6 = reportCard6;
-    this.reportCard7 = reportCard7;
+    this.listReport = listReport;
   }
 
   @Override
@@ -84,56 +53,13 @@ public final class FragmentReportsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.report_card_0;
-      CardView reportCard0 = rootView.findViewById(id);
-      if (reportCard0 == null) {
+      id = R.id.list_report;
+      ListView listReport = rootView.findViewById(id);
+      if (listReport == null) {
         break missingId;
       }
 
-      id = R.id.report_card_1;
-      CardView reportCard1 = rootView.findViewById(id);
-      if (reportCard1 == null) {
-        break missingId;
-      }
-
-      id = R.id.report_card_2;
-      CardView reportCard2 = rootView.findViewById(id);
-      if (reportCard2 == null) {
-        break missingId;
-      }
-
-      id = R.id.report_card_3;
-      CardView reportCard3 = rootView.findViewById(id);
-      if (reportCard3 == null) {
-        break missingId;
-      }
-
-      id = R.id.report_card_4;
-      CardView reportCard4 = rootView.findViewById(id);
-      if (reportCard4 == null) {
-        break missingId;
-      }
-
-      id = R.id.report_card_5;
-      CardView reportCard5 = rootView.findViewById(id);
-      if (reportCard5 == null) {
-        break missingId;
-      }
-
-      id = R.id.report_card_6;
-      CardView reportCard6 = rootView.findViewById(id);
-      if (reportCard6 == null) {
-        break missingId;
-      }
-
-      id = R.id.report_card_7;
-      CardView reportCard7 = rootView.findViewById(id);
-      if (reportCard7 == null) {
-        break missingId;
-      }
-
-      return new FragmentReportsBinding((FrameLayout) rootView, reportCard0, reportCard1,
-          reportCard2, reportCard3, reportCard4, reportCard5, reportCard6, reportCard7);
+      return new FragmentReportsBinding((FrameLayout) rootView, listReport);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:ignore="AllowBackup">
-        <activity android:name=".specific.GraphQty"></activity>
+        <activity android:name=".adapter.ReportAdapter"></activity>
+        <activity android:name=".specific.ReportMilkBill" />
+        <activity android:name=".specific.GraphAmt" />
+        <activity android:name=".specific.GraphQty" />
         <activity android:name=".entry.LabourEntryActivity" />
         <activity android:name=".entry.GassCharoEntryActivity" />
         <activity android:name=".entry.ROIEntryActivity" />
