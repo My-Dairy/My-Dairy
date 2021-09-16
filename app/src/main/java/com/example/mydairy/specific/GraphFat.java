@@ -48,7 +48,7 @@ public class GraphFat extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String keyid = user.getUid();
         mPostReference = FirebaseDatabase.getInstance().getReference().child("users").child(keyid).child("DailyEntry");
-        mPostReference.addValueEventListener(valueEventListener= new ValueEventListener() {
+        mPostReference.addListenerForSingleValueEvent(valueEventListener= new ValueEventListener() {
 
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot dataSnapshot) {

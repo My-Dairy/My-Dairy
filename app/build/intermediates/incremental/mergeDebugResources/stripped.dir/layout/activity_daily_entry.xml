@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_color"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <ScrollView
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/scrollView">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="30dp"
+                android:paddingStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/input_login"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/date"
+                android:textColor="@color/hint"
+                android:hint="@string/enter_date"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/select_choice"
+                android:textSize="18sp"
+                android:textColor="#505050"
+                android:gravity="bottom"
+                android:layout_marginHorizontal="40dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/radiogrp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                >
+
+
+                <RadioButton android:id="@+id/day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="55dp"
+                    android:text="@string/morning"
+                    android:textSize="17sp"
+                    android:textColor="@color/hint"
+                    android:onClick="onRadioButtonClicked"
+                    />
+
+                <RadioButton android:id="@+id/night"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/evening"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/hint"
+                    android:onClick="onRadioButtonClicked"
+                    />
+
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/fat"
+                android:inputType="numberDecimal"
+                android:layout_marginHorizontal="30dp"
+                android:paddingStart="20dp"
+                android:background="@drawable/input_login"
+                android:hint="@string/enter_fat"
+                android:textColor="@color/hint"
+            />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:inputType="number"
+                android:background="@drawable/input_login"
+                android:id="@+id/quantity"
+                android:hint="@string/enter_qty"
+                android:textColor="@color/hint"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:background="@drawable/input_login"
+                android:id="@+id/amount"
+                android:inputType="numberDecimal"
+                android:hint="@string/enter_amount"
+                android:layout_marginBottom="100dp"
+                android:textColor="@color/hint"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_login"
+        android:layout_alignParentBottom="true"
+        android:text="SAVE"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="5dp"
+        />
+
+</RelativeLayout>
