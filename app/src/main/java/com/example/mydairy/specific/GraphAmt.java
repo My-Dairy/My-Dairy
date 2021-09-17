@@ -30,18 +30,17 @@ import java.util.ArrayList;
 
 public class GraphAmt extends AppCompatActivity {
 
-    private LineChart mChart;
-    private FirebaseDatabase database;
-    private DatabaseReference mPostReference;
+    private LineChart mChart,mChart2;
+    private DatabaseReference mPostReference,mPostReference2;
     ValueEventListener valueEventListener;
-    ArrayList<Entry> yData,yData_new;
-    ArrayList<String> xData,xData_new;
+    ArrayList<Entry> yData_m,yData_e;
+    ArrayList<String> xData_m,xData_e;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graph_amt);
 
-
+        // First Chart.
         mChart = (LineChart)findViewById(R.id.specific_graph);
         mChart.animateX(1000);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -52,30 +51,28 @@ public class GraphAmt extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot dataSnapshot) {
 
-                yData = new ArrayList<>();
-                xData = new ArrayList<String>();
+                yData_m = new ArrayList<>();
+                xData_m = new ArrayList<String>();
 
                 float i =0;
                 for (DataSnapshot ds : dataSnapshot.getChildren()){
-                    i=i+1;
 
-                    String SV = ds.child("evening").child("amount").getValue().toString();
-                    Float SensorValue = Float.parseFloat(SV);
+                    for(DataSnapshot dataSnapshot1: ds.getChildren())
+                    {
+                        if(dataSnapshot1.getKey().toString().equals("morning"))
+                        {
+                            String SV = ds.child("morning").child("amount").getValue().toString();
+                            Float SensorValue = Float.parseFloat(SV);
 
-                    yData.add(new Entry(i,SensorValue));
-                    xData.add(ds.getKey());
+                            i=i+1;
 
+                            yData_m.add(new Entry(i,SensorValue));
+                            xData_m.add(ds.getKey());
+                        }
+                    }
                 }
 
-                yData_new = new ArrayList<>();
-                xData_new = new ArrayList<String>();
-
-                for(int x=0;x<xData.size();x++)
-                {
-
-                }
-
-                final LineDataSet lineDataSet = new LineDataSet(yData,"Fat");
+                final LineDataSet lineDataSet = new LineDataSet(yData_m,"Amt Morning");
                 LineData data = new LineData(lineDataSet);
                 XAxis xaxis =mChart.getXAxis();
                 xaxis.setPosition(XAxis.XAxisPosition.BOTTOM);
@@ -86,11 +83,11 @@ public class GraphAmt extends AppCompatActivity {
                 xaxis.setValueFormatter(new IAxisValueFormatter() {
                     @Override
                     public String getFormattedValue(float value, AxisBase axis) {
-                        return xData.get((int) value - 1);
+                        return xData_m.get((int) value - 1);
                     }
                 });
 
-                if (xData.isEmpty()||xData.size()==1) {
+                if (xData_m.isEmpty()||xData_m.size()==1) {
                     mChart.clear();
                 } else {
                     // set data
@@ -106,8 +103,76 @@ public class GraphAmt extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull @NotNull DatabaseError error) {
-                Log.i("Graph Error: ",error.getMessage());
+                Log.i("Graph 1 Error: ",error.getMessage());
             }
         });
+
+
+        // Second Chart.
+        mChart2 = (LineChart)findViewById(R.id.specific_graph1);
+        mChart2.animateX(1000);
+
+        mPostReference2 = FirebaseDatabase.getInstance().getReference().child("users").child(keyid).child("DailyEntry");
+        mPostReference2.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+
+                yData_e = new ArrayList<>();
+                xData_e = new ArrayList<String>();
+
+                float i = 0;
+                for (DataSnapshot ds : dataSnapshot.getChildren()){
+
+                    for(DataSnapshot dataSnapshot1: ds.getChildren())
+                    {
+                        if(dataSnapshot1.getKey().toString().equals("evening"))
+                        {
+                            String SV = ds.child("evening").child("amount").getValue().toString();
+                            Float SensorValue = Float.parseFloat(SV);
+
+                            i=i+1;
+
+                            yData_e.add(new Entry(i,SensorValue));
+                            xData_e.add(ds.getKey());
+                        }
+                    }
+                }
+
+                final LineDataSet lineDataSet = new LineDataSet(yData_e,"Amt Evening");
+                LineData data = new LineData(lineDataSet);
+                XAxis xaxis =mChart2.getXAxis();
+                xaxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+                xaxis.setCenterAxisLabels(false);
+                YAxis yAxisRight = mChart2.getAxisRight();
+                yAxisRight.setEnabled(false);
+                xaxis.setDrawGridLines(true);
+                xaxis.setValueFormatter(new IAxisValueFormatter() {
+                    @Override
+                    public String getFormattedValue(float value, AxisBase axis) {
+                        return xData_e.get((int) value - 1);
+                    }
+                });
+
+                if (xData_e.isEmpty()||xData_e.size()==1) {
+                    mChart2.clear();
+                } else {
+                    // set data
+                    mChart2.setData(data);
+                    mChart2.setBackgroundColor(Color.rgb(244, 117, 117));
+                }
+
+                mChart2.getXAxis().setGranularityEnabled(true);
+                mChart2.setNoDataText("Sorry! No Data Found");
+                mChart2.notifyDataSetChanged();
+                mChart2.invalidate();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.i("Graph 2 Error: ",error.getMessage());
+            }
+        });
+
     }
 }

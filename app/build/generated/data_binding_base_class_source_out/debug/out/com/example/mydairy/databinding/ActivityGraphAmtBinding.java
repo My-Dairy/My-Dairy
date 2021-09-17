@@ -21,10 +21,14 @@ public final class ActivityGraphAmtBinding implements ViewBinding {
   @NonNull
   public final LineChart specificGraph;
 
-  private ActivityGraphAmtBinding(@NonNull LinearLayout rootView,
-      @NonNull LineChart specificGraph) {
+  @NonNull
+  public final LineChart specificGraph1;
+
+  private ActivityGraphAmtBinding(@NonNull LinearLayout rootView, @NonNull LineChart specificGraph,
+      @NonNull LineChart specificGraph1) {
     this.rootView = rootView;
     this.specificGraph = specificGraph;
+    this.specificGraph1 = specificGraph1;
   }
 
   @Override
@@ -60,7 +64,13 @@ public final class ActivityGraphAmtBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityGraphAmtBinding((LinearLayout) rootView, specificGraph);
+      id = R.id.specific_graph1;
+      LineChart specificGraph1 = rootView.findViewById(id);
+      if (specificGraph1 == null) {
+        break missingId;
+      }
+
+      return new ActivityGraphAmtBinding((LinearLayout) rootView, specificGraph, specificGraph1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
