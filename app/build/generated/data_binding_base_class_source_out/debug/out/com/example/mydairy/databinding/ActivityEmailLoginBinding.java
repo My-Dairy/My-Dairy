@@ -41,6 +41,9 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
   public final SignInButton gglLogo;
 
   @NonNull
+  public final ConstraintLayout layout;
+
+  @NonNull
   public final Button letMeIn;
 
   @NonNull
@@ -55,8 +58,9 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
   private ActivityEmailLoginBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView activityIndicator, @NonNull Button btnCreateAccount,
       @NonNull View dividerLineLeft, @NonNull View dividerLineRight, @NonNull TextView forgtPswd,
-      @NonNull SignInButton gglLogo, @NonNull Button letMeIn, @NonNull TextInputLayout passwordBox,
-      @NonNull TextView textviewOr, @NonNull EditText usernameBox) {
+      @NonNull SignInButton gglLogo, @NonNull ConstraintLayout layout, @NonNull Button letMeIn,
+      @NonNull TextInputLayout passwordBox, @NonNull TextView textviewOr,
+      @NonNull EditText usernameBox) {
     this.rootView = rootView;
     this.activityIndicator = activityIndicator;
     this.btnCreateAccount = btnCreateAccount;
@@ -64,6 +68,7 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
     this.dividerLineRight = dividerLineRight;
     this.forgtPswd = forgtPswd;
     this.gglLogo = gglLogo;
+    this.layout = layout;
     this.letMeIn = letMeIn;
     this.passwordBox = passwordBox;
     this.textviewOr = textviewOr;
@@ -133,6 +138,12 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.layout;
+      ConstraintLayout layout = rootView.findViewById(id);
+      if (layout == null) {
+        break missingId;
+      }
+
       id = R.id.let_me_in;
       Button letMeIn = rootView.findViewById(id);
       if (letMeIn == null) {
@@ -158,7 +169,7 @@ public final class ActivityEmailLoginBinding implements ViewBinding {
       }
 
       return new ActivityEmailLoginBinding((ConstraintLayout) rootView, activityIndicator,
-          btnCreateAccount, dividerLineLeft, dividerLineRight, forgtPswd, gglLogo, letMeIn,
+          btnCreateAccount, dividerLineLeft, dividerLineRight, forgtPswd, gglLogo, layout, letMeIn,
           passwordBox, textviewOr, usernameBox);
     }
     String missingId = rootView.getResources().getResourceName(id);

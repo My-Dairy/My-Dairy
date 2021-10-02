@@ -1,9 +1,22 @@
 <resources>
+    <string name="app_name">My Dairy</string>
+
+    <!--dialog_box.xml-->
+    <string name="welcome_dairy">Welcome to My-Dairy</string>
+    <string name="select_language">Select Your Language: </string>
+    <string name="next_dsgn">Next >></string>
+    <string name="icon_desc">Icon of the App</string>
+
+
+    <!--phone_login.xml-->
+    <string name="enter_phn">ફોન નંબર દાખલ કરો</string>
+    <string name="verify_phn">તમારો નંબર ચકાસો</string>
+    <string name="login_with_email">ઇમેઇલ સાથે પ્રવેશ કરો</string>
+    <string name="login_with_phone_number">ફોન નંબર સાથે  પ્રવેશ કરો</string>
+
 
     <string name="reset_acc">reset_acc</string>
 
-    <string name="app_name">મારી ડેરી</string>
-    <string name="hello_sp">હેલો એસપી</string>
     <string name="sign_up">ઇમેઇલ સાથે સાઇન અપ કરો</string>
     <string name="enter_email">તમારું ઈમેલ એડ્રેસ લખો</string>
     <string name="enter_password">નવો પાસવર્ડ દાખલ કરો</string>
@@ -19,8 +32,6 @@
     <string name="enter_name">તમારું નામ દાખલ કરો</string>
     <string name="enter_surname">તમારી અટક દાખલ કરો</string>
     <string name="enter_city">તમારું શહેર દાખલ કરો</string>
-    <string name="login_with_email">ઇમેઇલ સાથે પ્રવેશ કરો</string>
-    <string name="login_with_phone_number">ફોન નંબર સાથે  પ્રવેશ કરો</string>
 
     <string name="title_activity_sidebar">Sidebar</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

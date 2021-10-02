@@ -22,6 +22,7 @@ import com.example.mydairy.Details.User;
 import com.example.mydairy.MainActivity;
 import com.example.mydairy.R;
 import com.example.mydairy.phonelogin.PhoneLoginActivity;
+import com.example.mydairy.splash.SplashActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -83,7 +84,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
             public boolean onPreferenceClick(Preference preference) {
 
                 mAuth.getInstance().signOut();
-                Intent intent = new Intent(getContext(), PhoneLoginActivity.class);
+                Intent intent = new Intent(getContext(), SplashActivity.class);
                 getActivity().finishAffinity();
                 startActivity(intent);
 

@@ -17,6 +17,8 @@ import com.example.mydairy.adapter.ReportAdapter;
 import com.example.mydairy.specific.GraphAmt;
 import com.example.mydairy.specific.GraphFat;
 import com.example.mydairy.specific.GraphQty;
+import com.example.mydairy.specific.ReportDanKhan;
+import com.example.mydairy.specific.ReportGassCharo;
 import com.example.mydairy.specific.ReportMilkBill;
 
 /**
@@ -98,8 +100,26 @@ public class ReportsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
-                Intent intent = new Intent(getContext(), ReportMilkBill.class);
-                startActivity(intent);
+                if(position==0)
+                {
+                    Intent intent = new Intent(getContext(), ReportMilkBill.class);
+                    startActivity(intent);
+                }
+                else if(position==1)
+                {
+                    Intent intent = new Intent(getContext(), ReportMilkBill.class);
+                    startActivity(intent);
+                }
+                else if(position==2)
+                {
+                    Intent intent = new Intent(getContext(), ReportDanKhan.class);
+                    startActivity(intent);
+                }
+                else if(position==3)
+                {
+                    Intent intent = new Intent(getContext(), ReportGassCharo.class);
+                    startActivity(intent);
+                }
             }
         });
 

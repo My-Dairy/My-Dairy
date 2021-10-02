@@ -2,7 +2,7 @@ package com.example.mydairy.Details;
 
 public class DanKhanEntry {
 
-    String Pashudan_Dairy, Pashudan_External, Makai_Own, Makai_External, Papdi_External, Pashuahar_Details, Pashushar_Amount;
+    String Pashudan_Dairy, Pashudan_External, Makai_Own, Makai_External, Papdi_External, Pashuahar_Details, Pashushar_Amount, date;
     public DanKhanEntry(String Pashudan_Dairy, String Pashudan_External,String Makai_Own,String Makai_External,String Papdi_External,
                         String Pashuahar_Details,String Pashushar_Amount)
     {
@@ -13,6 +13,22 @@ public class DanKhanEntry {
         this.Papdi_External = Papdi_External;
         this.Pashuahar_Details = Pashuahar_Details;
         this.Pashushar_Amount = Pashushar_Amount;
+    }
+
+    public DanKhanEntry(String Pashudan_Dairy,String Makai_Own,String Papdi_External,String Pashuahar_Details,String Pashushar_Amount, String date)
+    {
+        this.Pashudan_Dairy = Pashudan_Dairy;
+        //this.Pashudan_External = Pashudan_External;
+        this.Makai_Own = Makai_Own;
+        //this.Makai_External = Makai_External;
+        this.Papdi_External = Papdi_External;
+        this.Pashuahar_Details = Pashuahar_Details;
+        this.Pashushar_Amount = Pashushar_Amount;
+        this.date=date;
+    }
+
+    public String getDate() {
+        return date;
     }
 
     public String getPashudan_Dairy() {

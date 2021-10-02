@@ -35,6 +35,9 @@ public final class ActivityEmailRegisterBinding implements ViewBinding {
   public final EditText emailBox;
 
   @NonNull
+  public final ConstraintLayout layout;
+
+  @NonNull
   public final LinearLayout linearLayout;
 
   @NonNull
@@ -55,14 +58,15 @@ public final class ActivityEmailRegisterBinding implements ViewBinding {
   private ActivityEmailRegisterBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView btnLogIn, @NonNull EditText cnfrm,
       @NonNull TextInputLayout confirmPasswordBox, @NonNull EditText emailBox,
-      @NonNull LinearLayout linearLayout, @NonNull TextInputLayout passwordBox,
-      @NonNull EditText pwd, @NonNull Button registerBtn, @NonNull TextView textAlready,
-      @NonNull TextView textviewSignUpEmail) {
+      @NonNull ConstraintLayout layout, @NonNull LinearLayout linearLayout,
+      @NonNull TextInputLayout passwordBox, @NonNull EditText pwd, @NonNull Button registerBtn,
+      @NonNull TextView textAlready, @NonNull TextView textviewSignUpEmail) {
     this.rootView = rootView;
     this.btnLogIn = btnLogIn;
     this.cnfrm = cnfrm;
     this.confirmPasswordBox = confirmPasswordBox;
     this.emailBox = emailBox;
+    this.layout = layout;
     this.linearLayout = linearLayout;
     this.passwordBox = passwordBox;
     this.pwd = pwd;
@@ -122,6 +126,12 @@ public final class ActivityEmailRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.layout;
+      ConstraintLayout layout = rootView.findViewById(id);
+      if (layout == null) {
+        break missingId;
+      }
+
       id = R.id.linear_layout;
       LinearLayout linearLayout = rootView.findViewById(id);
       if (linearLayout == null) {
@@ -159,8 +169,8 @@ public final class ActivityEmailRegisterBinding implements ViewBinding {
       }
 
       return new ActivityEmailRegisterBinding((ConstraintLayout) rootView, btnLogIn, cnfrm,
-          confirmPasswordBox, emailBox, linearLayout, passwordBox, pwd, registerBtn, textAlready,
-          textviewSignUpEmail);
+          confirmPasswordBox, emailBox, layout, linearLayout, passwordBox, pwd, registerBtn,
+          textAlready, textviewSignUpEmail);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

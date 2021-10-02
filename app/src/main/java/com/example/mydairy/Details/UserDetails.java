@@ -11,6 +11,7 @@ import android.widget.EditText;
 import com.example.mydairy.MainActivity;
 import com.example.mydairy.R;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -57,12 +58,15 @@ public class UserDetails extends AppCompatActivity {
             String keyid;
             Bundle extras = getIntent().getExtras();
             if(extras == null) {
-                keyid= null;
+                FirebaseUser user1 = FirebaseAuth.getInstance().getCurrentUser();
+                String key = user1.getUid();
+                databaseReference.child("users").child(key).setValue(user);
             } else {
                 keyid= extras.getString("UID");
+                databaseReference.child("users").child(keyid).setValue(user);
             }
             //String keyid = databaseReference.push().getKey();
-            databaseReference.child("users").child(keyid).setValue(user); //adding user info to database
+            //adding user info to database
 
             Intent int_main = new Intent(UserDetails.this, MainActivity.class);
             finishAffinity();

@@ -23,13 +23,17 @@ public final class NavHeaderSidebarBinding implements ViewBinding {
   public final ImageView imageView;
 
   @NonNull
-  public final TextView textView;
+  public final TextView mailPhnTxt;
+
+  @NonNull
+  public final TextView txtName;
 
   private NavHeaderSidebarBinding(@NonNull LinearLayout rootView, @NonNull ImageView imageView,
-      @NonNull TextView textView) {
+      @NonNull TextView mailPhnTxt, @NonNull TextView txtName) {
     this.rootView = rootView;
     this.imageView = imageView;
-    this.textView = textView;
+    this.mailPhnTxt = mailPhnTxt;
+    this.txtName = txtName;
   }
 
   @Override
@@ -65,13 +69,19 @@ public final class NavHeaderSidebarBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView;
-      TextView textView = rootView.findViewById(id);
-      if (textView == null) {
+      id = R.id.mail_phn_txt;
+      TextView mailPhnTxt = rootView.findViewById(id);
+      if (mailPhnTxt == null) {
         break missingId;
       }
 
-      return new NavHeaderSidebarBinding((LinearLayout) rootView, imageView, textView);
+      id = R.id.txt_name;
+      TextView txtName = rootView.findViewById(id);
+      if (txtName == null) {
+        break missingId;
+      }
+
+      return new NavHeaderSidebarBinding((LinearLayout) rootView, imageView, mailPhnTxt, txtName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

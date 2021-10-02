@@ -183,7 +183,7 @@ public class EmailLoginActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
 
                             finish();
-                            Intent int_main = new Intent(EmailLoginActivity.this, MainActivity.class);
+                            Intent int_main = new Intent(EmailLoginActivity.this, UserDetails.class);
                             startActivity(int_main);
                             finish();
                         } else {

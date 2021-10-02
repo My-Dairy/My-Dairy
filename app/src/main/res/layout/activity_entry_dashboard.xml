@@ -13,7 +13,8 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/primary_color"
+        android:background="@drawable/side_nav_bar"
+        app:titleTextAppearance="@style/TitleText"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
@@ -51,7 +52,7 @@
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp"
+                app:cardElevation="1dp"
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -73,6 +74,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Daily Entry"
+                        android:fontFamily="@font/times_new_roman"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -84,7 +86,7 @@
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp"
+                app:cardElevation="1dp"
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -106,6 +108,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Dava/Daru(E)"
+                        android:fontFamily="@font/times_new_roman"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -116,7 +119,7 @@
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp"
+                app:cardElevation="1dp"
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toBottomOf="@+id/card_0"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -138,6 +141,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Dan/Khan(E)"
+                        android:fontFamily="@font/times_new_roman"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -148,7 +152,7 @@
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp"
+                app:cardElevation="1dp"
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toBottomOf="@+id/card_1"
                 app:layout_constraintRight_toRightOf="parent"
@@ -170,6 +174,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Labour Charge"
+                        android:fontFamily="@font/times_new_roman"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -181,7 +186,7 @@
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp"
+                app:cardElevation="1dp"
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toBottomOf="@+id/card_2"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -203,6 +208,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Returns Of Investment"
+                        android:fontFamily="@font/times_new_roman"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -213,7 +219,7 @@
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp"
+                app:cardElevation="1dp"
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toBottomOf="@+id/card_3"
                 app:layout_constraintRight_toRightOf="parent"
@@ -234,6 +240,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="GassCharo"
+                        android:fontFamily="@font/times_new_roman"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -244,7 +251,7 @@
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp"
+                app:cardElevation="1dp"
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toBottomOf="@+id/card_4"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -266,6 +273,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Miscellaneous"
+                        android:fontFamily="@font/times_new_roman"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -276,7 +284,7 @@
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp"
+                app:cardElevation="1dp"
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toBottomOf="@+id/card_5"
                 app:layout_constraintRight_toRightOf="parent"
@@ -299,6 +307,7 @@
                         android:layout_height="wrap_content"
                         android:text="Development/Investment"
                         android:textAlignment="center"
+                        android:fontFamily="@font/times_new_roman"
                         android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mydairy.Details.User;
@@ -36,6 +37,7 @@ public class PhoneOTPActivity extends AppCompatActivity {
     String phonenumber;
     String otpref;
     FirebaseAuth mAuth;
+    TextView verification;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
 
@@ -45,11 +47,14 @@ public class PhoneOTPActivity extends AppCompatActivity {
         setContentView(R.layout.activity_phone_otp);
 
         //Initializing the variables of all the datatypes.
-
         phonenumber = getIntent().getStringExtra("mobile").toString();
         otpans = (EditText) findViewById(R.id.otp_box);
         submit = (Button) findViewById(R.id.proceed_btn);
         mAuth = FirebaseAuth.getInstance();
+        verification = (TextView) findViewById(R.id.textView_description);
+
+        phonenumber = verification.getText().toString() + phonenumber;
+        verification.setText(phonenumber);
 
 
         initiateotp();

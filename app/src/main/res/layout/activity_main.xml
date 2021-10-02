@@ -18,8 +18,9 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/primary_color"
             android:elevation="4dp"
+            android:background="@drawable/side_nav_bar"
+            app:titleTextAppearance="@style/TitleText"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
@@ -38,6 +39,11 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        app:itemTextAppearance="@style/NewStyleText"
+        android:backgroundTint="@color/white"
+        app:itemIconTint="@color/dark_blue"
+        app:itemBackground="@drawable/nav_view_selection"
+        app:itemTextColor="@color/black"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_sidebar"
         app:menu="@menu/activity_sidebar_drawer" />

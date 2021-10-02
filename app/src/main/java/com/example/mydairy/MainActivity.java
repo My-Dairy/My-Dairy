@@ -17,6 +17,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.example.mydairy.Fragment.GraphsFragment;
 import com.example.mydairy.Fragment.HelpFragment;
@@ -25,6 +26,15 @@ import com.example.mydairy.Fragment.ReportsFragment;
 import com.example.mydairy.Fragment.SettingsFragment;
 import com.example.mydairy.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Objects;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -32,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
     private DrawerLayout drawer;
+    private FirebaseDatabase database;
+    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +63,49 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        TextView MailPhone = bottomNav.getHeaderView(0).findViewById(R.id.mail_phn_txt);
+        TextView FullName = bottomNav.getHeaderView(0).findViewById(R.id.txt_name);
+
+
+        databaseReference = FirebaseDatabase.getInstance().getReference();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String keyid = user.getUid();
+
+        System.out.println("Sanas: "+user.getProviderId());
+        if(!user.getProviderId().equals("firebase"))
+        {
+            if(!user.getPhoneNumber().equals(""))
+            {
+                MailPhone.setText(user.getPhoneNumber());
+                System.out.println("Sanas: "+user.getPhoneNumber());
+            }
+            else if(!user.getEmail().equals(""))
+            {
+                MailPhone.setText(user.getEmail());
+                System.out.println("Sanas: "+user.getEmail());
+            }
+        }
+
+
+
+        databaseReference = databaseReference.child("users").child(keyid);
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                String name = snapshot.child("name").getValue().toString();
+                String surname = snapshot.child("surname").getValue().toString();
+                String fullname = name+" "+surname;
+
+                FullName.setText(fullname);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
         if (savedInstanceState == null) {
             openFragment(new HomeFragment());

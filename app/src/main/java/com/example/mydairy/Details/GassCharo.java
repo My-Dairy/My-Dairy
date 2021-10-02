@@ -2,7 +2,7 @@ package com.example.mydairy.Details;
 
 public class GassCharo {
 
-    String checkbox,sukhocharoQuantity,sukhocharoAmount,tractorCharge,seeds,fertilizers,labourCharge,lilocharoSeeds,lilocharo_fertilizers;
+    String checkbox,sukhocharoQuantity,sukhocharoAmount,tractorCharge,seeds,fertilizers,labourCharge,lilocharoSeeds,lilocharo_fertilizers, date;
 
     public GassCharo(String checkbox, String sukhocharoQuantity, String sukhocharoAmount, String tractorCharge, String seeds, String fertilizers, String labourCharge, String lilocharoSeeds, String lilocharo_fertilizers) {
         this.checkbox = checkbox;
@@ -14,6 +14,24 @@ public class GassCharo {
         this.labourCharge = labourCharge;
         this.lilocharoSeeds = lilocharoSeeds;
         this.lilocharo_fertilizers = lilocharo_fertilizers;
+    }
+
+    public GassCharo(String checkbox, String sukhocharoQuantity, String sukhocharoAmount, String tractorCharge, String seeds, String fertilizers, String labourCharge,String date) {
+        this.checkbox = checkbox;
+        this.sukhocharoQuantity = sukhocharoQuantity;
+        this.sukhocharoAmount = sukhocharoAmount;
+        this.tractorCharge = tractorCharge;
+        this.seeds = seeds;
+        this.fertilizers = fertilizers;
+        this.labourCharge = labourCharge;
+//        this.lilocharoSeeds = lilocharoSeeds;
+//        this.lilocharo_fertilizers = lilocharo_fertilizers;
+        this.date=date;
+        //this.time=time;
+    }
+
+    public String getDate() {
+        return date;
     }
 
     public String getCheckbox() {

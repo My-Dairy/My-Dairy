@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:ignore="AllowBackup">
-        <activity android:name=".adapter.ReportAdapter"></activity>
+        <activity android:name=".specific.ReportGassCharo"></activity>
+        <activity android:name=".specific.ReportDanKhan" />
+        <activity android:name=".adapter.ReportAdapter" />
         <activity android:name=".specific.ReportMilkBill" />
         <activity android:name=".specific.GraphAmt" />
         <activity android:name=".specific.GraphQty" />

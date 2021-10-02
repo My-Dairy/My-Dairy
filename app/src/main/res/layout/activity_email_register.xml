@@ -9,13 +9,39 @@
     >
 
 
+
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Dairy"
+        android:textSize="60sp"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/century"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/bg_login"
+        >
+
+    <TextView
+        android:paddingTop="30dp"
         android:id="@+id/textview_sign_up_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:text="@string/sign_up"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
+        android:fontFamily="@font/title_welcome"
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/email_box"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,6 +61,7 @@
         android:background="@drawable/input_login"
         android:hint="@string/enter_email"
         android:inputType="textEmailAddress"
+        android:fontFamily="@font/times_new_roman"
         android:paddingHorizontal="16sp"
         android:textSize="13sp"
         app:layout_constraintBottom_toTopOf="@+id/password_box"
@@ -70,6 +97,7 @@
             android:ems="15"
             android:hint="@string/enter_password"
             android:inputType="textPassword"
+            android:fontFamily="@font/times_new_roman"
             android:paddingHorizontal="16sp"
             android:textSize="13sp" />
 
@@ -100,6 +128,7 @@
             android:background="@null"
             android:ems="15"
             android:hint="@string/confirm_password"
+            android:fontFamily="@font/times_new_roman"
             android:inputType="textPassword"
             android:paddingHorizontal="16sp"
             android:textSize="13sp" />
@@ -113,9 +142,10 @@
         android:layout_height="45dp"
         android:layout_marginStart="19dp"
         android:layout_marginEnd="19dp"
-        android:layout_marginBottom="58dp"
-        android:background="@drawable/btn_login"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/input_design_login"
         android:text="@string/register"
+        android:fontFamily="@font/title_welcome"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@id/linear_layout"
@@ -141,6 +171,7 @@
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text="@string/already_account"
+            android:fontFamily="@font/title_welcome"
             android:layout_marginEnd="4dp"
             android:textSize="16sp"
             />
@@ -151,13 +182,15 @@
             android:layout_height="wrap_content"
             android:gravity="start"
             android:textStyle="bold"
+            android:fontFamily="@font/title_welcome"
             android:textColor="@color/secondary_color"
             android:text="@string/log_in"
-            android:textSize="17sp"
+            android:textSize="16sp"
             />
     </LinearLayout>
 
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

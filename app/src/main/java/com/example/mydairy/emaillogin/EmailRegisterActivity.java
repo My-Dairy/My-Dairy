@@ -150,5 +150,4 @@ public class EmailRegisterActivity extends AppCompatActivity {
     }
 }
 
-//metaatoz - snt,thakkar,ahmd
 

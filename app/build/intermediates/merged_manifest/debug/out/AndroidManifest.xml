@@ -23,6 +23,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Design.Light.NoActionBar" >
+        <activity android:name="com.example.mydairy.specific.ReportGassCharo" />
+        <activity android:name="com.example.mydairy.specific.ReportDanKhan" />
         <activity android:name="com.example.mydairy.adapter.ReportAdapter" />
         <activity android:name="com.example.mydairy.specific.ReportMilkBill" />
         <activity android:name="com.example.mydairy.specific.GraphAmt" />

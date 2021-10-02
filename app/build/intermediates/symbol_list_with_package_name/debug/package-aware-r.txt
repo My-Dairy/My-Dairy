@@ -1187,6 +1187,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color dark_blue
 color defaultBorderFlagColor
 color defaultContentColor
 color design_bottom_navigation_shadow_color
@@ -1231,6 +1232,7 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color emerald_green
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
@@ -1239,6 +1241,7 @@ color highlighted_text_material_dark
 color highlighted_text_material_light
 color hint
 color hint_dark
+color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1347,6 +1350,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color skin_light
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -1896,6 +1900,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_login
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1931,6 +1936,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable dialog_welcome
 drawable fastscroll__default_bubble
 drawable fastscroll__default_handle
 drawable flag_afghanistan
@@ -2206,7 +2212,9 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable input_design_login
 drawable input_login
+drawable main_icon
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2227,6 +2235,7 @@ drawable mtrl_navigation_bar_item_background
 drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
+drawable nav_view_selection
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -2245,6 +2254,11 @@ drawable side_nav_bar
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font bookos
+font century
+font faustina_regular
+font times_new_roman
+font title_welcome
 id AFRIKAANS
 id ALT
 id ARABIC
@@ -2474,6 +2488,7 @@ id cow_selling_txt
 id custom
 id customPanel
 id cut
+id dan_khan_recycler
 id dark
 id dataBinding
 id date
@@ -2537,6 +2552,7 @@ id expansion_txt
 id fade
 id fastscroll
 id fat
+id fertilizer_charge
 id fertilizers_editText
 id fill
 id fill_horizontal
@@ -2550,6 +2566,7 @@ id floating
 id forever
 id forgt_pswd
 id fragment_container_view_tag
+id gaas_charo_recycler
 id gas_bill_edit
 id gas_bill_txt
 id generate_otp_btn
@@ -2590,6 +2607,8 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id labourCharge_editText
+id labour_charge
+id language_spinner
 id layout
 id left
 id leftToRight
@@ -2612,6 +2631,9 @@ id list_item
 id list_report
 id list_reportimg
 id list_reporttxt
+id lnrlyt
+id mail_phn_txt
+id main_image
 id maintenance_details
 id maintenance_edit
 id maintenance_txt
@@ -2695,6 +2717,7 @@ id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
 id never
+id next_btn
 id night
 id noScroll
 id none
@@ -2720,6 +2743,8 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id pashuahar_other_amt
+id pashuahar_other_type
 id pashuahar_othr_edit
 id pashuahar_othr_spcfy
 id pashuahar_othr_txt
@@ -2785,10 +2810,12 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seed_charge
 id seeds_editText
 id seekbar
 id seekbar_value
 id select_dialog_listview
+id select_language
 id selected
 id selection_type
 id shortcut
@@ -2828,6 +2855,9 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id sukoCharo_Amount
+id sukoCharo_Quantity
+id sukoCharo_type
 id sukocharoAmount_editText
 id switchWidget
 id switcher
@@ -2835,6 +2865,9 @@ id tabMode
 id table_amt
 id table_date
 id table_fat
+id table_makaiBhardo
+id table_papdi
+id table_pashudan
 id table_qty
 id table_time
 id tag_accessibility_actions
@@ -2861,7 +2894,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView_code
 id textView_countryName
 id textView_description
@@ -2887,12 +2919,14 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id title_welcome
 id toggle
 id toolbar
 id top
 id topPanel
 id touch_outside
 id tractorCharge_editText
+id tractor_charge
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -2901,6 +2935,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txt_name
 id typeOfWork_editText
 id unchecked
 id uniform
@@ -3010,6 +3045,7 @@ layout activity_r_o_i_entry
 layout activity_report_adapter
 layout activity_report_milk_bill
 layout activity_splash
+layout activity_table_gaascharo_bill
 layout activity_user_details
 layout app_bar_sidebar
 layout browser_actions_context_menu_page
@@ -3031,6 +3067,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_lnguage_wlcm
 layout expand_button
 layout fastscroll__default_bubble
 layout fragment_graphs
@@ -3118,11 +3155,15 @@ layout preference_widget_seekbar
 layout preference_widget_seekbar_material
 layout preference_widget_switch
 layout preference_widget_switch_compat
+layout report_dan_khan
+layout report_gass_charo
 layout row_graph_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout spinner_text
 layout support_simple_spinner_dropdown_item
+layout table_dan_khan
 layout table_milk_bill
 layout test_action_chip
 layout test_chip_zero_corner_radius
@@ -3143,6 +3184,7 @@ menu activity_sidebar_drawer
 menu menu_save
 menu sidebar
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw a_new_lang_template
@@ -3254,6 +3296,7 @@ string enter_email
 string enter_fat
 string enter_name
 string enter_password
+string enter_phn
 string enter_psswrd
 string enter_qty
 string enter_surname
@@ -3270,9 +3313,9 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
-string hello_sp
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string icon_desc
 string item_view_role_description
 string log_in
 string login_with_email
@@ -3348,6 +3391,7 @@ string nav_header_title
 string navigation_drawer_close
 string navigation_drawer_open
 string next
+string next_dsgn
 string no_result_found
 string not_set
 string or
@@ -3366,6 +3410,7 @@ string search_hint
 string search_menu_title
 string select_choice
 string select_country
+string select_language
 string sign_in
 string sign_up
 string signature_title
@@ -3377,6 +3422,8 @@ string sync_title
 string title_activity_sidebar
 string v7_preference_off
 string v7_preference_on
+string verify_phn
+string welcome_dairy
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -3620,6 +3667,7 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style NewStyleText
 style NoActionBar
 style PinWidget
 style PinWidget_PinView
@@ -3936,6 +3984,7 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
 style ThemeOverlayColorAccentRed
+style TitleText
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

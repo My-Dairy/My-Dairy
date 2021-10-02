@@ -1,6 +1,19 @@
 <resources>
     <string name="app_name">My Dairy</string>
-    <string name="hello_sp">Hello SP</string>
+
+    <!--dialog_box.xml-->
+    <string name="welcome_dairy">Welcome to My-Dairy</string>
+    <string name="select_language">Select Your Language: </string>
+    <string name="next_dsgn">Next >></string>
+    <string name="icon_desc">Icon of the App</string>
+
+
+    <!--phone_login.xml-->
+    <string name="enter_phn">Enter Phone Number</string>
+    <string name="verify_phn">Verify Your Number</string>
+    <string name="login_with_email">Login with email</string>
+    <string name="login_with_phone_number">Login With Phone Number</string>
+
 
     <!--activity_email_register.xml-->
     <string name="enter_email">Enter your email</string>
@@ -22,8 +35,6 @@
     <string name="enter_surname">Enter your surname</string>
     <string name="enter_city">Enter your city</string>
     <string name="sign_up">Sign up with Email</string>
-    <string name="login_with_email">Login with email</string>
-    <string name="login_with_phone_number">Login With Phone Number</string>
     <string name="title_activity_sidebar">Sidebar</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

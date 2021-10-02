@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -29,10 +28,16 @@ public final class ActivityPhoneLoginBinding implements ViewBinding {
   public final CountryCodePicker ccp;
 
   @NonNull
+  public final View dividerLineLeft;
+
+  @NonNull
+  public final View dividerLineRight;
+
+  @NonNull
   public final Button generateOtpBtn;
 
   @NonNull
-  public final ImageView imageView;
+  public final ConstraintLayout lnrlyt;
 
   @NonNull
   public final EditText phoneNumber;
@@ -40,17 +45,24 @@ public final class ActivityPhoneLoginBinding implements ViewBinding {
   @NonNull
   public final TextView textviewLogInWithNumber;
 
+  @NonNull
+  public final TextView textviewOr;
+
   private ActivityPhoneLoginBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnSignInWithEmail, @NonNull CountryCodePicker ccp,
-      @NonNull Button generateOtpBtn, @NonNull ImageView imageView, @NonNull EditText phoneNumber,
-      @NonNull TextView textviewLogInWithNumber) {
+      @NonNull View dividerLineLeft, @NonNull View dividerLineRight, @NonNull Button generateOtpBtn,
+      @NonNull ConstraintLayout lnrlyt, @NonNull EditText phoneNumber,
+      @NonNull TextView textviewLogInWithNumber, @NonNull TextView textviewOr) {
     this.rootView = rootView;
     this.btnSignInWithEmail = btnSignInWithEmail;
     this.ccp = ccp;
+    this.dividerLineLeft = dividerLineLeft;
+    this.dividerLineRight = dividerLineRight;
     this.generateOtpBtn = generateOtpBtn;
-    this.imageView = imageView;
+    this.lnrlyt = lnrlyt;
     this.phoneNumber = phoneNumber;
     this.textviewLogInWithNumber = textviewLogInWithNumber;
+    this.textviewOr = textviewOr;
   }
 
   @Override
@@ -92,15 +104,27 @@ public final class ActivityPhoneLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.divider_line_left;
+      View dividerLineLeft = rootView.findViewById(id);
+      if (dividerLineLeft == null) {
+        break missingId;
+      }
+
+      id = R.id.divider_line_right;
+      View dividerLineRight = rootView.findViewById(id);
+      if (dividerLineRight == null) {
+        break missingId;
+      }
+
       id = R.id.generate_otp_btn;
       Button generateOtpBtn = rootView.findViewById(id);
       if (generateOtpBtn == null) {
         break missingId;
       }
 
-      id = R.id.imageView;
-      ImageView imageView = rootView.findViewById(id);
-      if (imageView == null) {
+      id = R.id.lnrlyt;
+      ConstraintLayout lnrlyt = rootView.findViewById(id);
+      if (lnrlyt == null) {
         break missingId;
       }
 
@@ -116,8 +140,15 @@ public final class ActivityPhoneLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textview_or;
+      TextView textviewOr = rootView.findViewById(id);
+      if (textviewOr == null) {
+        break missingId;
+      }
+
       return new ActivityPhoneLoginBinding((ConstraintLayout) rootView, btnSignInWithEmail, ccp,
-          generateOtpBtn, imageView, phoneNumber, textviewLogInWithNumber);
+          dividerLineLeft, dividerLineRight, generateOtpBtn, lnrlyt, phoneNumber,
+          textviewLogInWithNumber, textviewOr);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

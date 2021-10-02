@@ -1,9 +1,5 @@
 [
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_graphs.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_graphs.xml"
     },
@@ -12,8 +8,8 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_settings_24.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nav_view_selection.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\nav_view_selection.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_login.xml.flat",
@@ -32,12 +28,28 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\table_milk_bill.xml"
     },
     {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_text.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\spinner_text.xml"
+    },
+    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input_login.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\input_login.xml"
     },
     {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_main_icon.png.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\main_icon.png"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_reports.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_reports.xml"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_report_gass_charo.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\report_gass_charo.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_help.xml.flat",
@@ -48,8 +60,16 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
     {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_report_dan_khan.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\report_dan_khan.xml"
+    },
+    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_storage_24.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_storage_24.xml"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\font_century.ttf.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\font\\century.ttf"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
@@ -60,6 +80,10 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_daily_entry.xml"
     },
     {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dialog_welcome.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\dialog_welcome.xml"
+    },
+    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_bar_chart_24.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_bar_chart_24.xml"
     },
@@ -68,12 +92,20 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dan_khan_entry.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\font_faustina_regular.ttf.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\font\\faustina_regular.ttf"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input_design_login.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\input_design_login.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_graph_qty.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_graph_qty.xml"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_email_login.xml.flat",
@@ -96,12 +128,20 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_settings.xml"
     },
     {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\font_title_welcome.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\font\\title_welcome.xml"
+    },
+    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_sidebar.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\app_bar_sidebar.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_feedback_24.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_feedback_24.xml"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_login.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable\\bg_login.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\xml_preference.xml.flat",
@@ -126,10 +166,6 @@
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_sidebar.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\content_sidebar.xml"
-    },
-    {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
@@ -160,6 +196,10 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dava_daru_entry.xml"
     },
     {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_table_gaascharo_bill.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_table_gaascharo_bill.xml"
+    },
+    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_r_o_i_entry.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_r_o_i_entry.xml"
     },
@@ -176,20 +216,20 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_lnguage_wlcm.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\dialog_lnguage_wlcm.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\font_times_new_roman.ttf.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\font\\times_new_roman.ttf"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_table_dan_khan.xml.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\table_dan_khan.xml"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_share_24.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\drawable-v24\\ic_baseline_share_24.xml"
-    },
-    {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_miscellaneous_entry.xml.flat",
@@ -198,10 +238,6 @@
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dev_inv.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dev_inv.xml"
-    },
-    {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_graph_item.xml.flat",
@@ -220,12 +256,12 @@
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\layout\\activity_phone_login.xml"
     },
     {
-        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\menu_sidebar.xml.flat",
         "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\menu\\sidebar.xml"
+    },
+    {
+        "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\font_bookos.TTF.flat",
+        "source": "D:\\BOOKS\\My-Dairy\\app\\src\\main\\res\\font\\bookos.TTF"
     },
     {
         "merged": "D:\\BOOKS\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
