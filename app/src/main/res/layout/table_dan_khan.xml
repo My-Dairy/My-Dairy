@@ -19,19 +19,6 @@
         android:orientation="vertical"
         >
 
-        <!--        <TextView-->
-        <!--            android:id="@+id/table_time"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            app:layout_constraintTop_toTopOf="parent"-->
-        <!--            app:layout_constraintRight_toRightOf="parent"-->
-        <!--            android:layout_marginHorizontal="15dp"-->
-        <!--            android:layout_marginTop="10dp"-->
-        <!--            android:textSize="20sp"-->
-        <!--            android:textColor="@color/black"-->
-        <!--            android:text="Morning"-->
-        <!--            />-->
-
         <LinearLayout
             android:id="@+id/date_box"
             android:layout_width="wrap_content"

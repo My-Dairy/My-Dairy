@@ -18,7 +18,9 @@ import com.example.mydairy.specific.GraphAmt;
 import com.example.mydairy.specific.GraphFat;
 import com.example.mydairy.specific.GraphQty;
 import com.example.mydairy.specific.ReportDanKhan;
+import com.example.mydairy.specific.ReportDavaDaru;
 import com.example.mydairy.specific.ReportGassCharo;
+import com.example.mydairy.specific.ReportLabourCharge;
 import com.example.mydairy.specific.ReportMilkBill;
 
 /**
@@ -44,9 +46,19 @@ public class ReportsFragment extends Fragment {
             "Milk Bill with Bonus",
             "Pashuahar",
             "Grasscharo",
+            "Dava Daru",
+            "Misc",
+            "Miscellaneous",
+            "Labour Charge",
+            "Return of investment",
     };
 
     private Integer ReportImage[] = {
+            R.drawable.cow1,
+            R.drawable.cow1,
+            R.drawable.cow1,
+            R.drawable.cow1,
+            R.drawable.cow1,
             R.drawable.cow1,
             R.drawable.cow1,
             R.drawable.cow1,
@@ -120,6 +132,17 @@ public class ReportsFragment extends Fragment {
                     Intent intent = new Intent(getContext(), ReportGassCharo.class);
                     startActivity(intent);
                 }
+                else if(position==4)
+                {
+                    Intent intent = new Intent(getContext(), ReportDavaDaru.class);
+                    startActivity(intent);
+                }
+                else if(position==7)
+                {
+                    Intent intent = new Intent(getContext(), ReportLabourCharge.class);
+                    startActivity(intent);
+                }
+
             }
         });
 

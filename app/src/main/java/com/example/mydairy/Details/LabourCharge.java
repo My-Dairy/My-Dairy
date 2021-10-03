@@ -2,7 +2,7 @@ package com.example.mydairy.Details;
 
 public class LabourCharge {
 
-    String monthly , withdraw,balance,type,amount;
+    String monthly , withdraw,balance,type,amount,date;
 
     public LabourCharge(String monthly, String withdraw, String balance, String type, String amount) {
         this.monthly = monthly;
@@ -10,6 +10,19 @@ public class LabourCharge {
         this.balance = balance;
         this.type = type;
         this.amount = amount;
+    }
+
+    public LabourCharge(String monthly, String withdraw, String balance, String type, String amount, String date) {
+        this.monthly = monthly;
+        this.withdraw = withdraw;
+        this.balance = balance;
+        this.type = type;
+        this.amount = amount;
+        this.date=date;
+    }
+
+    public String getDate() {
+        return date;
     }
 
     public String getMonthly() {

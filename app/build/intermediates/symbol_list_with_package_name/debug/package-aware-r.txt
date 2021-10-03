@@ -2494,6 +2494,7 @@ id dataBinding
 id date
 id date_box
 id date_picker_actions
+id dava_daru_recycler
 id day
 id decelerate
 id decelerateAndComplete
@@ -2608,6 +2609,9 @@ id jumpToStart
 id labeled
 id labourCharge_editText
 id labour_charge
+id labour_charge_recycler
+id labour_other_work
+id labour_other_work_amt
 id language_spinner
 id layout
 id left
@@ -2864,12 +2868,18 @@ id switcher
 id tabMode
 id table_amt
 id table_date
+id table_deposit
+id table_dose
 id table_fat
 id table_makaiBhardo
+id table_medical_visit
+id table_medicine
 id table_papdi
 id table_pashudan
 id table_qty
+id table_salary
 id table_time
+id table_withdraw
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3043,6 +3053,7 @@ layout activity_phone_login
 layout activity_phone_otp
 layout activity_r_o_i_entry
 layout activity_report_adapter
+layout activity_report_dava_daru
 layout activity_report_milk_bill
 layout activity_splash
 layout activity_table_gaascharo_bill
@@ -3157,6 +3168,7 @@ layout preference_widget_switch
 layout preference_widget_switch_compat
 layout report_dan_khan
 layout report_gass_charo
+layout report_labour_charge
 layout row_graph_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -3164,6 +3176,8 @@ layout select_dialog_singlechoice_material
 layout spinner_text
 layout support_simple_spinner_dropdown_item
 layout table_dan_khan
+layout table_dava_daru
+layout table_labour_charge
 layout table_milk_bill
 layout test_action_chip
 layout test_chip_zero_corner_radius

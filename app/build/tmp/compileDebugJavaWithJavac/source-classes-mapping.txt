@@ -7,6 +7,10 @@ com/example/mydairy/entry/ROIEntryActivity.java
  com.example.mydairy.entry.ROIEntryActivity$1
 com/example/mydairy/BuildConfig.java
  com.example.mydairy.BuildConfig
+com/example/mydairy/specific/ReportLabourCharge.java
+ com.example.mydairy.specific.ReportLabourCharge
+ com.example.mydairy.specific.ReportLabourCharge$1
+ com.example.mydairy.specific.ReportLabourCharge$2
 com/example/mydairy/databinding/ReportDanKhanBinding.java
  com.example.mydairy.databinding.ReportDanKhanBinding
 com/example/mydairy/splash/SplashActivity.java
@@ -42,6 +46,8 @@ com/example/mydairy/databinding/ActivityDanKhanEntryBinding.java
  com.example.mydairy.databinding.ActivityDanKhanEntryBinding
 com/example/mydairy/databinding/DialogLnguageWlcmBinding.java
  com.example.mydairy.databinding.DialogLnguageWlcmBinding
+com/example/mydairy/databinding/ReportLabourChargeBinding.java
+ com.example.mydairy.databinding.ReportLabourChargeBinding
 com/example/mydairy/entry/EntryDashboardActivity.java
  com.example.mydairy.entry.EntryDashboardActivity
  com.example.mydairy.entry.EntryDashboardActivity$1
@@ -54,8 +60,12 @@ com/example/mydairy/entry/EntryDashboardActivity.java
  com.example.mydairy.entry.EntryDashboardActivity$8
 com/example/mydairy/Details/LabourCharge.java
  com.example.mydairy.Details.LabourCharge
+com/example/mydairy/adapter/ReportLabourChargeAdapter.java
+ com.example.mydairy.adapter.ReportLabourChargeAdapter
 com/example/mydairy/databinding/ActivityLabourEntryBinding.java
  com.example.mydairy.databinding.ActivityLabourEntryBinding
+com/example/mydairy/databinding/TableDavaDaruBinding.java
+ com.example.mydairy.databinding.TableDavaDaruBinding
 com/example/mydairy/databinding/FragmentHelpBinding.java
  com.example.mydairy.databinding.FragmentHelpBinding
 com/example/mydairy/Fragment/HelpFragment.java
@@ -83,8 +93,12 @@ com/example/mydairy/adapter/ReportAdapter.java
  com.example.mydairy.adapter.ReportAdapter
 com/example/mydairy/databinding/ActivityMiscellaneousEntryBinding.java
  com.example.mydairy.databinding.ActivityMiscellaneousEntryBinding
+com/example/mydairy/databinding/ActivityReportDavaDaruBinding.java
+ com.example.mydairy.databinding.ActivityReportDavaDaruBinding
 com/example/mydairy/databinding/ActivityDavaDaruEntryBinding.java
  com.example.mydairy.databinding.ActivityDavaDaruEntryBinding
+com/example/mydairy/adapter/ReportDavaDaruAdapter.java
+ com.example.mydairy.adapter.ReportDavaDaruAdapter
 com/example/mydairy/databinding/NavHeaderSidebarBinding.java
  com.example.mydairy.databinding.NavHeaderSidebarBinding
 com/example/mydairy/databinding/AppBarSidebarBinding.java
@@ -102,6 +116,10 @@ com/example/mydairy/Details/ROI.java
 com/example/mydairy/entry/DevInvActivity.java
  com.example.mydairy.entry.DevInvActivity
  com.example.mydairy.entry.DevInvActivity$1
+com/example/mydairy/specific/ReportDavaDaru.java
+ com.example.mydairy.specific.ReportDavaDaru
+ com.example.mydairy.specific.ReportDavaDaru$1
+ com.example.mydairy.specific.ReportDavaDaru$2
 com/example/mydairy/databinding/FragmentSettingsBinding.java
  com.example.mydairy.databinding.FragmentSettingsBinding
 com/example/mydairy/specific/GraphQty.java
@@ -201,6 +219,8 @@ com/example/mydairy/specific/ReportMilkBill.java
  com.example.mydairy.specific.ReportMilkBill
  com.example.mydairy.specific.ReportMilkBill$1
  com.example.mydairy.specific.ReportMilkBill$2
+com/example/mydairy/databinding/TableLabourChargeBinding.java
+ com.example.mydairy.databinding.TableLabourChargeBinding
 com/example/mydairy/databinding/ActivitySplashBinding.java
  com.example.mydairy.databinding.ActivitySplashBinding
 com/example/mydairy/specific/GraphFat.java
