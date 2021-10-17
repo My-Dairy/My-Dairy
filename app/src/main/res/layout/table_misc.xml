@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="220dp"
+    android:layout_height="250dp"
     android:layout_marginTop="10dp"
     app:cardBackgroundColor="@color/primary_color"
     android:layout_marginLeft="5dp"
@@ -61,12 +61,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Labour Salary(₹): "
+                android:text="Gas Bottle Bill(₹): "
                 android:textSize="18sp"
                 />
 
             <TextView
-                android:id="@+id/table_salary"
+                android:id="@+id/table_gas_bottle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1000"
@@ -89,12 +89,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Withdraw Amount(₹): "
+                android:text="Electricity Bill(₹): "
                 android:textSize="18sp"
                 />
 
             <TextView
-                android:id="@+id/table_withdraw"
+                android:id="@+id/table_electricity_bill"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1000"
@@ -117,21 +117,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Deposit Amount(₹): "
+                android:text="Maintenance Details: "
                 android:textSize="18sp"
                 />
 
             <TextView
-                android:id="@+id/table_deposit"
+                android:id="@+id/table_maintenance_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1000"
+                android:text="light bill"
                 android:textSize="17sp"
                 android:layout_marginTop="0.5dp"
                 />
 
         </LinearLayout>
-
 
 
         <LinearLayout
@@ -147,15 +146,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Other Work(name): "
+                android:text="Maintenance Amount(₹): "
                 android:textSize="18sp"
                 />
 
             <TextView
-                android:id="@+id/labour_other_work"
+                android:id="@+id/table_maintenance_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ghaas katna"
+                android:text="100"
                 android:textSize="17sp"
                 android:layout_marginTop="0.5dp"
                 />
@@ -175,15 +174,43 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Other Work Charge(₹): "
+                android:text="Other Work type: "
                 android:textSize="18sp"
                 />
 
             <TextView
-                android:id="@+id/labour_other_work_amt"
+                android:id="@+id/table_other_work"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="1000"
+                android:layout_height="wrap_content"
+                android:text="Other work"
+                android:textSize="17sp"
+                android:layout_marginTop="0.5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/date_box"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Work(₹): "
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/table_other_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
                 android:textSize="17sp"
                 android:layout_marginTop="0.5dp"
                 />

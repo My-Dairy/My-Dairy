@@ -20,6 +20,10 @@
         "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\table_roi.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\table_roi.xml"
+    },
+    {
         "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\report_labour_charge.xml",
         "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\report_labour_charge.xml"
     },
@@ -68,8 +72,16 @@
         "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_fat_graph.xml"
     },
     {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_report_misc.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_report_misc.xml"
+    },
+    {
         "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_gass_charo_entry.xml",
         "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_gass_charo_entry.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\table_misc.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\table_misc.xml"
     },
     {
         "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_email_register.xml",
@@ -162,5 +174,9 @@
     {
         "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_lnguage_wlcm.xml",
         "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\dialog_lnguage_wlcm.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_report_roi.xml",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_report_roi.xml"
     }
 ]

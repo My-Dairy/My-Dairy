@@ -13,7 +13,9 @@
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:ignore="AllowBackup">
         <activity android:name=".specific.ReportGassCharo"/>
+        <activity android:name=".specific.ReportROI"/>
         <activity android:name=".specific.ReportDavaDaru"/>
+        <activity android:name=".specific.ReportMisc"/>
         <activity android:name=".specific.ReportDanKhan" />
         <activity android:name=".specific.ReportLabourCharge" />
 <!--        <activity android:name=".adapter.ReportAdapter" />-->

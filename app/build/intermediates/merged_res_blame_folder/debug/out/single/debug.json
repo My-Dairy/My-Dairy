@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\drawable\\input_login.xml"
     },
     {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_table_misc.xml.flat",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\table_misc.xml"
+    },
+    {
         "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\font_title_welcome.xml.flat",
         "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\font\\title_welcome.xml"
     },
@@ -224,6 +228,14 @@
         "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_report_misc.xml.flat",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_report_misc.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_report_roi.xml.flat",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_report_roi.xml"
+    },
+    {
         "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_r_o_i_entry.xml.flat",
         "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_r_o_i_entry.xml"
     },
@@ -290,6 +302,10 @@
     {
         "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dan_khan_entry.xml.flat",
         "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\activity_dan_khan_entry.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\layout_table_roi.xml.flat",
+        "source": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\src\\main\\res\\layout\\table_roi.xml"
     },
     {
         "merged": "C:\\Users\\Jinil\\AndroidStudioProjects\\My-Dairy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_share_24.xml.flat",

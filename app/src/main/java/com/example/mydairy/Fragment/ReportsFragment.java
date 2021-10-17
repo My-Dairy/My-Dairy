@@ -22,6 +22,8 @@ import com.example.mydairy.specific.ReportDavaDaru;
 import com.example.mydairy.specific.ReportGassCharo;
 import com.example.mydairy.specific.ReportLabourCharge;
 import com.example.mydairy.specific.ReportMilkBill;
+import com.example.mydairy.specific.ReportMisc;
+import com.example.mydairy.specific.ReportROI;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -47,7 +49,7 @@ public class ReportsFragment extends Fragment {
             "Pashuahar",
             "Grasscharo",
             "Dava Daru",
-            "Misc",
+            //"Misc",
             "Miscellaneous",
             "Labour Charge",
             "Return of investment",
@@ -59,7 +61,7 @@ public class ReportsFragment extends Fragment {
             R.drawable.cow1,
             R.drawable.cow1,
             R.drawable.cow1,
-            R.drawable.cow1,
+            //R.drawable.cow1,
             R.drawable.cow1,
             R.drawable.cow1,
             R.drawable.cow1,
@@ -137,9 +139,19 @@ public class ReportsFragment extends Fragment {
                     Intent intent = new Intent(getContext(), ReportDavaDaru.class);
                     startActivity(intent);
                 }
-                else if(position==7)
+                else if(position==5)
+                {
+                    Intent intent = new Intent(getContext(), ReportMisc.class);
+                    startActivity(intent);
+                }
+                else if(position==6)
                 {
                     Intent intent = new Intent(getContext(), ReportLabourCharge.class);
+                    startActivity(intent);
+                }
+                else if(position==7)
+                {
+                    Intent intent = new Intent(getContext(), ReportROI.class);
                     startActivity(intent);
                 }
 

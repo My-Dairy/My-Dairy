@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".specific.ReportLabourCharge">
+    tools:context=".specific.ReportMisc">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
     <!--        />-->
 
     <ListView
-        android:id="@+id/labour_charge_recycler"
+        android:id="@+id/misc_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="150dp"

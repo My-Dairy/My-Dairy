@@ -24,7 +24,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Design.Light.NoActionBar" >
         <activity android:name="com.example.mydairy.specific.ReportGassCharo" />
+        <activity android:name="com.example.mydairy.specific.ReportROI" />
         <activity android:name="com.example.mydairy.specific.ReportDavaDaru" />
+        <activity android:name="com.example.mydairy.specific.ReportMisc" />
         <activity android:name="com.example.mydairy.specific.ReportDanKhan" />
         <activity android:name="com.example.mydairy.specific.ReportLabourCharge" />
         <!-- <activity android:name=".adapter.ReportAdapter" /> -->

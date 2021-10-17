@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-72:12
-INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-72:12
-INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-72:12
-INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-72:12
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-74:12
 MERGED from [androidx.databinding:databinding-adapters:4.1.3] C:\Users\Jinil\.gradle\caches\transforms-2\files-2.1\653c0f946c5315008bbf10455b56778e\databinding-adapters-4.1.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:4.1.3] C:\Users\Jinil\.gradle\caches\transforms-2\files-2.1\718c4683e1aa43a9f8d30ed4fc22f412\databinding-runtime-4.1.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:viewbinding:4.1.3] C:\Users\Jinil\.gradle\caches\transforms-2\files-2.1\3808c758a3525ae49908c10928c8c363\jetified-viewbinding-4.1.3\AndroidManifest.xml:17:1-22:12
@@ -88,22 +88,22 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Jinil\.gradle\caches\transform
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Jinil\.gradle\caches\transforms-2\files-2.1\156f613e08b93711e742614783105f1a\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Jinil\.gradle\caches\transforms-2\files-2.1\3e4df694e62c67b0154a9700fff0907b\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [io.michaelrocks:libphonenumber-android:8.12.13] C:\Users\Jinil\.gradle\caches\transforms-2\files-2.1\6c957ebafc66a535cfd2b4cf81ead3df\jetified-libphonenumber-android-8.12.13\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-72:12
-INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-72:12
-INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-72:12
+INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-74:12
 	package
 		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:4:5-34
 		INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-72:12
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-74:12
 		INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-72:12
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:1-74:12
 		INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:2:11-69
@@ -128,7 +128,7 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] C:
 	android:name
 		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:8:5-70:19
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:8:5-72:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Jinil\.gradle\caches\transforms-2\files-2.1\0f12eff98186791d169dd8720173cce0\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Jinil\.gradle\caches\transforms-2\files-2.1\0f12eff98186791d169dd8720173cce0\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Jinil\.gradle\caches\transforms-2\files-2.1\1256201b925291c10163ce61c277858a\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -195,140 +195,148 @@ activity#com.example.mydairy.specific.ReportGassCharo
 ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:15:9-61
 	android:name
 		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:15:19-59
-activity#com.example.mydairy.specific.ReportDavaDaru
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:16:9-60
+activity#com.example.mydairy.specific.ReportROI
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:16:9-55
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:16:19-58
-activity#com.example.mydairy.specific.ReportDanKhan
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:16:19-53
+activity#com.example.mydairy.specific.ReportDavaDaru
 ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:17:9-60
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:17:19-57
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:17:19-58
+activity#com.example.mydairy.specific.ReportMisc
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:18:9-56
+	android:name
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:18:19-54
+activity#com.example.mydairy.specific.ReportDanKhan
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:19:9-60
+	android:name
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:19:19-57
 activity#com.example.mydairy.specific.ReportLabourCharge
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:18:9-65
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:20:9-65
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:18:19-62
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:20:19-62
 activity#com.example.mydairy.specific.ReportMilkBill
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:20:9-61
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:22:9-61
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:20:19-58
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:22:19-58
 activity#com.example.mydairy.specific.GraphAmt
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:21:9-55
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:23:9-55
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:21:19-52
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:23:19-52
 activity#com.example.mydairy.specific.GraphQty
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:22:9-55
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:24:9-55
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:22:19-52
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:24:19-52
 activity#com.example.mydairy.entry.LabourEntryActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:23:9-63
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:25:9-63
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:23:19-60
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:25:19-60
 activity#com.example.mydairy.entry.GassCharoEntryActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:24:9-66
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:26:9-66
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:24:19-63
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:26:19-63
 activity#com.example.mydairy.entry.ROIEntryActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:25:9-60
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:27:9-60
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:25:19-57
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:27:19-57
 activity#com.example.mydairy.entry.MiscellaneousEntryActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:26:9-70
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:28:9-70
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:26:19-67
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:28:19-67
 activity#com.example.mydairy.entry.DanKhanEntryActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:27:9-64
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:29:9-64
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:27:19-61
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:29:19-61
 activity#com.example.mydairy.entry.DavaDaruEntryActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:28:9-65
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:30:9-65
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:28:19-62
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:30:19-62
 activity#com.example.mydairy.entry.DevInvActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:29:9-58
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:31:9-58
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:29:19-55
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:31:19-55
 activity#com.example.mydairy.entry.EntryDashboardActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:30:9-66
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:32:9-66
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:30:19-63
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:32:19-63
 activity#com.example.mydairy.entry.DailyEntryActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:31:9-62
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:33:9-62
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:31:19-59
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:33:19-59
 activity#com.example.mydairy.Details.UserDetails
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:32:9-35:56
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:34:9-37:56
 	android:screenOrientation
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:34:13-49
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:36:13-49
 	tools:ignore
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:35:13-53
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:37:13-53
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:33:13-48
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:35:13-48
 activity#com.example.mydairy.emaillogin.EmailRegisterActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:36:9-39:56
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:38:9-41:56
 	android:screenOrientation
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:38:13-49
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:40:13-49
 	tools:ignore
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:39:13-53
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:41:13-53
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:37:13-61
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:39:13-61
 activity#com.example.mydairy.emaillogin.EmailLoginActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:40:9-43:56
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:42:9-45:56
 	android:screenOrientation
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:42:13-49
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:44:13-49
 	tools:ignore
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:43:13-53
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:45:13-53
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:41:13-58
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:43:13-58
 activity#com.example.mydairy.phonelogin.PhoneOTPActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:44:9-47:56
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:46:9-49:56
 	android:screenOrientation
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:46:13-49
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:48:13-49
 	tools:ignore
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:47:13-53
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:49:13-53
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:45:13-56
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:47:13-56
 activity#com.example.mydairy.phonelogin.PhoneLoginActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:48:9-51:56
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:50:9-53:56
 	android:screenOrientation
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:50:13-49
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:52:13-49
 	tools:ignore
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:51:13-53
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:53:13-53
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:49:13-58
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:51:13-58
 activity#com.example.mydairy.splash.SplashActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:52:9-61:20
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:54:9-63:20
 	android:screenOrientation
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:54:13-49
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:56:13-49
 	tools:ignore
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:55:13-53
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:57:13-53
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:53:13-50
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:55:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:56:13-60:29
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:58:13-62:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:57:17-69
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:59:17-69
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:57:25-66
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:59:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:59:17-77
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:61:17-77
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:59:27-74
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:61:27-74
 activity#com.example.mydairy.MainActivity
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:62:9-65:56
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:64:9-67:56
 	android:screenOrientation
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:64:13-49
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:66:13-49
 	tools:ignore
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:65:13-53
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:67:13-53
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:63:13-41
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:65:13-41
 activity#com.example.mydairy.specific.GraphFat
-ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:66:9-69:56
+ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:68:9-71:56
 	android:screenOrientation
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:68:13-49
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:70:13-49
 	tools:ignore
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:69:13-53
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:71:13-53
 	android:name
-		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:67:13-46
+		ADDED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml:69:13-46
 uses-sdk
 INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Jinil\AndroidStudioProjects\My-Dairy\app\src\main\AndroidManifest.xml

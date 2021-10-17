@@ -2673,6 +2673,7 @@ id message
 id middle
 id milk_bill_recycler
 id mini
+id misc_recycler
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2791,6 +2792,7 @@ id right_side
 id rlClickConsumer
 id rl_query_holder
 id rl_title
+id roi_recycler
 id rounded
 id row_index_key
 id save_btn
@@ -2870,10 +2872,17 @@ id table_amt
 id table_date
 id table_deposit
 id table_dose
+id table_electricity_bill
 id table_fat
+id table_gas_bottle
+id table_maintenance_amount
+id table_maintenance_name
 id table_makaiBhardo
 id table_medical_visit
 id table_medicine
+id table_monthly
+id table_other_amount
+id table_other_work
 id table_papdi
 id table_pashudan
 id table_qty
@@ -3055,6 +3064,8 @@ layout activity_r_o_i_entry
 layout activity_report_adapter
 layout activity_report_dava_daru
 layout activity_report_milk_bill
+layout activity_report_misc
+layout activity_report_roi
 layout activity_splash
 layout activity_table_gaascharo_bill
 layout activity_user_details
@@ -3179,6 +3190,8 @@ layout table_dan_khan
 layout table_dava_daru
 layout table_labour_charge
 layout table_milk_bill
+layout table_misc
+layout table_roi
 layout test_action_chip
 layout test_chip_zero_corner_radius
 layout test_design_checkbox
