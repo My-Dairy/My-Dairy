@@ -4,11 +4,11 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
 import java.lang.NullPointerException;
@@ -17,10 +17,16 @@ import java.lang.String;
 
 public final class TableMilkBillBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final LinearLayout dateBox;
+
+  @NonNull
+  public final LinearLayout ll01;
+
+  @NonNull
+  public final LinearLayout ll02;
 
   @NonNull
   public final TextView tableAmt;
@@ -37,11 +43,14 @@ public final class TableMilkBillBinding implements ViewBinding {
   @NonNull
   public final TextView tableTime;
 
-  private TableMilkBillBinding(@NonNull CardView rootView, @NonNull LinearLayout dateBox,
-      @NonNull TextView tableAmt, @NonNull TextView tableDate, @NonNull TextView tableFat,
-      @NonNull TextView tableQty, @NonNull TextView tableTime) {
+  private TableMilkBillBinding(@NonNull FrameLayout rootView, @NonNull LinearLayout dateBox,
+      @NonNull LinearLayout ll01, @NonNull LinearLayout ll02, @NonNull TextView tableAmt,
+      @NonNull TextView tableDate, @NonNull TextView tableFat, @NonNull TextView tableQty,
+      @NonNull TextView tableTime) {
     this.rootView = rootView;
     this.dateBox = dateBox;
+    this.ll01 = ll01;
+    this.ll02 = ll02;
     this.tableAmt = tableAmt;
     this.tableDate = tableDate;
     this.tableFat = tableFat;
@@ -51,7 +60,7 @@ public final class TableMilkBillBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -79,6 +88,18 @@ public final class TableMilkBillBinding implements ViewBinding {
       id = R.id.date_box;
       LinearLayout dateBox = rootView.findViewById(id);
       if (dateBox == null) {
+        break missingId;
+      }
+
+      id = R.id.ll01;
+      LinearLayout ll01 = rootView.findViewById(id);
+      if (ll01 == null) {
+        break missingId;
+      }
+
+      id = R.id.ll02;
+      LinearLayout ll02 = rootView.findViewById(id);
+      if (ll02 == null) {
         break missingId;
       }
 
@@ -112,8 +133,8 @@ public final class TableMilkBillBinding implements ViewBinding {
         break missingId;
       }
 
-      return new TableMilkBillBinding((CardView) rootView, dateBox, tableAmt, tableDate, tableFat,
-          tableQty, tableTime);
+      return new TableMilkBillBinding((FrameLayout) rootView, dateBox, ll01, ll02, tableAmt,
+          tableDate, tableFat, tableQty, tableTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

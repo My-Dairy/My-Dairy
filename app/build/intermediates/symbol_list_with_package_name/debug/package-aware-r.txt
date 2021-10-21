@@ -2541,6 +2541,8 @@ id electricity_bill_txt
 id email_box
 id end
 id endToStart
+id end_dte_edit
+id end_dte_txt
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
@@ -2635,6 +2637,8 @@ id list_item
 id list_report
 id list_reportimg
 id list_reporttxt
+id ll01
+id ll02
 id lnrlyt
 id mail_phn_txt
 id main_image
@@ -2748,6 +2752,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id parititon
 id pashuahar_other_amt
 id pashuahar_other_type
 id pashuahar_othr_edit
@@ -2784,6 +2789,7 @@ id recycler_countryDialog
 id recycler_view
 id register_btn
 id resend_otp_textview
+id reset_btn
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2808,6 +2814,7 @@ id scrollView
 id scrollable
 id search_badge
 id search_bar
+id search_btn
 id search_button
 id search_close_btn
 id search_edit_frame
@@ -2854,6 +2861,8 @@ id start
 id startHorizontal
 id startToEnd
 id startVertical
+id start_dte_edit
+id start_dte_txt
 id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content

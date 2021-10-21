@@ -235,7 +235,15 @@ com/example/mydairy/specific/ReportGassCharo.java
 com/example/mydairy/specific/ReportMilkBill.java
  com.example.mydairy.specific.ReportMilkBill
  com.example.mydairy.specific.ReportMilkBill$1
+ com.example.mydairy.specific.ReportMilkBill$10
  com.example.mydairy.specific.ReportMilkBill$2
+ com.example.mydairy.specific.ReportMilkBill$3
+ com.example.mydairy.specific.ReportMilkBill$4
+ com.example.mydairy.specific.ReportMilkBill$5
+ com.example.mydairy.specific.ReportMilkBill$6
+ com.example.mydairy.specific.ReportMilkBill$7
+ com.example.mydairy.specific.ReportMilkBill$8
+ com.example.mydairy.specific.ReportMilkBill$9
 com/example/mydairy/databinding/ActivityReportMiscBinding.java
  com.example.mydairy.databinding.ActivityReportMiscBinding
 com/example/mydairy/databinding/TableLabourChargeBinding.java

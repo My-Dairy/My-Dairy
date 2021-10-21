@@ -4,7 +4,10 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,10 +24,36 @@ public final class ReportDanKhanBinding implements ViewBinding {
   @NonNull
   public final ListView danKhanRecycler;
 
+  @NonNull
+  public final EditText endDteEdit;
+
+  @NonNull
+  public final TextView endDteTxt;
+
+  @NonNull
+  public final View parititon;
+
+  @NonNull
+  public final Button searchBtn;
+
+  @NonNull
+  public final EditText startDteEdit;
+
+  @NonNull
+  public final TextView startDteTxt;
+
   private ReportDanKhanBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ListView danKhanRecycler) {
+      @NonNull ListView danKhanRecycler, @NonNull EditText endDteEdit, @NonNull TextView endDteTxt,
+      @NonNull View parititon, @NonNull Button searchBtn, @NonNull EditText startDteEdit,
+      @NonNull TextView startDteTxt) {
     this.rootView = rootView;
     this.danKhanRecycler = danKhanRecycler;
+    this.endDteEdit = endDteEdit;
+    this.endDteTxt = endDteTxt;
+    this.parititon = parititon;
+    this.searchBtn = searchBtn;
+    this.startDteEdit = startDteEdit;
+    this.startDteTxt = startDteTxt;
   }
 
   @Override
@@ -60,7 +89,44 @@ public final class ReportDanKhanBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ReportDanKhanBinding((ConstraintLayout) rootView, danKhanRecycler);
+      id = R.id.end_dte_edit;
+      EditText endDteEdit = rootView.findViewById(id);
+      if (endDteEdit == null) {
+        break missingId;
+      }
+
+      id = R.id.end_dte_txt;
+      TextView endDteTxt = rootView.findViewById(id);
+      if (endDteTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.parititon;
+      View parititon = rootView.findViewById(id);
+      if (parititon == null) {
+        break missingId;
+      }
+
+      id = R.id.search_btn;
+      Button searchBtn = rootView.findViewById(id);
+      if (searchBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.start_dte_edit;
+      EditText startDteEdit = rootView.findViewById(id);
+      if (startDteEdit == null) {
+        break missingId;
+      }
+
+      id = R.id.start_dte_txt;
+      TextView startDteTxt = rootView.findViewById(id);
+      if (startDteTxt == null) {
+        break missingId;
+      }
+
+      return new ReportDanKhanBinding((ConstraintLayout) rootView, danKhanRecycler, endDteEdit,
+          endDteTxt, parititon, searchBtn, startDteEdit, startDteTxt);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
