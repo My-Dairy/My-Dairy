@@ -197,7 +197,7 @@ public class GraphFat extends AppCompatActivity {
                 xaxis.setValueFormatter(new IAxisValueFormatter() {
                     @Override
                     public String getFormattedValue(float value, AxisBase axis) {
-                        return xData_m.get((int) value - 1);
+                        return xData_m.get((int) value % xData_m.size());
                     }
                 });
 
@@ -273,7 +273,7 @@ public class GraphFat extends AppCompatActivity {
                 xaxis.setValueFormatter(new IAxisValueFormatter() {
                     @Override
                     public String getFormattedValue(float value, AxisBase axis) {
-                        return xData_e.get((int) value - 1);
+                        return xData_e.get((int) value % xData_e.size());
                     }
                 });
 

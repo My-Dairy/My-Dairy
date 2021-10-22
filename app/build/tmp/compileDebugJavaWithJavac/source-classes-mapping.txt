@@ -52,9 +52,8 @@ com/example/mydairy/adapter/ReportMilkBillAdapter.java
 com/example/mydairy/entry/DanKhanEntryActivity.java
  com.example.mydairy.entry.DanKhanEntryActivity
  com.example.mydairy.entry.DanKhanEntryActivity$1
-com/example/mydairy/Fragment/GraphsFragment.java
- com.example.mydairy.Fragment.GraphsFragment
- com.example.mydairy.Fragment.GraphsFragment$1
+com/example/mydairy/databinding/TableRoiBinding.java
+ com.example.mydairy.databinding.TableRoiBinding
 com/example/mydairy/databinding/ActivityFatGraphBinding.java
  com.example.mydairy.databinding.ActivityFatGraphBinding
 com/example/mydairy/phonelogin/PhoneLoginActivity.java
@@ -299,6 +298,20 @@ com/example/mydairy/databinding/TableLabourChargeBinding.java
  com.example.mydairy.databinding.TableLabourChargeBinding
 com/example/mydairy/databinding/ActivitySplashBinding.java
  com.example.mydairy.databinding.ActivitySplashBinding
+com/example/mydairy/Fragment/HomeFragment.java
+ com.example.mydairy.Fragment.HomeFragment
+ com.example.mydairy.Fragment.HomeFragment$1
+com/example/mydairy/databinding/ActivityMainBinding.java
+ com.example.mydairy.databinding.ActivityMainBinding
+com/example/mydairy/databinding/SpinnerTextBinding.java
+ com.example.mydairy.databinding.SpinnerTextBinding
+com/example/mydairy/databinding/ActivityPhoneLoginBinding.java
+ com.example.mydairy.databinding.ActivityPhoneLoginBinding
+com/example/mydairy/databinding/FragmentGraphsBinding.java
+ com.example.mydairy.databinding.FragmentGraphsBinding
+com/example/mydairy/Fragment/GraphsFragment.java
+ com.example.mydairy.Fragment.GraphsFragment
+ com.example.mydairy.Fragment.GraphsFragment$1
 com/example/mydairy/specific/GraphFat.java
  com.example.mydairy.specific.GraphFat
  com.example.mydairy.specific.GraphFat$1
@@ -310,16 +323,3 @@ com/example/mydairy/specific/GraphFat.java
  com.example.mydairy.specific.GraphFat$6$1
  com.example.mydairy.specific.GraphFat$7
  com.example.mydairy.specific.GraphFat$7$1
-com/example/mydairy/databinding/ActivityMainBinding.java
- com.example.mydairy.databinding.ActivityMainBinding
-com/example/mydairy/databinding/SpinnerTextBinding.java
- com.example.mydairy.databinding.SpinnerTextBinding
-com/example/mydairy/databinding/ActivityPhoneLoginBinding.java
- com.example.mydairy.databinding.ActivityPhoneLoginBinding
-com/example/mydairy/databinding/FragmentGraphsBinding.java
- com.example.mydairy.databinding.FragmentGraphsBinding
-com/example/mydairy/Fragment/HomeFragment.java
- com.example.mydairy.Fragment.HomeFragment
- com.example.mydairy.Fragment.HomeFragment$1
-com/example/mydairy/databinding/TableRoiBinding.java
- com.example.mydairy.databinding.TableRoiBinding
