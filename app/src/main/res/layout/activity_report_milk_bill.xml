@@ -30,7 +30,7 @@
             />
 
         <TextView
-            android:id="@+id/start_dte_txt"
+            android:id="@+id/start_date_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintRight_toLeftOf="@id/parititon"
@@ -47,15 +47,16 @@
             android:id="@+id/start_dte_edit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintRight_toLeftOf="@id/parititon"
-            app:layout_constraintTop_toBottomOf="@id/start_dte_txt"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginTop="10dp"
-            android:hint="DD/MM/YY"
             android:layout_marginHorizontal="10dp"
-            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:hint="DD/MM/YY"
             android:paddingHorizontal="16dp"
-            />
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/end_dte_txt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/parititon"
+            app:layout_constraintTop_toBottomOf="@id/start_date_text" />
 
         <TextView
             android:id="@+id/end_dte_txt"

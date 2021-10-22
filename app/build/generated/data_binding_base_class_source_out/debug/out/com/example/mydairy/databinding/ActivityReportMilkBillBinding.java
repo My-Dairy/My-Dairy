@@ -40,15 +40,15 @@ public final class ActivityReportMilkBillBinding implements ViewBinding {
   public final Button searchBtn;
 
   @NonNull
-  public final EditText startDteEdit;
+  public final TextView startDateText;
 
   @NonNull
-  public final TextView startDteTxt;
+  public final EditText startDteEdit;
 
   private ActivityReportMilkBillBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText endDteEdit, @NonNull TextView endDteTxt, @NonNull ListView milkBillRecycler,
       @NonNull View parititon, @NonNull Button resetBtn, @NonNull Button searchBtn,
-      @NonNull EditText startDteEdit, @NonNull TextView startDteTxt) {
+      @NonNull TextView startDateText, @NonNull EditText startDteEdit) {
     this.rootView = rootView;
     this.endDteEdit = endDteEdit;
     this.endDteTxt = endDteTxt;
@@ -56,8 +56,8 @@ public final class ActivityReportMilkBillBinding implements ViewBinding {
     this.parititon = parititon;
     this.resetBtn = resetBtn;
     this.searchBtn = searchBtn;
+    this.startDateText = startDateText;
     this.startDteEdit = startDteEdit;
-    this.startDteTxt = startDteTxt;
   }
 
   @Override
@@ -123,20 +123,20 @@ public final class ActivityReportMilkBillBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.start_date_text;
+      TextView startDateText = rootView.findViewById(id);
+      if (startDateText == null) {
+        break missingId;
+      }
+
       id = R.id.start_dte_edit;
       EditText startDteEdit = rootView.findViewById(id);
       if (startDteEdit == null) {
         break missingId;
       }
 
-      id = R.id.start_dte_txt;
-      TextView startDteTxt = rootView.findViewById(id);
-      if (startDteTxt == null) {
-        break missingId;
-      }
-
       return new ActivityReportMilkBillBinding((ConstraintLayout) rootView, endDteEdit, endDteTxt,
-          milkBillRecycler, parititon, resetBtn, searchBtn, startDteEdit, startDteTxt);
+          milkBillRecycler, parititon, resetBtn, searchBtn, startDateText, startDteEdit);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

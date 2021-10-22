@@ -2481,6 +2481,7 @@ id coordinator
 id cos
 id counterclockwise
 id countryCodeHolder
+id cow_logo
 id cow_purchase_editText
 id cow_purchase_txt
 id cow_selling_editText
@@ -2488,6 +2489,7 @@ id cow_selling_txt
 id custom
 id customPanel
 id cut
+id dairy_part
 id dan_khan_recycler
 id dark
 id dataBinding
@@ -2861,6 +2863,7 @@ id start
 id startHorizontal
 id startToEnd
 id startVertical
+id start_date_text
 id start_dte_edit
 id start_dte_txt
 id staticLayout
@@ -2946,6 +2949,7 @@ id textview_sign_up_email
 id time
 id title
 id titleDividerNoCustom
+id title_desc
 id title_template
 id title_welcome
 id toggle

@@ -4,6 +4,8 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -11,13 +13,27 @@ import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivitySplashBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private ActivitySplashBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final ImageView cowLogo;
+
+  @NonNull
+  public final TextView dairyPart;
+
+  @NonNull
+  public final TextView titleDesc;
+
+  private ActivitySplashBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView cowLogo,
+      @NonNull TextView dairyPart, @NonNull TextView titleDesc) {
     this.rootView = rootView;
+    this.cowLogo = cowLogo;
+    this.dairyPart = dairyPart;
+    this.titleDesc = titleDesc;
   }
 
   @Override
@@ -43,10 +59,31 @@ public final class ActivitySplashBinding implements ViewBinding {
 
   @NonNull
   public static ActivitySplashBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.cow_logo;
+      ImageView cowLogo = rootView.findViewById(id);
+      if (cowLogo == null) {
+        break missingId;
+      }
 
-    return new ActivitySplashBinding((ConstraintLayout) rootView);
+      id = R.id.dairy_part;
+      TextView dairyPart = rootView.findViewById(id);
+      if (dairyPart == null) {
+        break missingId;
+      }
+
+      id = R.id.title_desc;
+      TextView titleDesc = rootView.findViewById(id);
+      if (titleDesc == null) {
+        break missingId;
+      }
+
+      return new ActivitySplashBinding((ConstraintLayout) rootView, cowLogo, dairyPart, titleDesc);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

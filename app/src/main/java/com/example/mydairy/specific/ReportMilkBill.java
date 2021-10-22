@@ -175,6 +175,8 @@ public class ReportMilkBill extends AppCompatActivity {
 
                     try {
                         Date date1 = new SimpleDateFormat("MM/dd/yy", Locale.US).parse(date);
+                        System.out.println("ooooo"+date);
+                        System.out.println("ooooo"+date1);
                         if((date1.compareTo(datemin)>=0)&&(date1.compareTo(datemax)<=0))
                         {
                             for(DataSnapshot snapshot1:snapshot.getChildren())

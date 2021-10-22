@@ -31,6 +31,9 @@ public final class ActivityReportRoiBinding implements ViewBinding {
   public final View parititon;
 
   @NonNull
+  public final Button resetBtn;
+
+  @NonNull
   public final ListView roiRecycler;
 
   @NonNull
@@ -43,12 +46,14 @@ public final class ActivityReportRoiBinding implements ViewBinding {
   public final TextView startDteTxt;
 
   private ActivityReportRoiBinding(@NonNull ConstraintLayout rootView, @NonNull EditText endDteEdit,
-      @NonNull TextView endDteTxt, @NonNull View parititon, @NonNull ListView roiRecycler,
-      @NonNull Button searchBtn, @NonNull EditText startDteEdit, @NonNull TextView startDteTxt) {
+      @NonNull TextView endDteTxt, @NonNull View parititon, @NonNull Button resetBtn,
+      @NonNull ListView roiRecycler, @NonNull Button searchBtn, @NonNull EditText startDteEdit,
+      @NonNull TextView startDteTxt) {
     this.rootView = rootView;
     this.endDteEdit = endDteEdit;
     this.endDteTxt = endDteTxt;
     this.parititon = parititon;
+    this.resetBtn = resetBtn;
     this.roiRecycler = roiRecycler;
     this.searchBtn = searchBtn;
     this.startDteEdit = startDteEdit;
@@ -100,6 +105,12 @@ public final class ActivityReportRoiBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.reset_btn;
+      Button resetBtn = rootView.findViewById(id);
+      if (resetBtn == null) {
+        break missingId;
+      }
+
       id = R.id.roi_recycler;
       ListView roiRecycler = rootView.findViewById(id);
       if (roiRecycler == null) {
@@ -125,7 +136,7 @@ public final class ActivityReportRoiBinding implements ViewBinding {
       }
 
       return new ActivityReportRoiBinding((ConstraintLayout) rootView, endDteEdit, endDteTxt,
-          parititon, roiRecycler, searchBtn, startDteEdit, startDteTxt);
+          parititon, resetBtn, roiRecycler, searchBtn, startDteEdit, startDteTxt);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

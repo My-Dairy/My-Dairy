@@ -41,6 +41,7 @@ public class SplashActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     public static int flag_for_loc_dialog =0;
     String selectedLanguage = "English";
+    int flag = 0;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
 
@@ -59,100 +60,126 @@ public class SplashActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        View logo = findViewById(R.id.cow_logo);
+        View logo1 = findViewById(R.id.dairy_part);
+        View logo2 = findViewById(R.id.title_desc);
+
+        //Initializing the user and getting the user.
+        firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = firebaseAuth.getCurrentUser();
+
+        // If user is not added until now.
+        if(user == null){
+            flag = 0;
+        }
+        else
+        {
+            // Getting user id and checking if the user's folder in database is made or not.
+            String keyid = user.getUid();
+            database = FirebaseDatabase.getInstance();
+            databaseReference = database.getReference();
+
+            databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    // If the user's database is made.
+                    if(snapshot.hasChild(keyid))
+                    {
+                        flag = 1;
+                    }
+                    else
+                    {
+                        flag = 2;
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
+        }
+
         //Using timer handler method to sleep app for 2 seconds.
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
 
-                //Initializing the user and getting the user.
-                firebaseAuth = FirebaseAuth.getInstance();
-                FirebaseUser user = firebaseAuth.getCurrentUser();
+                logo.animate().translationX(-1500).setDuration(500);
+                logo1.animate().translationX(-1500).setDuration(500);
+                logo2.animate().translationX(-1500).setDuration(500);
 
-                // If user is not added until now.
-                if(user == null){
-                    showAlertDialog();
-                }
-                else
-                {
-                    // Getting user id and checking if the user's folder in database is made or not.
-                    String keyid = user.getUid();
-                    database = FirebaseDatabase.getInstance();
-                    databaseReference = database.getReference();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
 
-                    databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            // If the user's database is made.
-                            if(snapshot.hasChild(keyid))
-                            {
-                                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                                SplashActivity.this.startActivity(intent);
-                                SplashActivity.this.finish();
-                            }
-                            else
-                            {
-                                // If the user's database is not made.
-                                Intent intent = new Intent(SplashActivity.this, UserDetails.class);
-                                SplashActivity.this.startActivity(intent);
-                                SplashActivity.this.finish();
-                            }
+                        if(flag == 0){
+                            showAlertDialog();
+                        }
+                        else if(flag==1)
+                        {
+                            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                            SplashActivity.this.startActivity(intent);
+                            SplashActivity.this.finish();
+                        }
+                        else
+                        {
+                            // If the user's database is not made.
+                            Intent intent = new Intent(SplashActivity.this, UserDetails.class);
+                            SplashActivity.this.startActivity(intent);
+                            SplashActivity.this.finish();
                         }
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
-
-                        }
-                    });
-
-
-                }
+                    }
+                }, 300);
 
             }
         }, 2200);
+
     }
 
-        private void showAlertDialog() {
+    private void showAlertDialog() {
 
-            // Initializing for dialog box.
-            dialog = new Dialog(SplashActivity.this);
-            dialog.setContentView(R.layout.dialog_lnguage_wlcm);
-            dialog.getWindow().setBackgroundDrawableResource(R.drawable.dialog_welcome);
-            dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            dialog.setCancelable(false);
+        // Initializing for dialog box.
+        dialog = new Dialog(SplashActivity.this);
+        dialog.setContentView(R.layout.dialog_lnguage_wlcm);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.dialog_welcome);
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.setCancelable(false);
 
-            // Initializing Spinner.
-            Spinner spinner = dialog.findViewById(R.id.language_spinner);
-            ArrayAdapter ad = new ArrayAdapter(this, R.layout.spinner_text, language);
-            ad.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Initializing Spinner.
+        Spinner spinner = dialog.findViewById(R.id.language_spinner);
+        ArrayAdapter ad = new ArrayAdapter(this, R.layout.spinner_text, language);
+        ad.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-            //Setting adapter of array Language.
-            spinner.setAdapter(ad);
+        //Setting adapter of array Language.
+        spinner.setAdapter(ad);
 
-            //Showing dialog box.
-            Button Next = (Button) dialog.findViewById(R.id.next_btn);
-            dialog.show();
+        //Showing dialog box.
+        Button Next = (Button) dialog.findViewById(R.id.next_btn);
+        dialog.show();
 
-            // Checking if next button is clicked.
-            Next.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    int position = spinner.getSelectedItemPosition();
+        // Checking if next button is clicked.
+        Next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int position = spinner.getSelectedItemPosition();
 
-                    if(position==0)
-                    {
-                        setLocale("en");
-                    }
-                    else
-                    {
-                        setLocale("gu");
-                    }
-
-                    dialog.dismiss();
-                    Intent intent = new Intent(SplashActivity.this, PhoneLoginActivity.class);
-                    startActivity(intent);
-                    finish();
+                if(position==0)
+                {
+                    setLocale("en");
                 }
-            });
+                else
+                {
+                    setLocale("gu");
+                }
+
+                dialog.dismiss();
+                Intent intent = new Intent(SplashActivity.this, PhoneLoginActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void setLocale(String localeCode){

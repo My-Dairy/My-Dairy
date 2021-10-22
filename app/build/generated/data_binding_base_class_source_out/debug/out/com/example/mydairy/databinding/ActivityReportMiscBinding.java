@@ -34,6 +34,9 @@ public final class ActivityReportMiscBinding implements ViewBinding {
   public final View parititon;
 
   @NonNull
+  public final Button resetBtn;
+
+  @NonNull
   public final Button searchBtn;
 
   @NonNull
@@ -44,13 +47,14 @@ public final class ActivityReportMiscBinding implements ViewBinding {
 
   private ActivityReportMiscBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText endDteEdit, @NonNull TextView endDteTxt, @NonNull ListView miscRecycler,
-      @NonNull View parititon, @NonNull Button searchBtn, @NonNull EditText startDteEdit,
-      @NonNull TextView startDteTxt) {
+      @NonNull View parititon, @NonNull Button resetBtn, @NonNull Button searchBtn,
+      @NonNull EditText startDteEdit, @NonNull TextView startDteTxt) {
     this.rootView = rootView;
     this.endDteEdit = endDteEdit;
     this.endDteTxt = endDteTxt;
     this.miscRecycler = miscRecycler;
     this.parititon = parititon;
+    this.resetBtn = resetBtn;
     this.searchBtn = searchBtn;
     this.startDteEdit = startDteEdit;
     this.startDteTxt = startDteTxt;
@@ -107,6 +111,12 @@ public final class ActivityReportMiscBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.reset_btn;
+      Button resetBtn = rootView.findViewById(id);
+      if (resetBtn == null) {
+        break missingId;
+      }
+
       id = R.id.search_btn;
       Button searchBtn = rootView.findViewById(id);
       if (searchBtn == null) {
@@ -126,7 +136,7 @@ public final class ActivityReportMiscBinding implements ViewBinding {
       }
 
       return new ActivityReportMiscBinding((ConstraintLayout) rootView, endDteEdit, endDteTxt,
-          miscRecycler, parititon, searchBtn, startDteEdit, startDteTxt);
+          miscRecycler, parititon, resetBtn, searchBtn, startDteEdit, startDteTxt);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
