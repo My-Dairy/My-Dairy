@@ -120,17 +120,6 @@ public class GraphFat extends AppCompatActivity {
 
         });
 
-//        Button Reset = (Button) findViewById(R.id.reset_btn);
-//
-//        Reset.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                loadalldata();
-//            }
-//
-//
-//        });
-
     }
 
     private void loadspecificdata() throws ParseException{
@@ -206,7 +195,7 @@ public class GraphFat extends AppCompatActivity {
                 } else {
                     // set data
                     mChart.setData(data);
-                    mChart.setBackgroundColor(Color.rgb(244, 117, 117));
+                    mChart.setBackgroundColor(Color.rgb(245,245,245));
                 }
                 mChart.getXAxis().setGranularityEnabled(true);
                 mChart.setNoDataText("Sorry! No Data Found");
@@ -282,7 +271,7 @@ public class GraphFat extends AppCompatActivity {
                 } else {
                     // set data
                     mChart2.setData(data);
-                    mChart2.setBackgroundColor(Color.rgb(244, 117, 117));
+                    mChart2.setBackgroundColor(Color.rgb(245,245,245));
                 }
 
                 mChart2.getXAxis().setGranularityEnabled(true);

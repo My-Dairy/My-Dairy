@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
@@ -15,14 +17,103 @@
             android:orientation="vertical"
             >
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:orientation="horizontal"
-                >
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/parititon"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:background="@color/black"
+                    android:layout_marginVertical="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/start_dte_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toLeftOf="@id/parititon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="20dp"
+                    android:text="Start Date"
+                    android:fontFamily="@font/times_new_roman"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/start_dte_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toLeftOf="@id/parititon"
+                    app:layout_constraintTop_toBottomOf="@id/start_dte_txt"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:hint="DD/MM/YY"
+                    android:focusableInTouchMode="false"
+                    android:inputType="date"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="14sp"
+                    android:paddingHorizontal="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/end_dte_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toLeftOf="@id/parititon"
+                    app:layout_constraintTop_toBottomOf="@id/start_dte_edit"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="15dp"
+                    android:text="End Date"
+                    android:fontFamily="@font/times_new_roman"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/end_dte_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toLeftOf="@id/parititon"
+                    app:layout_constraintTop_toBottomOf="@id/end_dte_txt"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:hint="DD/MM/YY"
+                    android:focusableInTouchMode="false"
+                    android:inputType="date"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="14sp"
+                    android:paddingHorizontal="16dp"
+                    />
+
+                <Button
+                    android:id="@+id/search_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@+id/parititon"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="Search"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/btn_login"
+                    android:fontFamily="@font/title_welcome"
+                    android:textColor="@color/white"
+                    />
 
 
-            </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -53,14 +144,15 @@
 
             </LinearLayout>
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                ></FrameLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+            </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

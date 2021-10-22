@@ -3,9 +3,14 @@ package com.example.mydairy.specific;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
 
 import com.example.mydairy.R;
 import com.github.mikephil.charting.charts.LineChart;
@@ -26,27 +31,117 @@ import com.google.firebase.database.ValueEventListener;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 public class GraphAmt extends AppCompatActivity {
 
     private LineChart mChart,mChart2;
     private DatabaseReference mPostReference,mPostReference2;
     ValueEventListener valueEventListener;
+    Calendar myCalendar, myCalendar1;
+    EditText startdate, enddate;
     ArrayList<Entry> yData_m,yData_e;
     ArrayList<String> xData_m,xData_e;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graph_amt);
 
+        //Setting the datepicker.
+        myCalendar = Calendar.getInstance();
+        startdate = (EditText) findViewById(R.id.start_dte_edit);
+
+        DatePickerDialog.OnDateSetListener date  = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, month);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                updateStartLabel();
+            }
+        };
+
+        startdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                DatePickerDialog datePickerDialog = new DatePickerDialog(GraphAmt.this, date, myCalendar
+                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH));
+
+                datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
+                datePickerDialog.show();
+            }
+        });
+
+        myCalendar1 = Calendar.getInstance();
+        enddate = (EditText) findViewById(R.id.end_dte_edit);
+        DatePickerDialog.OnDateSetListener date1 = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                myCalendar1.set(Calendar.YEAR, year);
+                myCalendar1.set(Calendar.MONTH, month);
+                myCalendar1.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                updateEndLabel();
+            }
+        };
+
+        enddate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                DatePickerDialog datePickerDialog = new DatePickerDialog(GraphAmt.this, date1, myCalendar1
+                        .get(Calendar.YEAR), myCalendar1.get(Calendar.MONTH),
+                        myCalendar1.get(Calendar.DAY_OF_MONTH));
+
+                datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
+                datePickerDialog.show();
+            }
+        });
+
+        Button Search = (Button) findViewById(R.id.search_btn);
+
+        Search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    loadspecificdata();
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                    System.out.println("SPPatel");
+                }
+            }
+
+        });
+
+    }
+
+    private void loadspecificdata() throws ParseException{
+
         // First Chart.
         mChart = (LineChart)findViewById(R.id.specific_graph);
         mChart.animateX(1000);
+
+        EditText Min = (EditText) findViewById(R.id.start_dte_edit);
+        String mindate = Min.getText().toString();
+        Date datemin = new SimpleDateFormat("MM/dd/yy", Locale.US).parse(mindate);
+        System.out.println("SPPatel: "+mindate);
+
+        EditText Max = (EditText) findViewById(R.id.end_dte_edit);
+        String maxdate = Max.getText().toString();
+        Date datemax = new SimpleDateFormat("MM/dd/yy", Locale.US).parse(maxdate);
+        System.out.println("SPPatel: "+maxdate);
+
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String keyid = user.getUid();
         mPostReference = FirebaseDatabase.getInstance().getReference().child("users").child(keyid).child("DailyEntry");
-        mPostReference.addValueEventListener(valueEventListener= new ValueEventListener() {
+        mPostReference.addListenerForSingleValueEvent(valueEventListener= new ValueEventListener() {
 
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot dataSnapshot) {
@@ -56,23 +151,31 @@ public class GraphAmt extends AppCompatActivity {
 
                 float i =0;
                 for (DataSnapshot ds : dataSnapshot.getChildren()){
+                    String date = ds.getKey();
+                    date = date.replace("-","/");
 
-                    for(DataSnapshot dataSnapshot1: ds.getChildren())
-                    {
-                        if(dataSnapshot1.getKey().toString().equals("morning"))
-                        {
-                            String SV = ds.child("morning").child("amount").getValue().toString();
-                            Float SensorValue = Float.parseFloat(SV);
+                    try {
+                        Date date1 = new SimpleDateFormat("MM/dd/yy", Locale.US).parse(date);
+                        if((date1.compareTo(datemin)>=0)&&(date1.compareTo(datemax)<=0)) {
+                            for (DataSnapshot dataSnapshot1 : ds.getChildren()) {
+                                if (dataSnapshot1.getKey().toString().equals("morning")) {
+                                    String SV = ds.child("morning").child("amount").getValue().toString();
+                                    Float SensorValue = Float.parseFloat(SV);
 
-                            i=i+1;
+                                    i = i + 1;
 
-                            yData_m.add(new Entry(i,SensorValue));
-                            xData_m.add(ds.getKey());
+                                    yData_m.add(new Entry(i, SensorValue));
+                                    xData_m.add(date);
+                                }
+                            }
                         }
+                    } catch (ParseException e) {
+                        e.printStackTrace();
                     }
+
                 }
 
-                final LineDataSet lineDataSet = new LineDataSet(yData_m,"Amt Morning");
+                final LineDataSet lineDataSet = new LineDataSet(yData_m,"Amount Morning");
                 LineData data = new LineData(lineDataSet);
                 XAxis xaxis =mChart.getXAxis();
                 xaxis.setPosition(XAxis.XAxisPosition.BOTTOM);
@@ -83,7 +186,7 @@ public class GraphAmt extends AppCompatActivity {
                 xaxis.setValueFormatter(new IAxisValueFormatter() {
                     @Override
                     public String getFormattedValue(float value, AxisBase axis) {
-                        return xData_m.get((int) value - 1);
+                        return xData_m.get((int) value % xData_m.size());
                     }
                 });
 
@@ -92,7 +195,7 @@ public class GraphAmt extends AppCompatActivity {
                 } else {
                     // set data
                     mChart.setData(data);
-                    mChart.setBackgroundColor(Color.rgb(244, 117, 117));
+                    mChart.setBackgroundColor(Color.rgb(245,245,245));
                 }
                 mChart.getXAxis().setGranularityEnabled(true);
                 mChart.setNoDataText("Sorry! No Data Found");
@@ -107,10 +210,12 @@ public class GraphAmt extends AppCompatActivity {
             }
         });
 
-
-        // Second Chart.
+        //Second Chart
         mChart2 = (LineChart)findViewById(R.id.specific_graph1);
         mChart2.animateX(1000);
+
+//        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+//        String keyid = user.getUid();
 
         mPostReference2 = FirebaseDatabase.getInstance().getReference().child("users").child(keyid).child("DailyEntry");
         mPostReference2.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -123,23 +228,30 @@ public class GraphAmt extends AppCompatActivity {
 
                 float i = 0;
                 for (DataSnapshot ds : dataSnapshot.getChildren()){
+                    String date = ds.getKey();
+                    date = date.replace("-","/");
+                    try {
+                        Date date1 = new SimpleDateFormat("MM/dd/yy", Locale.US).parse(date);
+                        if ((date1.compareTo(datemin) >= 0) && (date1.compareTo(datemax) <= 0)) {
 
-                    for(DataSnapshot dataSnapshot1: ds.getChildren())
-                    {
-                        if(dataSnapshot1.getKey().toString().equals("evening"))
-                        {
-                            String SV = ds.child("evening").child("amount").getValue().toString();
-                            Float SensorValue = Float.parseFloat(SV);
+                            for (DataSnapshot dataSnapshot1 : ds.getChildren()) {
+                                if (dataSnapshot1.getKey().toString().equals("evening")) {
+                                    String SV = ds.child("evening").child("amount").getValue().toString();
+                                    Float SensorValue = Float.parseFloat(SV);
 
-                            i=i+1;
+                                    i = i + 1;
 
-                            yData_e.add(new Entry(i,SensorValue));
-                            xData_e.add(ds.getKey());
+                                    yData_e.add(new Entry(i, SensorValue));
+                                    xData_e.add(date);
+                                }
+                            }
                         }
+                    }catch (ParseException e) {
+                        e.printStackTrace();
                     }
                 }
 
-                final LineDataSet lineDataSet = new LineDataSet(yData_e,"Amt Evening");
+                final LineDataSet lineDataSet = new LineDataSet(yData_e,"Amount Evening");
                 LineData data = new LineData(lineDataSet);
                 XAxis xaxis =mChart2.getXAxis();
                 xaxis.setPosition(XAxis.XAxisPosition.BOTTOM);
@@ -150,7 +262,7 @@ public class GraphAmt extends AppCompatActivity {
                 xaxis.setValueFormatter(new IAxisValueFormatter() {
                     @Override
                     public String getFormattedValue(float value, AxisBase axis) {
-                        return xData_e.get((int) value - 1);
+                        return xData_e.get((int) value % xData_e.size());
                     }
                 });
 
@@ -159,7 +271,7 @@ public class GraphAmt extends AppCompatActivity {
                 } else {
                     // set data
                     mChart2.setData(data);
-                    mChart2.setBackgroundColor(Color.rgb(244, 117, 117));
+                    mChart2.setBackgroundColor(Color.rgb(245,245,245));
                 }
 
                 mChart2.getXAxis().setGranularityEnabled(true);
@@ -174,5 +286,23 @@ public class GraphAmt extends AppCompatActivity {
             }
         });
 
+
     }
+
+
+    private void updateEndLabel() {
+        String myFormat = "MM/dd/yy"; //In which you need put here
+        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+        enddate.setText(sdf.format(myCalendar1.getTime()));
+    }
+
+    private void updateStartLabel() {
+        String myFormat = "MM/dd/yy"; //In which you need put here
+        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+        startdate.setText(sdf.format(myCalendar.getTime()));
+    }
+
+
 }
