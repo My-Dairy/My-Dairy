@@ -7,6 +7,7 @@
     tools:context=".entry.LabourEntryActivity"
     android:orientation="vertical">
 
+    <!-- Action Bar. -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -22,28 +23,29 @@
         app:layout_constraintRight_toRightOf="parent"
         />
 
+    <!-- Scrolling View. -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="55dp">
 
+        <!-- Taking one Frame. -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
+            <!-- For pairing TextView and EditText. -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="25dp"
-                >
+                android:layout_marginTop="25dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Salary"
+                    android:text="@string/salary"
                     android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
@@ -55,29 +57,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:id="@+id/monthly_editText"
-                    android:hint="Enter the monthly salary (Rs)"
+                    android:hint="@string/enter_mnthly_slry"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:elevation="4dp"
                     android:fontFamily="@font/times_new_roman"
                     android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
                     />
 
             </LinearLayout>
 
-
+            <!-- For pairing TextView and EditText. -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="25dp"
-                >
+                android:layout_marginTop="25dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Withdrawal Balance"
+                    android:text="@string/withdrwl_blnce"
                     android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
@@ -90,27 +93,29 @@
                     android:layout_height="50dp"
                     android:id="@+id/withdraw_editText"
                     android:fontFamily="@font/times_new_roman"
-                    android:hint="Enter the amount in (Rs)"
+                    android:hint="@string/entr_emnt_in_rs"
                     android:elevation="4dp"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
                     />
 
             </LinearLayout>
 
+            <!-- For pairing TextView and EditText. -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="25dp"
-                >
+                android:layout_marginTop="25dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Deposit Balance"
+                    android:text="@string/deposit_blnce"
                     android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
@@ -122,29 +127,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:id="@+id/balance_editText"
-                    android:hint="Enter the amount in (Rs)"
+                    android:hint="@string/entr_emnt_in_rs"
                     android:elevation="4dp"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:fontFamily="@font/times_new_roman"
                     android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
                     />
 
             </LinearLayout>
 
-
+            <!-- For pairing TextView and EditText. -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="25dp"
-                >
+                android:layout_marginTop="25dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Other Work"
+                    android:text="@string/other_wrk"
                     android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
@@ -158,10 +164,13 @@
                     android:fontFamily="@font/times_new_roman"
                     android:id="@+id/typeOfWork_editText"
                     android:elevation="4dp"
-                    android:hint="Specify the type of work"
+                    android:hint="@string/specify_type_of_wrk"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:background="@drawable/main_btn"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
                     />
 
                 <EditText
@@ -169,21 +178,22 @@
                     android:layout_height="50dp"
                     android:id="@+id/amount_editText"
                     android:fontFamily="@font/times_new_roman"
-                    android:hint="Enter the amount in (Rs)"
+                    android:hint="@string/entr_emnt_in_rs"
                     android:elevation="4dp"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:background="@drawable/main_btn"
                     android:layout_marginTop="10dp"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
                     />
 
-
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
 
+    <!-- Floating Action Button. -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/save_btn"
         android:layout_width="55dp"
@@ -195,6 +205,7 @@
         android:backgroundTint="@color/primary_color"
         android:layout_marginEnd="25dp"
         android:src="@drawable/ic_baseline_chevron_right_24"
+        android:contentDescription="@string/save_dtl"
         />
 
 </RelativeLayout>

@@ -52,6 +52,54 @@
     <string name="log_in">Log in</string>
 
 
+    <!--activity_entry_dashboard.xml-->
+    <string name="daily_entry">Daily Entry</string>
+    <string name="dava_daru">Dava/Daru(E)</string>
+    <string name="dan_khan">Dan/Khan(E)</string>
+    <string name="labour_chrge">Labour Charge</string>
+    <string name="roi">ROI</string>
+    <string name="gass_charo">GassCharo</string>
+    <string name="misc">Miscellaneous</string>
+    <string name="investment">Investment</string>
+
+
+    <!--activity_fat_graph.xml-->
+    <string name="start_dte">Start Date</string>
+    <string name="ddmmyyyy">DD/MM/YY</string>
+    <string name="end_dte">End Date</string>
+    <string name="search">Search</string>
+
+
+    <!--activity_gass_charo_entry.xml-->
+    <string name="sukocharo">Sukocharo</string>
+    <string name="fertilizer">Fertilizers</string>
+    <string name="seeds">Seeds</string>
+    <string name="lilocharo">Lilocharo</string>
+    <string name="tractr_chrge">Tractor Charge</string>
+    <string name="unalu_sudhiyu">Unalu Sudhiyu</string>
+    <string name="amount">Amount (Rs)</string>
+    <string name="enter_here">Enter here</string>
+    <string name="quantity">Quantity (Kg)</string>
+    <string name="other">Other</string>
+    <string name="sidhiyu">Sidhiyu</string>
+    <string name="guvariyu">Guvariyu</string>
+    <string name="makaiyu">Makaiyu</string>
+    <string name="guno">Guno</string>
+    <string name="type">Type: </string>
+
+
+    <!--activity_graph_amt.xml-->
+    <!--activity_graph_qty.xml-->
+
+    <!--activity_labour_entry.xml-->
+    <string name="enter_mnthly_slry">Enter the monthly salary (Rs)</string>
+    <string name="entr_emnt_in_rs">Enter the amount in (Rs)</string>
+    <string name="specify_type_of_wrk">Specify the type of work</string>
+    <string name="other_wrk">Other Work</string>
+    <string name="deposit_blnce">Deposit Balance</string>
+    <string name="withdrwl_blnce">Withdrawal Balance</string>
+
+
     <!--dialog_box.xml-->
     <string name="welcome_dairy">Welcome to My-Dairy</string>
     <string name="select_language">Select Your Language: </string>

@@ -7,6 +7,7 @@
     tools:context=".entry.GassCharoEntryActivity"
     android:orientation="vertical">
 
+    <!-- Action Bar. -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -18,18 +19,20 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
+    <!-- Scrolling View. -->
     <ScrollView
         android:layout_marginTop="55dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/scrollView">
 
+        <!-- Taking one Frame. -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
+            <!-- SukoCharo Frame -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -37,13 +40,13 @@
                 android:background="@drawable/bg_frame"
                 android:layout_marginTop="20dp"
                 android:elevation="2dp"
-                android:layout_marginHorizontal="20dp"
-                >
+                android:layout_marginHorizontal="20dp">
 
+                <!-- Suko CHaro Title -->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sukocharo"
+                    android:text="@string/sukocharo"
                     android:fontFamily="@font/bookos"
                     android:layout_marginTop="10dp"
                     android:textSize="22sp"
@@ -51,11 +54,11 @@
                     android:textColor="#303030"
                     />
 
-
+                <!-- CheckBox -->
                 <TextView
                     android:layout_width="350dp"
                     android:layout_height="40dp"
-                    android:text="Type: "
+                    android:text="@string/type"
                     android:fontFamily="@font/bookos"
                     android:layout_marginTop="20dp"
                     android:textColor="@color/hint_dark"
@@ -63,12 +66,11 @@
                     android:layout_marginHorizontal="32dp"
                     />
 
-
                 <CheckBox
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="60dp"
-                    android:text="Guno"
+                    android:text="@string/guno"
                     android:fontFamily="@font/times_new_roman"
                     android:id="@+id/cb_1"
                     android:textSize="16sp"
@@ -78,50 +80,57 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="60dp"
-                    android:text="Makaiyu"
+                    android:text="@string/makaiyu"
                     android:fontFamily="@font/times_new_roman"
                     android:textSize="16sp"
                     android:id="@+id/cb_2"
-                    android:textColor="@color/hint"/>
+                    android:textColor="@color/hint"
+                    />
+
                 <CheckBox
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="60dp"
-                    android:text="Guvariyu"
+                    android:text="@string/guvariyu"
                     android:fontFamily="@font/times_new_roman"
                     android:textSize="16sp"
                     android:id="@+id/cb_3"
-                    android:textColor="@color/hint"/>
+                    android:textColor="@color/hint"
+                    />
+
                 <CheckBox
                     android:layout_width="match_parent"
                     android:id="@+id/cb_4"
                     android:layout_height="match_parent"
                     android:layout_marginStart="60dp"
-                    android:text="Sidhiyu"
+                    android:text="@string/sidhiyu"
                     android:fontFamily="@font/times_new_roman"
                     android:textSize="16sp"
-                    android:textColor="@color/hint"/>
+                    android:textColor="@color/hint"
+                    />
+
                 <CheckBox
                     android:id="@+id/cb_5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="60dp"
-                    android:text="Other"
+                    android:text="@string/other"
                     android:fontFamily="@font/times_new_roman"
                     android:textSize="16sp"
-                    android:textColor="@color/hint"/>
+                    android:textColor="@color/hint"
+                    />
 
+                <!-- Input for Quantity. -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="25dp"
-                    >
+                    android:layout_marginTop="25dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Quantity (Kg)"
+                        android:text="@string/quantity"
                         android:fontFamily="@font/bookos"
                         android:layout_marginHorizontal="32dp"
                         android:layout_marginBottom="5dp"
@@ -133,28 +142,30 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:elevation="2dp"
-                        android:hint="Enter here"
+                        android:hint="@string/enter_here"
                         android:fontFamily="@font/times_new_roman"
                         android:id="@+id/quantity_editText"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
                         android:inputType="number"
                         android:background="@drawable/main_btn"
+                        android:importantForAutofill="no"
                         />
 
                 </LinearLayout>
 
+                <!-- Input for Amount. -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="25dp"
-                    >
+                    android:layout_marginTop="25dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Amount (Rs)"
+                        android:text="@string/amount"
                         android:fontFamily="@font/bookos"
                         android:layout_marginHorizontal="32dp"
                         android:layout_marginBottom="5dp"
@@ -166,21 +177,22 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:id="@+id/sukocharoAmount_editText"
-                        android:hint="Enter the amount"
+                        android:hint="@string/enter_amount"
                         android:elevation="2dp"
                         android:fontFamily="@font/times_new_roman"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
                         android:inputType="numberDecimal"
                         android:background="@drawable/main_btn"
                         android:layout_marginBottom="15dp"
+                        android:importantForAutofill="no"
                         />
 
                 </LinearLayout>
-
             </LinearLayout>
 
-
+            <!-- Frame for Unalu Sudhiyu. -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -188,14 +200,13 @@
                 android:elevation="2dp"
                 android:background="@drawable/bg_frame"
                 android:layout_marginTop="20dp"
-                android:layout_marginHorizontal="20dp"
-                >
+                android:layout_marginHorizontal="20dp">
 
-
+                <!-- UnaluSudhiyu Title. -->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Unalu Sudhiyu"
+                    android:text="@string/unalu_sudhiyu"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/bookos"
                     android:textSize="22sp"
@@ -203,18 +214,17 @@
                     android:textColor="#303030"
                     />
 
-
+                <!-- Input for Tractor Charge. -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="25dp"
-                    >
+                    android:layout_marginTop="25dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Tractor Charge"
+                        android:text="@string/tractr_chrge"
                         android:fontFamily="@font/bookos"
                         android:layout_marginHorizontal="32dp"
                         android:layout_marginBottom="5dp"
@@ -226,29 +236,30 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:id="@+id/tractorCharge_editText"
-                        android:hint="Enter the amount"
+                        android:hint="@string/enter_amount"
                         android:elevation="2dp"
                         android:fontFamily="@font/times_new_roman"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
                         android:inputType="numberDecimal"
                         android:background="@drawable/main_btn"
+                        android:importantForAutofill="no"
                         />
 
                 </LinearLayout>
 
-
+                <!-- Input for Seeds. -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="25dp"
-                    >
+                    android:layout_marginTop="25dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Seeds"
+                        android:text="@string/seeds"
                         android:layout_marginHorizontal="32dp"
                         android:layout_marginBottom="5dp"
                         android:textSize="17sp"
@@ -260,29 +271,30 @@
                         android:layout_width="match_parent"
                         android:id="@+id/seeds_editText"
                         android:layout_height="50dp"
-                        android:hint="Enter the amount"
+                        android:hint="@string/enter_amount"
                         android:elevation="2dp"
                         android:fontFamily="@font/times_new_roman"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
                         android:inputType="numberDecimal"
                         android:background="@drawable/main_btn"
+                        android:importantForAutofill="no"
                         />
 
                 </LinearLayout>
 
-
+                <!-- Input for Fertilizers. -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="25dp"
-                    >
+                    android:layout_marginTop="25dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Fertilizers"
+                        android:text="@string/fertilizer"
                         android:fontFamily="@font/bookos"
                         android:layout_marginHorizontal="32dp"
                         android:layout_marginBottom="5dp"
@@ -294,29 +306,30 @@
                         android:id="@+id/fertilizers_editText"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:hint="Enter the amount"
+                        android:hint="@string/enter_amount"
                         android:elevation="2dp"
                         android:fontFamily="@font/times_new_roman"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
                         android:inputType="numberDecimal"
                         android:background="@drawable/main_btn"
+                        android:importantForAutofill="no"
                         />
 
                 </LinearLayout>
 
-
+                <!-- Input for Labour Charge. -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="25dp"
-                    >
+                    android:layout_marginTop="25dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Labour Charge"
+                        android:text="@string/labour_chrge"
                         android:fontFamily="@font/bookos"
                         android:layout_marginHorizontal="32dp"
                         android:layout_marginBottom="5dp"
@@ -328,21 +341,22 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:id="@+id/labourCharge_editText"
-                        android:hint="Enter the amount"
+                        android:hint="@string/enter_amount"
                         android:elevation="2dp"
                         android:fontFamily="@font/times_new_roman"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
                         android:inputType="numberDecimal"
                         android:background="@drawable/main_btn"
                         android:layout_marginBottom="20dp"
+                        android:importantForAutofill="no"
                         />
 
                 </LinearLayout>
-
             </LinearLayout>
 
-
+            <!-- Frame for Lilo Charo. -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -351,13 +365,12 @@
                 android:elevation="2dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginBottom="80dp"
-                >
+                android:layout_marginBottom="80dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Lilocharo"
+                    android:text="@string/lilocharo"
                     android:fontFamily="@font/bookos"
                     android:layout_marginTop="10dp"
                     android:textSize="22sp"
@@ -365,18 +378,17 @@
                     android:textColor="#303030"
                     />
 
-
+                <!-- Input for Seeds. -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="25dp"
-                    >
+                    android:layout_marginTop="25dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Seeds"
+                        android:text="@string/seeds"
                         android:fontFamily="@font/bookos"
                         android:layout_marginHorizontal="32dp"
                         android:layout_marginBottom="5dp"
@@ -389,28 +401,29 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:fontFamily="@font/times_new_roman"
-                        android:hint="Enter the amount"
+                        android:hint="@string/enter_amount"
                         android:elevation="2dp"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
                         android:inputType="numberDecimal"
                         android:background="@drawable/main_btn"
+                        android:importantForAutofill="no"
                         />
 
                 </LinearLayout>
 
-
+                <!-- Input for Fertilizers. -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="25dp"
-                    >
+                    android:layout_marginTop="25dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Fertilizers"
+                        android:text="@string/fertilizer"
                         android:fontFamily="@font/bookos"
                         android:layout_marginHorizontal="32dp"
                         android:layout_marginBottom="5dp"
@@ -422,25 +435,24 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:fontFamily="@font/times_new_roman"
-                        android:hint="Enter the amount"
+                        android:hint="@string/enter_amount"
                         android:elevation="2dp"
                         android:layout_marginHorizontal="20dp"
                         android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
                         android:id="@+id/lilocharoFertilizers_editText"
                         android:inputType="numberDecimal"
                         android:background="@drawable/main_btn"
                         android:layout_marginBottom="20dp"
+                        android:importantForAutofill="no"
                         />
 
                 </LinearLayout>
-
             </LinearLayout>
-
         </LinearLayout>
-
-
     </ScrollView>
 
+    <!-- Floating Action Button -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/save_btn"
         android:layout_width="55dp"
@@ -452,6 +464,7 @@
         android:backgroundTint="@color/primary_color"
         android:layout_marginEnd="25dp"
         android:src="@drawable/ic_baseline_chevron_right_24"
+        android:contentDescription="@string/save_dtl"
         />
 
 </RelativeLayout>

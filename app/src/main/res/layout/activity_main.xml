@@ -9,11 +9,13 @@
     tools:context=".MainActivity"
     tools:openDrawer="start">
 
+    <!-- Linear in Drawer Layout. -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!-- Action Bar -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -23,18 +25,20 @@
             app:titleTextAppearance="@style/TitleText"
             app:titleTextColor="@color/white"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
 
-
+        <!-- For Fragment -->
         <FrameLayout
             android:id="@+id/flframelayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
 
     </LinearLayout>
 
-
+    <!-- Navigation View. -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
@@ -47,6 +51,7 @@
         app:itemTextColor="@color/black"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_sidebar"
-        app:menu="@menu/activity_sidebar_drawer" />
+        app:menu="@menu/activity_sidebar_drawer"
+        />
 
 </androidx.drawerlayout.widget.DrawerLayout>

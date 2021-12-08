@@ -8,7 +8,7 @@
     tools:context=".entry.DailyEntryActivity">
 
 
-
+    <!-- Action Bar. -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -24,20 +24,20 @@
         app:layout_constraintRight_toRightOf="parent"
         />
 
-
+    <!-- Scrolling View. -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="55dp"
-        >
+        android:layout_marginTop="55dp">
 
+        <!-- Taking One Frame. -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="15dp"
-            android:layout_marginHorizontal="10dp"
-            >
+            android:layout_marginHorizontal="10dp">
 
+            <!-- Divider Line -->
             <View
                 android:id="@+id/divider"
                 android:layout_width="1dp"
@@ -48,6 +48,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 />
 
+            <!-- Card For Daily Entry -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_0"
                 android:layout_width="0dp"
@@ -64,13 +65,15 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/dailyentry"
+                        android:contentDescription="@string/daily_entry"
                         />
 
                     <TextView
@@ -78,16 +81,18 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/hint"
-                        android:text="Daily Entry"
+                        android:text="@string/daily_entry"
                         android:textSize="16sp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/bookos"
                         android:textAlignment="center"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-
+            <!-- Card for Dava/Daru Entry -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_1"
                 android:layout_width="0dp"
@@ -97,26 +102,28 @@
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toRightOf="@+id/divider"
-                >
+                app:layout_constraintLeft_toRightOf="@+id/divider">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/davadarus"/>
+                        android:background="@drawable/davadarus"
+                        android:contentDescription="@string/dava_daru"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dava/Daru(E)"
+                        android:text="@string/dava_daru"
                         android:textColor="@color/hint"
                         android:textSize="16sp"
                         android:layout_marginTop="10dp"
@@ -125,9 +132,11 @@
                         android:textStyle="bold"
                         android:layout_marginBottom="10dp"
                         />
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Card for Dan Khan. -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_2"
                 android:layout_width="0dp"
@@ -137,37 +146,41 @@
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toBottomOf="@+id/card_0"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="@+id/divider"
-                >
+                app:layout_constraintRight_toRightOf="@+id/divider">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/dankhns"
+                        android:contentDescription="@string/dan_khan"
                         />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dan/Khan(E)"
+                        android:text="@string/dan_khan"
                         android:textColor="@color/hint"
                         android:textSize="16sp"
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/bookos"
                         android:textAlignment="center"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Card for Labour Charge. -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_3"
                 android:layout_width="0dp"
@@ -177,37 +190,41 @@
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toBottomOf="@+id/card_1"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toRightOf="@+id/divider"
-                >
+                app:layout_constraintLeft_toRightOf="@+id/divider">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/labourchrgs"/>
+                        android:background="@drawable/labourchrgs"
+                        android:contentDescription="@string/labour_chrge"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Labour Charge"
+                        android:text="@string/labour_chrge"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/hint"
                         android:textSize="16sp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/bookos"
                         android:textAlignment="center"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-
+            <!-- Card for ROI. -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_4"
                 android:layout_width="0dp"
@@ -217,36 +234,41 @@
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toBottomOf="@+id/card_2"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="@+id/divider"
-                >
+                app:layout_constraintRight_toRightOf="@+id/divider">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/rois"/>
+                        android:background="@drawable/rois"
+                        android:contentDescription="@string/roi"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ROI"
+                        android:text="@string/roi"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/hint"
                         android:textSize="16sp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/bookos"
                         android:textAlignment="center"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Card for Gass Charo. -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_5"
                 android:layout_width="0dp"
@@ -263,18 +285,21 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/gasscharos"/>
+                        android:background="@drawable/gasscharos"
+                        android:contentDescription="@string/gass_charo"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="GassCharo"
+                        android:text="@string/gass_charo"
                         android:fontFamily="@font/bookos"
                         android:textAlignment="center"
                         android:textColor="@color/hint"
@@ -283,9 +308,11 @@
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
                         />
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Card for Miscellaneous. -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_6"
                 android:layout_width="0dp"
@@ -295,36 +322,41 @@
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toBottomOf="@+id/card_4"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="@+id/divider"
-                >
+                app:layout_constraintRight_toRightOf="@+id/divider">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/miscs"/>
+                        android:background="@drawable/miscs"
+                        android:contentDescription="@string/misc"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Miscellaneous"
+                        android:text="@string/misc"
                         android:textColor="@color/hint"
                         android:textSize="16sp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/bookos"
                         android:textAlignment="center"
                         android:layout_marginTop="10dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Card for Investment. -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_7"
                 android:layout_width="0dp"
@@ -334,33 +366,37 @@
                 app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toBottomOf="@+id/card_5"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toRightOf="@+id/divider"
-                >
+                app:layout_constraintLeft_toRightOf="@+id/divider">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/invests"/>
+                        android:background="@drawable/invests"
+                        android:contentDescription="@string/investment"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Investment"
+                        android:text="@string/investment"
                         android:textAlignment="center"
                         android:layout_marginBottom="10dp"
                         android:textColor="@color/hint"
                         android:textSize="16sp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/bookos"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -369,7 +405,7 @@
                 android:layout_height="40dp"
                 android:orientation="vertical"
                 app:layout_constraintTop_toBottomOf="@+id/card_7"
-                ></LinearLayout>
+                tools:ignore="UselessLeaf" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
