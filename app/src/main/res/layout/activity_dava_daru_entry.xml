@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".entry.DavaDaruEntryActivity">
 
-
+    <!-- Action Bar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
         app:layout_constraintRight_toRightOf="parent"
         />
 
-
+    <!-- Scroll View. -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,187 +30,195 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        >
+        app:layout_constraintBottom_toBottomOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginTop="30dp"
-            >
-
+        <!-- Taking one Frame. -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            >
+            android:layout_marginTop="30dp">
 
-            <TextView
+            <!-- For pairing TextView and EditText -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Medicine (External)"
-                android:fontFamily="@font/bookos"
-                android:layout_marginHorizontal="32dp"
-                android:layout_marginBottom="5dp"
-                android:textSize="17sp"
-                android:textColor="@color/hint_dark"
-                />
+                android:orientation="vertical">
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/medicine_external"
-                android:hint="Enter the amount"
-                android:elevation="4dp"
-                android:fontFamily="@font/times_new_roman"
-                android:layout_marginHorizontal="20dp"
-                android:paddingStart="20dp"
-                android:inputType="numberDecimal"
-                android:background="@drawable/main_btn"
-                />
+                <!-- Input for Medicine (External). -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medicine_external"
+                    android:fontFamily="@font/bookos"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/hint_dark"
+                    />
 
-        </LinearLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/medicine_external"
+                    android:hint="@string/enter_amount"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/times_new_roman"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
+                    />
 
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="25dp"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Medical Visit (From Dairy)"
-                android:layout_marginHorizontal="32dp"
-                android:fontFamily="@font/bookos"
-                android:layout_marginBottom="5dp"
-                android:textSize="17sp"
-                android:textColor="@color/hint_dark"
-                />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/medical_visit_dairy"
-                android:hint="Enter the amount"
-                android:elevation="4dp"
-                android:layout_marginHorizontal="20dp"
-                android:paddingStart="20dp"
-                android:fontFamily="@font/times_new_roman"
-                android:inputType="numberDecimal"
-                android:background="@drawable/main_btn"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="25dp"
-            >
-
-            <TextView
+            <!-- For pairing TextView and EditText -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Medical Visit (External)"
-                android:layout_marginHorizontal="32dp"
-                android:layout_marginBottom="5dp"
-                android:fontFamily="@font/bookos"
-                android:textSize="17sp"
-                android:textColor="@color/hint_dark"
-                />
+                android:orientation="vertical"
+                android:layout_marginTop="25dp">
 
-            <EditText
-                android:layout_width="match_parent"
-                android:id="@+id/medical_visit_external"
-                android:layout_height="50dp"
-                android:elevation="4dp"
-                android:hint="Enter the amount"
-                android:fontFamily="@font/times_new_roman"
-                android:layout_marginHorizontal="20dp"
-                android:paddingStart="20dp"
-                android:inputType="numberDecimal"
-                android:background="@drawable/main_btn"
-                />
+                <!-- Input for Medical Visit From Dairy. -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medical_visit_frm_dry"
+                    android:layout_marginHorizontal="32dp"
+                    android:fontFamily="@font/bookos"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/hint_dark"
+                    />
 
-        </LinearLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/medical_visit_dairy"
+                    android:hint="@string/enter_amount"
+                    android:elevation="4dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:fontFamily="@font/times_new_roman"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
+                    />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="25dp"
-            >
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Dose (From Dairy)"
-                android:layout_marginHorizontal="32dp"
-                android:layout_marginBottom="5dp"
-                android:fontFamily="@font/bookos"
-                android:textSize="17sp"
-                android:textColor="@color/hint_dark"
-                />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:id="@+id/dose_from_dairy"
-                android:layout_height="50dp"
-                android:elevation="4dp"
-                android:hint="Enter the amount"
-                android:fontFamily="@font/times_new_roman"
-                android:layout_marginHorizontal="20dp"
-                android:paddingStart="20dp"
-                android:inputType="numberDecimal"
-                android:background="@drawable/main_btn"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:orientation="vertical"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="100dp"
-            >
-
-            <TextView
+            <!-- For pairing TextView and EditText -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Dose (External)"
-                android:layout_marginHorizontal="32dp"
-                android:layout_marginBottom="5dp"
-                android:textSize="17sp"
-                android:fontFamily="@font/bookos"
-                android:textColor="@color/hint_dark"
-                />
+                android:orientation="vertical"
+                android:layout_marginTop="25dp">
 
-            <EditText
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medicl_visit_extrnl"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/bookos"
+                    android:textSize="17sp"
+                    android:textColor="@color/hint_dark"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/medical_visit_external"
+                    android:layout_height="50dp"
+                    android:elevation="4dp"
+                    android:hint="@string/enter_amount"
+                    android:fontFamily="@font/times_new_roman"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
+                    />
+
+            </LinearLayout>
+
+            <!-- For pairing TextView and EditText -->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:fontFamily="@font/times_new_roman"
-                android:hint="Enter the amount"
-                android:elevation="4dp"
-                android:id="@+id/dose_external"
-                android:layout_marginHorizontal="20dp"
-                android:paddingStart="20dp"
-                android:inputType="numberDecimal"
-                android:background="@drawable/main_btn"
-                />
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dose_frm_dry"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/bookos"
+                    android:textSize="17sp"
+                    android:textColor="@color/hint_dark"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/dose_from_dairy"
+                    android:layout_height="50dp"
+                    android:elevation="4dp"
+                    android:hint="@string/enter_amount"
+                    android:fontFamily="@font/times_new_roman"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
+                    />
+
+            </LinearLayout>
+
+            <!-- For pairing TextView and EditText -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="100dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dose_extrnl"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/bookos"
+                    android:textColor="@color/hint_dark"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/times_new_roman"
+                    android:hint="@string/enter_amount"
+                    android:elevation="4dp"
+                    android:id="@+id/dose_external"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
+                    />
+
+            </LinearLayout>
         </LinearLayout>
-
-        </LinearLayout>
-
     </ScrollView>
 
+    <!-- Floating Action Button. -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/save_btn"
         android:layout_width="55dp"
@@ -222,6 +230,7 @@
         android:src="@drawable/ic_baseline_chevron_right_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/save_dtl"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

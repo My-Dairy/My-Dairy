@@ -1,6 +1,57 @@
 <resources>
     <string name="app_name">My Dairy</string>
 
+    <!--activity_daily_entry.xml-->
+    <string name="enter_date">Enter your date</string>
+    <string name="morning">Morning</string>
+    <string name="evening">Evening</string>
+    <string name="select_choice">Select your choice</string>
+    <string name="enter_fat">Enter the fat</string>
+    <string name="enter_amount">Enter the amount</string>
+    <string name="enter_qty">Enter the quantity</string>
+    <string name="save_dtl">Save</string>
+
+
+    <!--activity_dan_khan_entry.xml-->
+    <string name="pashudan_from_dairy">Pashudan (From Dairy)</string>
+    <string name="pashudan_external">Pashudan (External)</string>
+    <string name="makai_bhardo_own">Makai Bhardo (Own)</string>
+    <string name="specify_dtl">Specify the details</string>
+    <string name="pashuahar_othr">Pashuahar (Others)</string>
+    <string name="papdi_external">Papdi (External)</string>
+    <string name="makai_bhrdo_extrnl">Makai Bhardo (External)</string>
+
+
+    <!--activity_dava_dary_entry.xml-->
+    <string name="medicine_external">Medicine (External)</string>
+    <string name="medical_visit_frm_dry">Medical Visit (From Dairy)</string>
+    <string name="dose_extrnl">Dose (External)</string>
+    <string name="dose_frm_dry">Dose (From Dairy)</string>
+    <string name="medicl_visit_extrnl">Medical Visit (External)</string>
+
+
+    <!--actviity_dev_inv.xml-->
+    <string name="cow_prchse">Cow Purchase</string>
+    <string name="cow_slng">Cow Selling</string>
+    <string name="expansion">Expansion</string>
+
+
+    <!--activity_email_login.xml-->
+    <string name="sign_in">Sign in</string>
+    <string name="enter_psswrd">Enter your password</string>
+    <string name="forgot_psswrd">Forgot Password?</string>
+    <string name="or">OR</string>
+
+
+    <!--activity_email_register.xml-->
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_password">Enter new password</string>
+    <string name="confirm_password">Confirm your password</string>
+    <string name="register">Register</string>
+    <string name="already_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
+
+
     <!--dialog_box.xml-->
     <string name="welcome_dairy">Welcome to My-Dairy</string>
     <string name="select_language">Select Your Language: </string>
@@ -15,19 +66,8 @@
     <string name="login_with_phone_number">Login With Phone Number</string>
 
 
-    <!--activity_email_register.xml-->
-    <string name="enter_email">Enter your email</string>
-    <string name="enter_password">Enter new password</string>
-    <string name="confirm_password">Confirm your password</string>
-    <string name="register">Register</string>
-    <string name="already_account">Already have an account?</string>
-    <string name="log_in">Log in</string>
 
-    <!--activity_email_login.xml-->
-    <string name="sign_in">Sign in</string>
-    <string name="enter_psswrd">Enter your password</string>
-    <string name="forgot_psswrd">Forgot Password?</string>
-    <string name="or">OR</string>
+
 
     <!--activity_user_details-->
     <string name="next">Next</string>
@@ -52,14 +92,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <!--activity_daily_entry.xml-->
-    <string name="enter_date">Enter your date</string>
-    <string name="morning">Morning</string>
-    <string name="evening">Evening</string>
-    <string name="select_choice">Select your choice</string>
-    <string name="enter_fat">Enter the fat</string>
-    <string name="enter_amount">Enter the amount</string>
-    <string name="enter_qty">Enter the quantity</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>

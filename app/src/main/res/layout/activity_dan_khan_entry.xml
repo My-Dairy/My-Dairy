@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".entry.DanKhanEntryActivity">
 
+    <!-- Action Bar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -21,7 +22,7 @@
         app:layout_constraintRight_toRightOf="parent"
         />
 
-
+    <!-- Scroll View.-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,27 +30,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        >
+        app:layout_constraintBottom_toBottomOf="parent">
 
+        <!-- Taking one Frame. -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="30dp"
-            >
+            android:layout_marginTop="30dp">
 
+            <!-- For pairing TextView and EditText -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
 
+                <!-- Input for Pashudan (From Dairy) -->
                 <TextView
                     android:id="@+id/pashudan_dairy_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Pashudan (From Dairy)"
+                    android:text="@string/pashudan_from_dairy"
                     android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
@@ -62,29 +63,31 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:fontFamily="@font/times_new_roman"
-                    android:hint="Enter the amount"
+                    android:hint="@string/enter_amount"
                     android:elevation="4dp"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
                     />
 
             </LinearLayout>
 
-
+            <!-- For pairing TextView and EditText -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="25dp"
-                >
+                android:layout_marginTop="25dp">
 
+                <!-- Input for Pashudan (External). -->
                 <TextView
                     android:id="@+id/pashudan_extrnl_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Pashudan (External)"
+                    android:text="@string/pashudan_external"
                     android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
@@ -96,29 +99,32 @@
                     android:id="@+id/pashudan_extrnl_edit"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="Enter the amount"
+                    android:hint="@string/enter_amount"
                     android:elevation="4dp"
                     android:layout_marginHorizontal="20dp"
                     android:fontFamily="@font/times_new_roman"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
                     />
 
             </LinearLayout>
 
+            <!-- For pairing TextView and EditText -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="25dp"
-                >
+                android:layout_marginTop="25dp">
 
+                <!-- Input for Makai Bhardo (Own). -->
                 <TextView
                     android:id="@+id/makai_own_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Makai Bhardo (Own)"
+                    android:text="@string/makai_bhardo_own"
                     android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
@@ -130,29 +136,32 @@
                     android:id="@+id/makai_own_edit"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="Enter the amount"
+                    android:hint="@string/enter_amount"
                     android:elevation="4dp"
                     android:fontFamily="@font/times_new_roman"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
                     />
 
             </LinearLayout>
 
+            <!-- For pairing TextView and EditText -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="25dp"
-                >
+                android:layout_marginTop="25dp">
 
+                <!-- Input for Makai Bhardo (External). -->
                 <TextView
                     android:id="@+id/makai_ext_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Makai Bhardo (External)"
+                    android:text="@string/makai_bhrdo_extrnl"
                     android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
@@ -166,27 +175,30 @@
                     android:layout_height="50dp"
                     android:elevation="4dp"
                     android:fontFamily="@font/times_new_roman"
-                    android:hint="Enter the amount"
+                    android:hint="@string/enter_amount"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
                     />
 
             </LinearLayout>
 
+            <!-- For pairing TextView and EditText -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="25dp"
-                >
+                android:layout_marginTop="25dp">
 
+                <!-- Input for Papdi (External) -->
                 <TextView
                     android:id="@+id/papdi_extrnl_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Papdi (External)"
+                    android:text="@string/papdi_external"
                     android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
@@ -200,28 +212,31 @@
                     android:layout_height="50dp"
                     android:elevation="4dp"
                     android:fontFamily="@font/times_new_roman"
-                    android:hint="Enter the amount"
+                    android:hint="@string/enter_amount"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
                     />
 
             </LinearLayout>
 
+            <!-- For pairing TextView and EditText -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="25dp"
-                android:layout_marginBottom="150dp"
-                >
+                android:layout_marginBottom="150dp">
 
+                <!-- Input for Pashuahar (Others). -->
                 <TextView
                     android:id="@+id/pashuahar_othr_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Pashuahar (Others)"
+                    android:text="@string/pashuahar_othr"
                     android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
@@ -229,16 +244,20 @@
                     android:textColor="@color/hint_dark"
                     />
 
+                <!-- Details -->
                 <EditText
                     android:id="@+id/pashuahar_othr_spcfy"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="Specify the details"
+                    android:hint="@string/specify_dtl"
                     android:elevation="4dp"
                     android:fontFamily="@font/times_new_roman"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
                     />
 
                 <EditText
@@ -247,20 +266,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:elevation="4dp"
-                    android:hint="Enter the amount"
+                    android:hint="@string/enter_amount"
                     android:fontFamily="@font/times_new_roman"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
+                    android:importantForAutofill="no"
                     />
 
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
 
+    <!-- Floating Action Bar -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/save_btn"
         android:layout_width="55dp"
@@ -272,6 +292,7 @@
         android:src="@drawable/ic_baseline_chevron_right_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/save_dtl"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

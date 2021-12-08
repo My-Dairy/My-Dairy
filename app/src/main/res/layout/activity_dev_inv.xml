@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".entry.DevInvActivity">
 
+    <!-- Action Bar. -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -20,33 +21,34 @@
         app:layout_constraintRight_toRightOf="parent"
         />
 
+    <!-- Scrolling View. -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="55dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
+        <!-- Taking one Frame. -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="30dp"
-            >
+            android:layout_marginTop="30dp">
 
+            <!-- For pairing TextView and EditText. -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
 
+                <!-- Input for Cow Purchase. -->
                 <TextView
                     android:id="@+id/cow_purchase_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cow Purchase"
+                    android:text="@string/cow_prchse"
                     android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
@@ -58,29 +60,31 @@
                     android:id="@+id/cow_purchase_editText"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="Enter the amount"
+                    android:hint="@string/enter_amount"
                     android:elevation="4dp"
                     android:fontFamily="@font/times_new_roman"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
-                    />
+                    android:importantForAutofill="no" />
 
             </LinearLayout>
 
+            <!-- For pairing TextView and EditText. -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="25dp"
-                >
+                android:layout_marginTop="25dp">
 
+                <!-- Input for Cow Selling. -->
                 <TextView
                     android:id="@+id/cow_selling_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cow Selling"
+                    android:text="@string/cow_slng"
                     android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
@@ -89,33 +93,35 @@
                     />
 
                 <EditText
+                    android:importantForAutofill="no"
                     android:id="@+id/cow_selling_editText"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="Enter the amount"
+                    android:hint="@string/enter_amount"
                     android:elevation="4dp"
                     android:fontFamily="@font/times_new_roman"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
                     />
 
             </LinearLayout>
 
-
+            <!-- For pairing TextView and EditText. -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="25dp"
-                >
+                android:layout_marginTop="25dp">
 
+                <!-- Input for Expansion with details and amount. -->
                 <TextView
                     android:id="@+id/expansion_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Expansion"
+                    android:text="@string/expansion"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
                     android:textSize="17sp"
@@ -127,23 +133,27 @@
                     android:id="@+id/expansion_details_editText"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="Specify the details"
+                    android:hint="@string/specify_dtl"
                     android:elevation="4dp"
                     android:fontFamily="@font/times_new_roman"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:background="@drawable/main_btn"
-                    />
+                    android:importantForAutofill="no"
+                    android:inputType="text" />
 
                 <EditText
                     android:id="@+id/expansion_amount_editText"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="Enter the amount"
+                    android:hint="@string/enter_amount"
                     android:elevation="4dp"
                     android:fontFamily="@font/times_new_roman"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:importantForAutofill="no"
                     android:layout_marginTop="10dp"
                     android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
@@ -151,11 +161,10 @@
                     />
 
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
 
+    <!-- Floating Action Button. -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/save_btn"
         android:layout_width="55dp"
@@ -167,6 +176,7 @@
         android:src="@drawable/ic_baseline_chevron_right_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/save_dtl"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

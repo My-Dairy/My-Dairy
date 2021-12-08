@@ -1,6 +1,57 @@
 <resources>
     <string name="app_name">My Dairy</string>
 
+    <!--activity_daily_entry.xml-->
+    <string name="enter_date">Enter your date</string>
+    <string name="morning">Morning</string>
+    <string name="evening">Evening</string>
+    <string name="select_choice">Select your choice</string>
+    <string name="enter_fat">Enter the fat</string>
+    <string name="enter_amount">Enter the amount</string>
+    <string name="enter_qty">Enter the quantity</string>
+    <string name="save_dtl">Save</string>
+
+
+    <!--activity_dan_khan_entry.xml-->
+    <string name="pashudan_from_dairy">Pashudan (From Dairy)</string>
+    <string name="pashudan_external">Pashudan (External)</string>
+    <string name="makai_bhardo_own">Makai Bhardo (Own)</string>
+    <string name="specify_dtl">Specify the details</string>
+    <string name="pashuahar_othr">Pashuahar (Others)</string>
+    <string name="papdi_external">Papdi (External)</string>
+    <string name="makai_bhrdo_extrnl">Makai Bhardo (External)</string>
+
+
+    <!--activity_dava_dary_entry.xml-->
+    <string name="medicine_external">Medicine (External)</string>
+    <string name="medical_visit_frm_dry">Medical Visit (From Dairy)</string>
+    <string name="dose_extrnl">Dose (External)</string>
+    <string name="dose_frm_dry">Dose (From Dairy)</string>
+    <string name="medicl_visit_extrnl">Medical Visit (External)</string>
+
+
+    <!--actviity_dev_inv.xml-->
+    <string name="cow_prchse">Cow Purchase</string>
+    <string name="cow_slng">Cow Selling</string>
+    <string name="expansion">Expansion</string>
+
+
+    <!--activity_email_login.xml-->
+    <string name="sign_in">Sign in</string>
+    <string name="enter_psswrd">Enter your password</string>
+    <string name="forgot_psswrd">Forgot Password?</string>
+    <string name="or">OR</string>
+
+
+    <!--activity_email_register.xml-->
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_password">Enter new password</string>
+    <string name="confirm_password">Confirm your password</string>
+    <string name="register">Register</string>
+    <string name="already_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
+
+
     <!--dialog_box.xml-->
     <string name="welcome_dairy">Welcome to My-Dairy</string>
     <string name="select_language">Select Your Language: </string>
@@ -9,30 +60,21 @@
 
 
     <!--phone_login.xml-->
-    <string name="enter_phn">ફોન નંબર દાખલ કરો</string>
-    <string name="verify_phn">તમારો નંબર ચકાસો</string>
-    <string name="login_with_email">ઇમેઇલ સાથે પ્રવેશ કરો</string>
-    <string name="login_with_phone_number">ફોન નંબર સાથે  પ્રવેશ કરો</string>
+    <string name="enter_phn">Enter Phone Number</string>
+    <string name="verify_phn">Verify Your Number</string>
+    <string name="login_with_email">Login with email</string>
+    <string name="login_with_phone_number">Login With Phone Number</string>
 
 
-    <string name="reset_acc">reset_acc</string>
 
-    <string name="sign_up">ઇમેઇલ સાથે સાઇન અપ કરો</string>
-    <string name="enter_email">તમારું ઈમેલ એડ્રેસ લખો</string>
-    <string name="enter_password">નવો પાસવર્ડ દાખલ કરો</string>
-    <string name="confirm_password">તમારા પાસવર્ડની ખાતરી કરો</string>
-    <string name="register">નોંધણી કરો</string>
-    <string name="already_account">પહેલેથી ખાતું છે?</string>
-    <string name="log_in">પ્રવેશ કરો</string>
-    <string name="sign_in">સાઇન ઇન કરો</string>
-    <string name="enter_psswrd">તમારો પાસવર્ડ નાખો</string>
-    <string name="forgot_psswrd">પાસવર્ડ ભૂલી ગયા છો?</string>
-    <string name="or">અથવા</string>
-    <string name="next">આગળ</string>
-    <string name="enter_name">તમારું નામ દાખલ કરો</string>
-    <string name="enter_surname">તમારી અટક દાખલ કરો</string>
-    <string name="enter_city">તમારું શહેર દાખલ કરો</string>
 
+
+    <!--activity_user_details-->
+    <string name="next">Next</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="enter_surname">Enter your surname</string>
+    <string name="enter_city">Enter your city</string>
+    <string name="sign_up">Sign up with Email</string>
     <string name="title_activity_sidebar">Sidebar</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -40,8 +82,7 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="salary">Salary</string>
-    <string name="signout">Signout</string>
+
     <string name="menu_dashboard">Dashboard</string>
     <string name="menu_graph">Graph</string>
     <string name="menu_report">Report</string>
@@ -50,15 +91,6 @@
     <string name="menu_share">Share</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
-    <!--activity_daily_entry.xml-->
-    <string name="enter_date">તારીખ દાખલ કરો</string>
-    <string name="morning">સવાર</string>
-    <string name="evening">સાંજ</string>
-    <string name="select_choice">તમારી પસંદગી પસંદ કરો</string>
-    <string name="enter_fat">ચરબી(fat) દાખલ કરો</string>
-    <string name="enter_amount">રકમ દાખલ કરો</string>
-    <string name="enter_qty">જથ્થો દાખલ કરો</string>
 
 
     <!-- Preference Titles -->
@@ -75,5 +107,7 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
-
+    <string name="salary">Salary</string>
+    <string name="signout">sign_out</string>
+    <string name="reset_acc">reset_acc</string>
 </resources>
