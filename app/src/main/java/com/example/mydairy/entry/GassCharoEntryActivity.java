@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,6 +17,7 @@ import android.widget.Toast;
 import com.example.mydairy.Details.DavaDaru;
 import com.example.mydairy.Details.GassCharo;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -28,7 +30,7 @@ public class GassCharoEntryActivity extends AppCompatActivity {
 
     EditText quantity,SukhocharoAmount ,tractorCharge,seeds,fertilizers,labourCharge,lilocharoSeeds,lilocharoFertilizers;
     CheckBox cb1,cb2,cb3,cb4,cb5;
-    Button Save;
+    FloatingActionButton Save;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
     private GassCharo gassCharo;
@@ -37,6 +39,10 @@ public class GassCharoEntryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gass_charo_entry);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.primary_color, this.getTheme()));
+        }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -58,7 +64,7 @@ public class GassCharoEntryActivity extends AppCompatActivity {
         lilocharoSeeds=(EditText)findViewById(R.id.lilocharoSeeds_editText);
         lilocharoFertilizers=(EditText)findViewById(R.id.lilocharoFertilizers_editText);
 
-        Save = (Button) findViewById(R.id.save_btn);
+        Save = (FloatingActionButton) findViewById(R.id.save_btn);
 
         Save.setOnClickListener(new View.OnClickListener() {
             @Override

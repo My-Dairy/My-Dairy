@@ -11,9 +11,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/secondary_color"
+        android:background="@color/emerald_green"
         app:titleTextAppearance="@style/TitleText"
         android:elevation="4dp"
+        app:titleTextColor="@color/white"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_constraintTop_toTopOf="parent"
@@ -44,6 +45,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Return of Investment"
+                    android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
                     android:textSize="17sp"
@@ -55,10 +57,12 @@
                     android:layout_height="50dp"
                     android:id="@+id/monthly_editText"
                     android:hint="Eg: 1.5 times"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/times_new_roman"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
                     android:inputType="number"
-                    android:background="@drawable/input_login"
+                    android:background="@drawable/main_btn"
                     />
 
             </LinearLayout>
@@ -75,6 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Withdrawal Balance"
+                    android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
                     android:textSize="17sp"
@@ -86,10 +91,12 @@
                     android:layout_height="50dp"
                     android:id="@+id/withdraw_editText"
                     android:hint="Enter the amount in (Rs)"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/times_new_roman"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
                     android:inputType="numberDecimal"
-                    android:background="@drawable/input_login"
+                    android:background="@drawable/main_btn"
                     />
 
             </LinearLayout>
@@ -105,6 +112,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Deposit Balance"
+                    android:fontFamily="@font/bookos"
                     android:layout_marginHorizontal="32dp"
                     android:layout_marginBottom="5dp"
                     android:textSize="17sp"
@@ -116,10 +124,12 @@
                     android:layout_height="50dp"
                     android:id="@+id/balance_editText"
                     android:hint="Enter the amount in (Rs)"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/times_new_roman"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
                     android:inputType="numberDecimal"
-                    android:background="@drawable/input_login"
+                    android:background="@drawable/main_btn"
                     />
 
             </LinearLayout>
@@ -129,17 +139,17 @@
         </LinearLayout>
     </ScrollView>
 
-    <Button
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/save_btn"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/input_design_login"
-        android:text="SAVE"
-        android:textSize="17sp"
-        android:textColor="@color/white"
-        android:layout_marginBottom="5dp"
-        android:layout_marginHorizontal="5dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:fabCustomSize="55dp"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/primary_color"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/ic_baseline_chevron_right_24"
         />
 
 

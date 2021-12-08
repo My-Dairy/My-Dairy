@@ -20,14 +20,23 @@ public final class RowGraphItemBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final View divider;
+
+  @NonNull
+  public final ImageView listGraphImg;
+
+  @NonNull
   public final ImageView listGraphimg;
 
   @NonNull
   public final TextView listGraphtxt;
 
-  private RowGraphItemBinding(@NonNull CardView rootView, @NonNull ImageView listGraphimg,
+  private RowGraphItemBinding(@NonNull CardView rootView, @NonNull View divider,
+      @NonNull ImageView listGraphImg, @NonNull ImageView listGraphimg,
       @NonNull TextView listGraphtxt) {
     this.rootView = rootView;
+    this.divider = divider;
+    this.listGraphImg = listGraphImg;
     this.listGraphimg = listGraphimg;
     this.listGraphtxt = listGraphtxt;
   }
@@ -59,6 +68,18 @@ public final class RowGraphItemBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.divider;
+      View divider = rootView.findViewById(id);
+      if (divider == null) {
+        break missingId;
+      }
+
+      id = R.id.list_graph_img;
+      ImageView listGraphImg = rootView.findViewById(id);
+      if (listGraphImg == null) {
+        break missingId;
+      }
+
       id = R.id.list_graphimg;
       ImageView listGraphimg = rootView.findViewById(id);
       if (listGraphimg == null) {
@@ -71,7 +92,8 @@ public final class RowGraphItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RowGraphItemBinding((CardView) rootView, listGraphimg, listGraphtxt);
+      return new RowGraphItemBinding((CardView) rootView, divider, listGraphImg, listGraphimg,
+          listGraphtxt);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

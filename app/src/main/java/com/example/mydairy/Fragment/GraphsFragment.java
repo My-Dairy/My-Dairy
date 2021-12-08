@@ -16,6 +16,11 @@ import com.example.mydairy.adapter.GraphAdapter;
 import com.example.mydairy.specific.GraphAmt;
 import com.example.mydairy.specific.GraphFat;
 import com.example.mydairy.specific.GraphQty;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,19 +34,19 @@ public class GraphsFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+    private AdView mAdView;
+
     private ListView listView;
     private String GraphTitle[] = {
             "Fat",
             "Quantity",
             "Amount",
-            "Graph4 with average",
     };
 
     private Integer GraphImage[] = {
-            R.drawable.cow1,
-            R.drawable.cow1,
-            R.drawable.cow1,
-            R.drawable.cow1,
+            R.drawable.fat,
+            R.drawable.average,
+            R.drawable.amount,
     };
 
     // TODO: Rename and change types of parameters

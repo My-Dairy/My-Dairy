@@ -4,7 +4,6 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -13,6 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -43,7 +43,7 @@ public final class ActivityDevInvBinding implements ViewBinding {
   public final TextView expansionTxt;
 
   @NonNull
-  public final Button saveBtn;
+  public final FloatingActionButton saveBtn;
 
   @NonNull
   public final Toolbar toolbar;
@@ -52,7 +52,8 @@ public final class ActivityDevInvBinding implements ViewBinding {
       @NonNull EditText cowPurchaseEditText, @NonNull TextView cowPurchaseTxt,
       @NonNull EditText cowSellingEditText, @NonNull TextView cowSellingTxt,
       @NonNull EditText expansionAmountEditText, @NonNull EditText expansionDetailsEditText,
-      @NonNull TextView expansionTxt, @NonNull Button saveBtn, @NonNull Toolbar toolbar) {
+      @NonNull TextView expansionTxt, @NonNull FloatingActionButton saveBtn,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.cowPurchaseEditText = cowPurchaseEditText;
     this.cowPurchaseTxt = cowPurchaseTxt;
@@ -135,7 +136,7 @@ public final class ActivityDevInvBinding implements ViewBinding {
       }
 
       id = R.id.save_btn;
-      Button saveBtn = rootView.findViewById(id);
+      FloatingActionButton saveBtn = rootView.findViewById(id);
       if (saveBtn == null) {
         break missingId;
       }

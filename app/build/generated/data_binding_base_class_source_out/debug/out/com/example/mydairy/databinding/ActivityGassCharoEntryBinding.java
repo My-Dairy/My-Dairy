@@ -4,7 +4,6 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
@@ -14,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -53,7 +53,7 @@ public final class ActivityGassCharoEntryBinding implements ViewBinding {
   public final EditText quantityEditText;
 
   @NonNull
-  public final Button saveBtn;
+  public final FloatingActionButton saveBtn;
 
   @NonNull
   public final ScrollView scrollView;
@@ -74,9 +74,10 @@ public final class ActivityGassCharoEntryBinding implements ViewBinding {
       @NonNull CheckBox cb2, @NonNull CheckBox cb3, @NonNull CheckBox cb4, @NonNull CheckBox cb5,
       @NonNull EditText fertilizersEditText, @NonNull EditText labourChargeEditText,
       @NonNull EditText lilocharoFertilizersEditText, @NonNull EditText lilocharoSeedsEditText,
-      @NonNull EditText quantityEditText, @NonNull Button saveBtn, @NonNull ScrollView scrollView,
-      @NonNull EditText seedsEditText, @NonNull EditText sukocharoAmountEditText,
-      @NonNull Toolbar toolbar, @NonNull EditText tractorChargeEditText) {
+      @NonNull EditText quantityEditText, @NonNull FloatingActionButton saveBtn,
+      @NonNull ScrollView scrollView, @NonNull EditText seedsEditText,
+      @NonNull EditText sukocharoAmountEditText, @NonNull Toolbar toolbar,
+      @NonNull EditText tractorChargeEditText) {
     this.rootView = rootView;
     this.cb1 = cb1;
     this.cb2 = cb2;
@@ -184,7 +185,7 @@ public final class ActivityGassCharoEntryBinding implements ViewBinding {
       }
 
       id = R.id.save_btn;
-      Button saveBtn = rootView.findViewById(id);
+      FloatingActionButton saveBtn = rootView.findViewById(id);
       if (saveBtn == null) {
         break missingId;
       }

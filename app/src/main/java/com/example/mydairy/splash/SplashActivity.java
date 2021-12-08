@@ -70,7 +70,7 @@ public class SplashActivity extends AppCompatActivity {
 
         // If user is not added until now.
         if(user == null){
-            flag = 0;
+            showAlertDialog();
         }
         else
         {
@@ -85,11 +85,56 @@ public class SplashActivity extends AppCompatActivity {
                     // If the user's database is made.
                     if(snapshot.hasChild(keyid))
                     {
-                        flag = 1;
+
+                        //Using timer handler method to sleep app for 2 seconds.
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+
+                                logo.animate().translationX(-1500).setDuration(500);
+                                logo1.animate().translationX(-1500).setDuration(500);
+                                logo2.animate().translationX(-1500).setDuration(500);
+
+                                new Handler().postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+
+                                        Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                                        SplashActivity.this.startActivity(intent);
+                                        SplashActivity.this.finish();
+                                    }
+                                }, 300);
+                            }
+                        }, 1200);
+
+
                     }
                     else
                     {
-                        flag = 2;
+                        //Using timer handler method to sleep app for 2 seconds.
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+
+                                logo.animate().translationX(-1500).setDuration(500);
+                                logo1.animate().translationX(-1500).setDuration(500);
+                                logo2.animate().translationX(-1500).setDuration(500);
+
+                                new Handler().postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        // If the user's database is not made.
+                                        Intent intent = new Intent(SplashActivity.this, UserDetails.class);
+                                        SplashActivity.this.startActivity(intent);
+                                        SplashActivity.this.finish();
+
+                                    }
+                                }, 300);
+
+                            }
+                        }, 1200);
+
+
                     }
                 }
 
@@ -99,43 +144,6 @@ public class SplashActivity extends AppCompatActivity {
                 }
             });
         }
-
-        //Using timer handler method to sleep app for 2 seconds.
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-
-                logo.animate().translationX(-1500).setDuration(500);
-                logo1.animate().translationX(-1500).setDuration(500);
-                logo2.animate().translationX(-1500).setDuration(500);
-
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-
-                        if(flag == 0){
-                            showAlertDialog();
-                        }
-                        else if(flag==1)
-                        {
-                            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                            SplashActivity.this.startActivity(intent);
-                            SplashActivity.this.finish();
-                        }
-                        else
-                        {
-                            // If the user's database is not made.
-                            Intent intent = new Intent(SplashActivity.this, UserDetails.class);
-                            SplashActivity.this.startActivity(intent);
-                            SplashActivity.this.finish();
-                        }
-
-                    }
-                }, 300);
-
-            }
-        }, 2200);
-
     }
 
     private void showAlertDialog() {

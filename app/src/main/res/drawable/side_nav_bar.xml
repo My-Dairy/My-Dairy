@@ -1,9 +1,11 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
+
     <gradient
         android:angle="135"
-        android:centerColor="@color/emerald_green"
-        android:endColor="@color/secondary_color"
-        android:startColor="@color/secondary_color"
-        android:type="linear" />
+        android:centerColor="@color/secondary_color"
+        android:endColor="@color/emerald_green"
+        android:startColor="@color/emerald_green"
+        android:type="sweep"
+        />
 </shape>

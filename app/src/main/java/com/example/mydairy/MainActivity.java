@@ -14,6 +14,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -53,6 +54,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.primary_color, this.getTheme()));
+        }
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -72,18 +77,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String keyid = user.getUid();
 
-        System.out.println("Sanas: "+user.getProviderId());
         if(!user.getProviderId().equals("firebase"))
         {
             if(!user.getPhoneNumber().equals(""))
             {
                 MailPhone.setText(user.getPhoneNumber());
-                System.out.println("Sanas: "+user.getPhoneNumber());
             }
             else if(!user.getEmail().equals(""))
             {
                 MailPhone.setText(user.getEmail());
-                System.out.println("Sanas: "+user.getEmail());
             }
         }
 
@@ -179,5 +181,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(drawer.isDrawerOpen(GravityCompat.START))
+        {
+            drawer.closeDrawer(GravityCompat.START);
+        }
+        else
+        {
+            NavigationView bottomNav = findViewById(R.id.nav_view);
+            openFragment(new HomeFragment());
+            bottomNav.setCheckedItem(R.id.nav_dashboard);
+        }
     }
 }

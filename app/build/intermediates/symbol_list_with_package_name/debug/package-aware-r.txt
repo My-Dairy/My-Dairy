@@ -108,6 +108,9 @@ attr actionProviderClass
 attr actionTextColorAlpha
 attr actionViewClass
 attr activityChooserViewStyle
+attr adSize
+attr adSizes
+attr adUnitId
 attr adjustable
 attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
@@ -794,6 +797,7 @@ attr navigationRailStyle
 attr navigationViewStyle
 attr negativeButtonText
 attr nestedScrollFlags
+attr nestedScrollViewStyle
 attr nestedScrollable
 attr nullable
 attr number
@@ -865,6 +869,7 @@ attr progressBarPadding
 attr progressBarStyle
 attr queryBackground
 attr queryHint
+attr queryPatterns
 attr radioButtonStyle
 attr rangeFillColor
 attr ratingBarStyle
@@ -900,6 +905,7 @@ attr shapeAppearanceLargeComponent
 attr shapeAppearanceMediumComponent
 attr shapeAppearanceOverlay
 attr shapeAppearanceSmallComponent
+attr shortcutMatchRequired
 attr shouldDisableView
 attr showAnimationBehavior
 attr showAsAction
@@ -1124,7 +1130,11 @@ attr yearTodayStyle
 bool abc_action_bar_embed_tabs
 bool abc_config_actionMenuItemAllCaps
 bool config_materialPreferenceIconSpaceReserved
+bool enable_system_alarm_service_default
+bool enable_system_foreground_service_default
+bool enable_system_job_service_default
 bool mtrl_btn_textappearance_all_caps
+bool workmanager_test_configuration
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -1898,8 +1908,12 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable amount
+drawable arrow
 drawable avd_hide_password
 drawable avd_show_password
+drawable average
+drawable bg_frame
 drawable bg_login
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1931,6 +1945,10 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable cow1
+drawable dailyentry
+drawable dankhns
+drawable davadaru
+drawable davadarus
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -1939,6 +1957,7 @@ drawable design_snackbar_background
 drawable dialog_welcome
 drawable fastscroll__default_bubble
 drawable fastscroll__default_handle
+drawable fat
 drawable flag_afghanistan
 drawable flag_aland
 drawable flag_albania
@@ -2186,12 +2205,16 @@ drawable flag_wallis_and_futuna
 drawable flag_yemen
 drawable flag_zambia
 drawable flag_zimbabwe
+drawable gasscharo
+drawable gasscharos
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable human
 drawable ic_arrow_down_24dp
 drawable ic_backspace_black_24dp
 drawable ic_baseline_account_circle_24
 drawable ic_baseline_bar_chart_24
+drawable ic_baseline_chevron_right_24
 drawable ic_baseline_dashboard_24
 drawable ic_baseline_feedback_24
 drawable ic_baseline_settings_24
@@ -2214,6 +2237,10 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable input_design_login
 drawable input_login
+drawable invests
+drawable labourcharge
+drawable labourchrgs
+drawable main_btn
 drawable main_icon
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -2225,6 +2252,9 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable milkbill
+drawable misc
+drawable miscs
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -2249,7 +2279,11 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pashuahar
 drawable preference_list_divider_material
+drawable rangoli
+drawable roi
+drawable rois
 drawable side_nav_bar
 drawable test_custom_background
 drawable tooltip_frame_dark
@@ -2633,6 +2667,7 @@ id linear_flag_holder
 id linear_layout
 id listMode
 id list_graph
+id list_graph_img
 id list_graphimg
 id list_graphtxt
 id list_item
@@ -3294,6 +3329,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
 string already_account
+string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
 string attachment_summary_off
@@ -3434,6 +3470,13 @@ string next
 string next_dsgn
 string no_result_found
 string not_set
+string offline_notification_text
+string offline_notification_title
+string offline_opt_in_confirm
+string offline_opt_in_confirmation
+string offline_opt_in_decline
+string offline_opt_in_message
+string offline_opt_in_title
 string or
 string password_toggle_content_description
 string path_password_eye
@@ -3445,6 +3488,13 @@ string project_id
 string register
 string reply_title
 string reset_acc
+string s1
+string s2
+string s3
+string s4
+string s5
+string s6
+string s7
 string salary
 string search_hint
 string search_menu_title
@@ -3923,6 +3973,7 @@ style Theme_Design_Light
 style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
+style Theme_IAPTheme
 style Theme_MaterialComponents
 style Theme_MaterialComponents_BottomSheetDialog
 style Theme_MaterialComponents_Bridge
@@ -4238,6 +4289,7 @@ styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
 styleable ActivityNavigator android_name action data dataPattern targetPackage
+styleable AdsAttrs adSize adSizes adUnitId
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable
@@ -4257,6 +4309,7 @@ styleable BottomAppBar backgroundTint elevation fabAlignmentMode fabAnimationMod
 styleable BottomNavigationView itemHorizontalTranslationEnabled
 styleable BottomSheetBehavior_Layout android_maxWidth android_elevation backgroundTint behavior_draggable behavior_expandedOffset behavior_fitToContents behavior_halfExpandedRatio behavior_hideable behavior_peekHeight behavior_saveFlags behavior_skipCollapsed gestureInsetBottomIgnored paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets paddingTopSystemWindowInsets shapeAppearance shapeAppearanceOverlay
 styleable ButtonBarLayout allowStacking
+styleable Capability queryPatterns shortcutMatchRequired
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable CheckBoxPreference android_summaryOn android_summaryOff android_disableDependentsState disableDependentsState summaryOff summaryOn
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding

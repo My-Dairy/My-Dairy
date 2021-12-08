@@ -3,6 +3,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -60,6 +61,10 @@ public class ReportLabourCharge extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.report_labour_charge);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.primary_color, this.getTheme()));
+        }
 
         listView = (ListView) findViewById(R.id.labour_charge_recycler);
         labourChargeArrayList = new ArrayList<>();

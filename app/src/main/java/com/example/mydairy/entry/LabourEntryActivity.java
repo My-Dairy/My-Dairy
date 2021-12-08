@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.mydairy.Details.LabourCharge;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -25,7 +27,7 @@ import java.util.Calendar;
 public class LabourEntryActivity extends AppCompatActivity {
 
     EditText Monthly,Withdraw,Balance,Amount,Type;
-    Button Save;
+    FloatingActionButton Save;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
     private LabourCharge labourCharge;
@@ -33,6 +35,10 @@ public class LabourEntryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_labour_entry);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.primary_color, this.getTheme()));
+        }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -45,7 +51,7 @@ public class LabourEntryActivity extends AppCompatActivity {
         Type = (EditText)findViewById(R.id.typeOfWork_editText);
         Amount = (EditText)findViewById(R.id.amount_editText);
 
-        Save = (Button) findViewById(R.id.save_btn);
+        Save = (FloatingActionButton) findViewById(R.id.save_btn);
 
         Save.setOnClickListener(new View.OnClickListener() {
             @Override

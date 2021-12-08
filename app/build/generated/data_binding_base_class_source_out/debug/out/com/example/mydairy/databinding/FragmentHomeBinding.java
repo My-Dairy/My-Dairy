@@ -21,9 +21,14 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final Button btnEntry;
 
-  private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull Button btnEntry) {
+  @NonNull
+  public final View divider;
+
+  private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull Button btnEntry,
+      @NonNull View divider) {
     this.rootView = rootView;
     this.btnEntry = btnEntry;
+    this.divider = divider;
   }
 
   @Override
@@ -59,7 +64,13 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((FrameLayout) rootView, btnEntry);
+      id = R.id.divider;
+      View divider = rootView.findViewById(id);
+      if (divider == null) {
+        break missingId;
+      }
+
+      return new FragmentHomeBinding((FrameLayout) rootView, btnEntry, divider);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

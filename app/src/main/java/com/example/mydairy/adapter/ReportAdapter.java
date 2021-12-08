@@ -33,7 +33,7 @@ public class ReportAdapter extends ArrayAdapter {
         LayoutInflater inflater = context.getLayoutInflater();
 
         if(convertView==null)
-            row = inflater.inflate(R.layout.activity_report_adapter, null, true);
+            row = inflater.inflate(R.layout.activity_report_adapter, parent, false);
 
         TextView ReportTitle = (TextView) row.findViewById(R.id.list_reporttxt);
         ImageView ReportImage = (ImageView) row.findViewById(R.id.list_reportimg);

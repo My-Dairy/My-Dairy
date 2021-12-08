@@ -4,7 +4,6 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -13,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -52,7 +52,7 @@ public final class ActivityMiscellaneousEntryBinding implements ViewBinding {
   public final TextView othersTxt;
 
   @NonNull
-  public final Button saveBtn;
+  public final FloatingActionButton saveBtn;
 
   @NonNull
   public final Toolbar toolbar;
@@ -62,8 +62,8 @@ public final class ActivityMiscellaneousEntryBinding implements ViewBinding {
       @NonNull EditText gasBillEdit, @NonNull TextView gasBillTxt,
       @NonNull EditText maintenanceDetails, @NonNull EditText maintenanceEdit,
       @NonNull TextView maintenanceTxt, @NonNull EditText othersDetails,
-      @NonNull EditText othersEdit, @NonNull TextView othersTxt, @NonNull Button saveBtn,
-      @NonNull Toolbar toolbar) {
+      @NonNull EditText othersEdit, @NonNull TextView othersTxt,
+      @NonNull FloatingActionButton saveBtn, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.electricityBillEdit = electricityBillEdit;
     this.electricityBillTxt = electricityBillTxt;
@@ -167,7 +167,7 @@ public final class ActivityMiscellaneousEntryBinding implements ViewBinding {
       }
 
       id = R.id.save_btn;
-      Button saveBtn = rootView.findViewById(id);
+      FloatingActionButton saveBtn = rootView.findViewById(id);
       if (saveBtn == null) {
         break missingId;
       }

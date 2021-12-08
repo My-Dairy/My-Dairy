@@ -44,27 +44,23 @@ public class ReportsFragment extends Fragment {
     private ListView listView;
 
     private String ReportTitle[] = {
-            "Milk Bill without Bonus",
-            "Milk Bill with Bonus",
+            "Milk Bill",
             "Pashuahar",
             "Grasscharo",
             "Dava Daru",
-            //"Misc",
             "Miscellaneous",
             "Labour Charge",
             "Return of investment",
     };
 
     private Integer ReportImage[] = {
-            R.drawable.cow1,
-            R.drawable.cow1,
-            R.drawable.cow1,
-            R.drawable.cow1,
-            R.drawable.cow1,
-            //R.drawable.cow1,
-            R.drawable.cow1,
-            R.drawable.cow1,
-            R.drawable.cow1,
+            R.drawable.milkbill,
+            R.drawable.pashuahar,
+            R.drawable.gasscharo,
+            R.drawable.davadaru,
+            R.drawable.misc,
+            R.drawable.labourcharge,
+            R.drawable.roi,
     };
 
 
@@ -121,40 +117,34 @@ public class ReportsFragment extends Fragment {
                 }
                 else if(position==1)
                 {
-                    Intent intent = new Intent(getContext(), ReportMilkBill.class);
+                    Intent intent = new Intent(getContext(), ReportDanKhan.class);
                     startActivity(intent);
                 }
                 else if(position==2)
                 {
-                    Intent intent = new Intent(getContext(), ReportDanKhan.class);
+                    Intent intent = new Intent(getContext(), ReportGassCharo.class);
                     startActivity(intent);
                 }
                 else if(position==3)
                 {
-                    Intent intent = new Intent(getContext(), ReportGassCharo.class);
+                    Intent intent = new Intent(getContext(), ReportDavaDaru.class);
                     startActivity(intent);
                 }
                 else if(position==4)
                 {
-                    Intent intent = new Intent(getContext(), ReportDavaDaru.class);
+                    Intent intent = new Intent(getContext(), ReportMisc.class);
                     startActivity(intent);
                 }
                 else if(position==5)
                 {
-                    Intent intent = new Intent(getContext(), ReportMisc.class);
+                    Intent intent = new Intent(getContext(), ReportLabourCharge.class);
                     startActivity(intent);
                 }
                 else if(position==6)
                 {
-                    Intent intent = new Intent(getContext(), ReportLabourCharge.class);
-                    startActivity(intent);
-                }
-                else if(position==7)
-                {
                     Intent intent = new Intent(getContext(), ReportROI.class);
                     startActivity(intent);
                 }
-
             }
         });
 

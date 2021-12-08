@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,6 +18,7 @@ import com.example.mydairy.Details.DavaDaru;
 import com.example.mydairy.Details.GassCharo;
 import com.example.mydairy.Details.devInv;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -28,7 +30,7 @@ import java.util.Calendar;
 public class DevInvActivity extends AppCompatActivity {
     EditText cowPurchase,cowSelling,expansionDetails,expansionAmount;
 
-    Button Save;
+    FloatingActionButton Save;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
     private devInv devinv;
@@ -36,6 +38,10 @@ public class DevInvActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dev_inv);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.primary_color, this.getTheme()));
+        }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -46,7 +52,7 @@ public class DevInvActivity extends AppCompatActivity {
         expansionDetails=(EditText)findViewById(R.id.expansion_details_editText);
         expansionAmount=(EditText)findViewById(R.id.expansion_amount_editText);
 
-        Save = (Button) findViewById(R.id.save_btn);
+        Save = (FloatingActionButton) findViewById(R.id.save_btn);
 
         Save.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:elevation="4dp"
-        android:background="@color/secondary_color"
+        android:background="@color/emerald_green"
+        app:titleTextColor="@color/white"
         app:titleTextAppearance="@style/TitleText"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
@@ -36,11 +37,14 @@
                 android:layout_marginHorizontal="30dp"
                 android:paddingStart="20dp"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/input_login"
+                android:elevation="4dp"
+                android:background="@drawable/main_btn"
                 android:clickable="false"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
+                android:fontFamily="@font/times_new_roman"
                 android:id="@+id/date"
+                android:textColorHint="@color/hint"
                 android:textColor="@color/hint"
                 android:hint="@string/enter_date"
                 />
@@ -50,7 +54,8 @@
                 android:layout_height="50dp"
                 android:text="@string/select_choice"
                 android:textSize="18sp"
-                android:textColor="#505050"
+                android:textColor="@color/hint_dark"
+                android:fontFamily="@font/bookos"
                 android:gravity="bottom"
                 android:layout_marginHorizontal="40dp"
                 />
@@ -69,8 +74,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginHorizontal="55dp"
                     android:text="@string/morning"
+                    android:fontFamily="@font/times_new_roman"
                     android:textSize="17sp"
-                    android:textColor="@color/hint"
                     android:onClick="onRadioButtonClicked"
                     />
 
@@ -80,7 +85,7 @@
                     android:text="@string/evening"
                     android:layout_marginTop="10dp"
                     android:textSize="17sp"
-                    android:textColor="@color/hint"
+                    android:fontFamily="@font/times_new_roman"
                     android:onClick="onRadioButtonClicked"
                     />
 
@@ -94,7 +99,9 @@
                 android:inputType="numberDecimal"
                 android:layout_marginHorizontal="30dp"
                 android:paddingStart="20dp"
-                android:background="@drawable/input_login"
+                android:elevation="4dp"
+                android:fontFamily="@font/times_new_roman"
+                android:background="@drawable/main_btn"
                 android:hint="@string/enter_fat"
                 android:textColor="@color/hint"
             />
@@ -105,8 +112,10 @@
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="20dp"
                 android:paddingStart="20dp"
+                android:elevation="4dp"
+                android:fontFamily="@font/times_new_roman"
                 android:inputType="number"
-                android:background="@drawable/input_login"
+                android:background="@drawable/main_btn"
                 android:id="@+id/quantity"
                 android:hint="@string/enter_qty"
                 android:textColor="@color/hint"
@@ -119,8 +128,10 @@
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="20dp"
                 android:paddingStart="20dp"
-                android:background="@drawable/input_login"
+                android:elevation="4dp"
+                android:background="@drawable/main_btn"
                 android:id="@+id/amount"
+                android:fontFamily="@font/times_new_roman"
                 android:inputType="numberDecimal"
                 android:hint="@string/enter_amount"
                 android:layout_marginBottom="100dp"
@@ -132,17 +143,18 @@
 
     </ScrollView>
 
-    <Button
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/save_btn"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/input_design_login"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:fabCustomSize="55dp"
         android:layout_alignParentBottom="true"
-        android:text="SAVE"
-        android:textSize="17sp"
-        android:textColor="@color/white"
-        android:layout_marginBottom="5dp"
-        android:layout_marginHorizontal="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/primary_color"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/ic_baseline_chevron_right_24"
         />
 
 </RelativeLayout>

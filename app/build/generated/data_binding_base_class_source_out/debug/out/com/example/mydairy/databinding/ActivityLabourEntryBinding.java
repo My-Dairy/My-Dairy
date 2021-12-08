@@ -4,7 +4,6 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
@@ -12,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -30,7 +30,7 @@ public final class ActivityLabourEntryBinding implements ViewBinding {
   public final EditText monthlyEditText;
 
   @NonNull
-  public final Button saveBtn;
+  public final FloatingActionButton saveBtn;
 
   @NonNull
   public final Toolbar toolbar;
@@ -43,8 +43,9 @@ public final class ActivityLabourEntryBinding implements ViewBinding {
 
   private ActivityLabourEntryBinding(@NonNull RelativeLayout rootView,
       @NonNull EditText amountEditText, @NonNull EditText balanceEditText,
-      @NonNull EditText monthlyEditText, @NonNull Button saveBtn, @NonNull Toolbar toolbar,
-      @NonNull EditText typeOfWorkEditText, @NonNull EditText withdrawEditText) {
+      @NonNull EditText monthlyEditText, @NonNull FloatingActionButton saveBtn,
+      @NonNull Toolbar toolbar, @NonNull EditText typeOfWorkEditText,
+      @NonNull EditText withdrawEditText) {
     this.rootView = rootView;
     this.amountEditText = amountEditText;
     this.balanceEditText = balanceEditText;
@@ -101,7 +102,7 @@ public final class ActivityLabourEntryBinding implements ViewBinding {
       }
 
       id = R.id.save_btn;
-      Button saveBtn = rootView.findViewById(id);
+      FloatingActionButton saveBtn = rootView.findViewById(id);
       if (saveBtn == null) {
         break missingId;
       }

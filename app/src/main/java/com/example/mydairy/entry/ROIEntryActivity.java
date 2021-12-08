@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import com.example.mydairy.Details.LabourCharge;
 import com.example.mydairy.Details.ROI;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -25,7 +27,7 @@ import java.util.Calendar;
 
 public class ROIEntryActivity extends AppCompatActivity {
     EditText Monthly,Withdraw,Balance;
-    Button Save;
+    FloatingActionButton Save;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
     private ROI roi;
@@ -34,6 +36,10 @@ public class ROIEntryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_r_o_i_entry);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.primary_color, this.getTheme()));
+        }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -44,7 +50,7 @@ public class ROIEntryActivity extends AppCompatActivity {
         Withdraw =  (EditText)findViewById(R.id.withdraw_editText);
         Balance = (EditText)findViewById(R.id.balance_editText);
 
-        Save = (Button) findViewById(R.id.save_btn);
+        Save = (FloatingActionButton) findViewById(R.id.save_btn);
 
         Save.setOnClickListener(new View.OnClickListener() {
             @Override

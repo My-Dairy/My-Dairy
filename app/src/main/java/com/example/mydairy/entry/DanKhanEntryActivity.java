@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.mydairy.Details.DanKhanEntry;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -25,7 +27,7 @@ import java.util.Date;
 public class DanKhanEntryActivity extends AppCompatActivity {
 
     EditText PashudanD, PashudanE, MakaiO, MakaiE, PapdiE, PashuaharD, PashuaharA;
-    Button Save;
+    FloatingActionButton Save;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
     private DanKhanEntry entry;
@@ -34,6 +36,10 @@ public class DanKhanEntryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dan_khan_entry);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.primary_color, this.getTheme()));
+        }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -48,7 +54,7 @@ public class DanKhanEntryActivity extends AppCompatActivity {
         PashuaharD = (EditText) findViewById(R.id.pashuahar_othr_spcfy);
         PashuaharA = (EditText) findViewById(R.id.pashuahar_othr_edit);
 
-        Save = (Button) findViewById(R.id.save_btn);
+        Save = (FloatingActionButton) findViewById(R.id.save_btn);
 
         Save.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import com.example.mydairy.Details.DanKhanEntry;
 import com.example.mydairy.Details.DavaDaru;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -27,7 +29,7 @@ import java.util.Date;
 public class DavaDaruEntryActivity extends AppCompatActivity {
 
     EditText medicineExternal, medicalVisitDairy, medicalVisitExternal, doseDairy,doseExternal;
-    Button Save;
+    FloatingActionButton Save;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
     private DavaDaru davaDaru;
@@ -36,6 +38,10 @@ public class DavaDaruEntryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dava_daru_entry);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.primary_color, this.getTheme()));
+        }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -48,7 +54,7 @@ public class DavaDaruEntryActivity extends AppCompatActivity {
         doseDairy = (EditText)findViewById(R.id.dose_from_dairy);
         doseExternal = (EditText)findViewById(R.id.dose_external);
 
-        Save = (Button) findViewById(R.id.save_btn);
+        Save = (FloatingActionButton) findViewById(R.id.save_btn);
 
         Save.setOnClickListener(new View.OnClickListener() {
             @Override

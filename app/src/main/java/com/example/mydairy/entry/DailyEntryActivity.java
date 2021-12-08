@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.app.DatePickerDialog;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.Menu;
@@ -21,6 +22,7 @@ import android.widget.Toast;
 
 import com.example.mydairy.Details.DailyEntry;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -35,7 +37,7 @@ public class DailyEntryActivity extends AppCompatActivity {
     Calendar myCalendar;
     EditText DateText, Fat, Quantity, Amount;
     RadioGroup Time;
-    Button Save;
+    FloatingActionButton Save;
     private DailyEntry entry;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
@@ -45,6 +47,11 @@ public class DailyEntryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daily_entry);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.primary_color, this.getTheme()));
+        }
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -56,7 +63,7 @@ public class DailyEntryActivity extends AppCompatActivity {
         Fat = (EditText) findViewById(R.id.fat);
         Quantity = (EditText) findViewById(R.id.quantity);
         Amount = (EditText) findViewById(R.id.amount);
-        Save = (Button) findViewById(R.id.save_btn);
+        Save = (FloatingActionButton) findViewById(R.id.save_btn);
 
         Save.setOnClickListener(new View.OnClickListener() {
             @Override

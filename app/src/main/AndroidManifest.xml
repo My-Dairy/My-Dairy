@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:ignore="AllowBackup">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5493516980230071~3645906477"/>
+
+
+
         <activity android:name=".specific.ReportGassCharo"/>
         <activity android:name=".specific.ReportROI"/>
         <activity android:name=".specific.ReportDavaDaru"/>

@@ -10,6 +10,10 @@
         android:id="@+id/list_report"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/white"
         />
 
 </FrameLayout>

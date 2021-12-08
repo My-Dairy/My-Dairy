@@ -38,25 +38,25 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="20dp"
             android:text="Start Date"
+            android:textSize="16sp"
             android:fontFamily="@font/times_new_roman"
-            android:textColor="@color/black"
-            android:layout_marginLeft="20dp"
+            android:textColor="@color/dark_blue"
+            android:layout_marginLeft="23dp"
             />
 
         <EditText
             android:id="@+id/start_dte_edit"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="15dp"
-            android:hint="DD/MM/YY"
-            android:paddingHorizontal="16dp"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toTopOf="@+id/end_dte_txt"
-            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_height="35dp"
             app:layout_constraintRight_toLeftOf="@id/parititon"
-            app:layout_constraintTop_toBottomOf="@id/start_date_text" />
+            app:layout_constraintTop_toBottomOf="@id/start_date_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            android:hint="DD/MM/YY"
+            android:background="@drawable/main_btn"
+            android:layout_marginHorizontal="15dp"
+            android:textSize="14sp"
+            android:paddingHorizontal="16dp"/>
 
         <TextView
             android:id="@+id/end_dte_txt"
@@ -67,21 +67,23 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="15dp"
             android:text="End Date"
+            android:textSize="16sp"
             android:fontFamily="@font/times_new_roman"
-            android:textColor="@color/black"
-            android:layout_marginLeft="20dp"
+            android:textColor="@color/dark_blue"
+            android:layout_marginLeft="23dp"
             />
 
         <EditText
             android:id="@+id/end_dte_edit"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/main_btn"
             app:layout_constraintRight_toLeftOf="@id/parititon"
             app:layout_constraintTop_toBottomOf="@id/end_dte_txt"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="10dp"
             android:hint="DD/MM/YY"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="15dp"
             android:textSize="14sp"
             android:paddingHorizontal="16dp"
             />

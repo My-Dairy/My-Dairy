@@ -36,9 +36,11 @@ com/example/mydairy/databinding/ReportDanKhanBinding.java
 com/example/mydairy/splash/SplashActivity.java
  com.example.mydairy.splash.SplashActivity
  com.example.mydairy.splash.SplashActivity$1
+ com.example.mydairy.splash.SplashActivity$1$1
+ com.example.mydairy.splash.SplashActivity$1$1$1
+ com.example.mydairy.splash.SplashActivity$1$2
+ com.example.mydairy.splash.SplashActivity$1$2$1
  com.example.mydairy.splash.SplashActivity$2
- com.example.mydairy.splash.SplashActivity$2$1
- com.example.mydairy.splash.SplashActivity$3
 com/example/mydairy/databinding/ActivityPhoneOtpBinding.java
  com.example.mydairy.databinding.ActivityPhoneOtpBinding
 com/example/mydairy/databinding/ActivityEmailRegisterBinding.java

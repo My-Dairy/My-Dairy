@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
 import java.lang.NullPointerException;
@@ -17,7 +17,7 @@ import java.lang.String;
 
 public final class ActivityReportAdapterBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final ImageView listReportimg;
@@ -25,8 +25,8 @@ public final class ActivityReportAdapterBinding implements ViewBinding {
   @NonNull
   public final TextView listReporttxt;
 
-  private ActivityReportAdapterBinding(@NonNull CardView rootView, @NonNull ImageView listReportimg,
-      @NonNull TextView listReporttxt) {
+  private ActivityReportAdapterBinding(@NonNull LinearLayout rootView,
+      @NonNull ImageView listReportimg, @NonNull TextView listReporttxt) {
     this.rootView = rootView;
     this.listReportimg = listReportimg;
     this.listReporttxt = listReporttxt;
@@ -34,7 +34,7 @@ public final class ActivityReportAdapterBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -71,7 +71,8 @@ public final class ActivityReportAdapterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityReportAdapterBinding((CardView) rootView, listReportimg, listReporttxt);
+      return new ActivityReportAdapterBinding((LinearLayout) rootView, listReportimg,
+          listReporttxt);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
