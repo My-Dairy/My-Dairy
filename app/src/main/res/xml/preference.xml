@@ -2,31 +2,22 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="General">
 
-        <SwitchPreference
-            android:title="Dark Theme"
-            android:key="DARK_THEME"
-            android:defaultValue="false"
-            android:id="@+id/switcher"
-            />
-
         <ListPreference
             android:key="LANGUAGE"
             android:title="Language"
-            android:summary="English"
+            android:summary="%s"
+            android:icon="@drawable/ic_baseline_language_24"
             android:dialogTitle="Choose language"
             android:entries="@array/language"
             android:entryValues="@array/language"/>
 
-
-        <CheckBoxPreference
-            android:key="NOTIFICATION"
-            android:title="Notification"/>
-
         <Preference
+            android:icon="@drawable/ic_baseline_delete_24"
             android:key="@string/reset_acc"
             android:title="Reset your Account" />
 
         <Preference
+            android:icon="@drawable/ic_baseline_logout_24"
             android:key="@string/signout"
             android:title="Sign out" />
 

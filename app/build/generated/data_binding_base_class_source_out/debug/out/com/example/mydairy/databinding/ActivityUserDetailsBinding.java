@@ -4,13 +4,13 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,7 +20,7 @@ public final class ActivityUserDetailsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button;
+  public final FloatingActionButton button;
 
   @NonNull
   public final EditText editTextTextPersonName;
@@ -31,9 +31,9 @@ public final class ActivityUserDetailsBinding implements ViewBinding {
   @NonNull
   public final EditText editTextTextPersonName3;
 
-  private ActivityUserDetailsBinding(@NonNull ConstraintLayout rootView, @NonNull Button button,
-      @NonNull EditText editTextTextPersonName, @NonNull EditText editTextTextPersonName2,
-      @NonNull EditText editTextTextPersonName3) {
+  private ActivityUserDetailsBinding(@NonNull ConstraintLayout rootView,
+      @NonNull FloatingActionButton button, @NonNull EditText editTextTextPersonName,
+      @NonNull EditText editTextTextPersonName2, @NonNull EditText editTextTextPersonName3) {
     this.rootView = rootView;
     this.button = button;
     this.editTextTextPersonName = editTextTextPersonName;
@@ -69,7 +69,7 @@ public final class ActivityUserDetailsBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.button;
-      Button button = rootView.findViewById(id);
+      FloatingActionButton button = rootView.findViewById(id);
       if (button == null) {
         break missingId;
       }

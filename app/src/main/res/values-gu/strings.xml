@@ -2,9 +2,9 @@
     <string name="app_name">My Dairy</string>
 
     <!--activity_daily_entry.xml-->
-    <string name="enter_date">Enter your date</string>
-    <string name="morning">Morning</string>
-    <string name="evening">Evening</string>
+    <string name="enter_date">તારીખ દાખલ કરો</string>
+    <string name="morning">સવાર</string>
+    <string name="evening">સાંજ</string>
     <string name="select_choice">Select your choice</string>
     <string name="enter_fat">Enter the fat</string>
     <string name="enter_amount">Enter the amount</string>

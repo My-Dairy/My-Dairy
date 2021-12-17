@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 import com.example.mydairy.MainActivity;
 import com.example.mydairy.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -19,7 +20,7 @@ public class UserDetails extends AppCompatActivity {
 
 
     private EditText editText ,editText2,editText3;
-    private Button button;
+    private FloatingActionButton button;
     private  User user;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
@@ -32,7 +33,7 @@ public class UserDetails extends AppCompatActivity {
         editText  = findViewById(R.id.editTextTextPersonName);
         editText2  = findViewById(R.id.editTextTextPersonName2);
         editText3  = findViewById(R.id.editTextTextPersonName3);
-        button= findViewById(R.id.button);
+        button=  findViewById(R.id.button);
 
 
         database = FirebaseDatabase.getInstance();

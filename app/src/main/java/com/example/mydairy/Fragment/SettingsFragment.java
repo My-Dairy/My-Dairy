@@ -2,8 +2,11 @@ package com.example.mydairy.Fragment;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.renderscript.Sampler;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,9 +34,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Locale;
+
 public class SettingsFragment extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     Preference signout,reset;
+    ListPreference language;
     private FirebaseAuth mAuth;
     private DatabaseReference databaseReference;
     private ListPreference mListPreference;
@@ -48,12 +54,11 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
             /* the preference's 'entries' list (since they have separate labels/values). */
             ListPreference listPreference = (ListPreference) preference;
             int prefIndex = listPreference.findIndexOfValue(stringValue);
-            if (prefIndex >= 0) {
-                preference.setSummary(listPreference.getEntries()[prefIndex]);
-            }
+
+
         } else {
             // For other preferences, set the summary to the value's simple string representation.
-            preference.setSummary(stringValue);
+
         }
     }
 
@@ -70,13 +75,31 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
         int count = prefScreen.getPreferenceCount();
         for (int i = 0; i < count; i++) {
             Preference p = prefScreen.getPreference(i);
-            if (!(p instanceof CheckBoxPreference)) {
-                String value = sharedPreferences.getString(p.getKey(), "");
-                setPreferenceSummary(p, value);
-            }
+
+            String value = sharedPreferences.getString(p.getKey(), "");
+
+
         }
 
+        language = findPreference("LANGUAGE");
+        language.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                SharedPreferences sharedPreferences = getPreferenceScreen().getSharedPreferences();
+                String language = sharedPreferences.getString("LANGUAGE","en-US");
 
+                System.out.println("Dhabuda: "+language);
+                if(language.equalsIgnoreCase("English"))
+                {
+                    setLocale("gu");
+                }
+                else
+                {
+                    setLocale("en");
+                }
+                return true;
+            }
+        });
 
         signout  = findPreference(getString(R.string.signout));
         signout.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
@@ -156,6 +179,15 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
                 setPreferenceSummary(preference, sharedPreferences.getString(key, ""));
             }
         }
+    }
+
+    private void setLocale(String localeCode){
+        // Code for updating the language.
+        Resources resources = getResources();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        Configuration config = resources.getConfiguration();
+        config.setLocale(new Locale(localeCode.toLowerCase()));
+        resources.updateConfiguration(config, dm);
     }
 
 }
