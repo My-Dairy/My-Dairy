@@ -270,7 +270,7 @@ public class ReportROI extends AppCompatActivity{
                     //else continue;
                     System.out.println("Jinil roi_monthly"+roi_monthly);
 
-                    String roi_withdraw= snapshot.child("roi_monthly").getValue().toString();
+                    String roi_withdraw= snapshot.child("roi_withdraw").getValue().toString();
                     if(roi_withdraw=="")
                     {
                         roi_withdraw="0";

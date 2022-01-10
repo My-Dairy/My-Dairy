@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,13 +15,16 @@
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
     android:layout_marginBottom="10dp"
-    app:cardCornerRadius="10dp"
+    android:background="@color/white"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp"
     >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/white"
         >
 
         <LinearLayout
@@ -34,6 +42,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Date: "
+                android:textColor="@color/dark_blue"
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="18sp"
                 />
 
@@ -42,6 +52,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="18/07/2020"
+                android:textColor="@color/black"
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="17sp"
                 android:layout_marginTop="0.5dp"
                 />
@@ -61,8 +73,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue"
                 android:text="Labour Salary(₹): "
                 android:textSize="18sp"
+                android:fontFamily="@font/times_new_roman"
                 />
 
             <TextView
@@ -70,7 +84,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1000"
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="17sp"
+                android:textColor="@color/black"
                 android:layout_marginTop="0.5dp"
                 />
 
@@ -89,6 +105,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/times_new_roman"
+                android:textColor="@color/dark_blue"
                 android:text="Withdraw Amount(₹): "
                 android:textSize="18sp"
                 />
@@ -98,7 +116,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1000"
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="17sp"
+                android:textColor="@color/black"
                 android:layout_marginTop="0.5dp"
                 />
 
@@ -117,7 +137,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue"
                 android:text="Deposit Amount(₹): "
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="18sp"
                 />
 
@@ -126,7 +148,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1000"
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="17sp"
+                android:textColor="@color/black"
                 android:layout_marginTop="0.5dp"
                 />
 
@@ -147,7 +171,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/times_new_roman"
                 android:text="Other Work(name): "
+                android:textColor="@color/dark_blue"
                 android:textSize="18sp"
                 />
 
@@ -156,7 +182,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ghaas katna"
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="17sp"
+                android:textColor="@color/black"
                 android:layout_marginTop="0.5dp"
                 />
 
@@ -174,7 +202,9 @@
 
             <TextView
                 android:layout_width="wrap_content"
+                android:textColor="@color/dark_blue"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/times_new_roman"
                 android:text="Other Work Charge(₹): "
                 android:textSize="18sp"
                 />
@@ -184,7 +214,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="1000"
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="17sp"
+                android:textColor="@color/black"
                 android:layout_marginTop="0.5dp"
                 />
 
@@ -195,3 +227,4 @@
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
+</FrameLayout>

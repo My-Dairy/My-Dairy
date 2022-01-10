@@ -61,7 +61,7 @@
                     android:fontFamily="@font/times_new_roman"
                     android:layout_marginHorizontal="20dp"
                     android:paddingStart="20dp"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:background="@drawable/main_btn"
                     />
 

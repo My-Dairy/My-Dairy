@@ -4,11 +4,11 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
 import java.lang.NullPointerException;
@@ -17,7 +17,7 @@ import java.lang.String;
 
 public final class TableRoiBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final LinearLayout dateBox;
@@ -34,7 +34,7 @@ public final class TableRoiBinding implements ViewBinding {
   @NonNull
   public final TextView tableWithdraw;
 
-  private TableRoiBinding(@NonNull CardView rootView, @NonNull LinearLayout dateBox,
+  private TableRoiBinding(@NonNull FrameLayout rootView, @NonNull LinearLayout dateBox,
       @NonNull TextView tableDate, @NonNull TextView tableDeposit, @NonNull TextView tableMonthly,
       @NonNull TextView tableWithdraw) {
     this.rootView = rootView;
@@ -47,7 +47,7 @@ public final class TableRoiBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -102,7 +102,7 @@ public final class TableRoiBinding implements ViewBinding {
         break missingId;
       }
 
-      return new TableRoiBinding((CardView) rootView, dateBox, tableDate, tableDeposit,
+      return new TableRoiBinding((FrameLayout) rootView, dateBox, tableDate, tableDeposit,
           tableMonthly, tableWithdraw);
     }
     String missingId = rootView.getResources().getResourceName(id);

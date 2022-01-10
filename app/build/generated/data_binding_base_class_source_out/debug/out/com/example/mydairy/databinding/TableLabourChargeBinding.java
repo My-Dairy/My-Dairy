@@ -4,11 +4,11 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
 import java.lang.NullPointerException;
@@ -17,7 +17,7 @@ import java.lang.String;
 
 public final class TableLabourChargeBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final LinearLayout dateBox;
@@ -40,7 +40,7 @@ public final class TableLabourChargeBinding implements ViewBinding {
   @NonNull
   public final TextView tableWithdraw;
 
-  private TableLabourChargeBinding(@NonNull CardView rootView, @NonNull LinearLayout dateBox,
+  private TableLabourChargeBinding(@NonNull FrameLayout rootView, @NonNull LinearLayout dateBox,
       @NonNull TextView labourOtherWork, @NonNull TextView labourOtherWorkAmt,
       @NonNull TextView tableDate, @NonNull TextView tableDeposit, @NonNull TextView tableSalary,
       @NonNull TextView tableWithdraw) {
@@ -56,7 +56,7 @@ public final class TableLabourChargeBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -123,7 +123,7 @@ public final class TableLabourChargeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new TableLabourChargeBinding((CardView) rootView, dateBox, labourOtherWork,
+      return new TableLabourChargeBinding((FrameLayout) rootView, dateBox, labourOtherWork,
           labourOtherWorkAmt, tableDate, tableDeposit, tableSalary, tableWithdraw);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -4,11 +4,11 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
 import java.lang.NullPointerException;
@@ -17,7 +17,7 @@ import java.lang.String;
 
 public final class TableMiscBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final LinearLayout dateBox;
@@ -43,7 +43,7 @@ public final class TableMiscBinding implements ViewBinding {
   @NonNull
   public final TextView tableOtherWork;
 
-  private TableMiscBinding(@NonNull CardView rootView, @NonNull LinearLayout dateBox,
+  private TableMiscBinding(@NonNull FrameLayout rootView, @NonNull LinearLayout dateBox,
       @NonNull TextView tableDate, @NonNull TextView tableElectricityBill,
       @NonNull TextView tableGasBottle, @NonNull TextView tableMaintenanceAmount,
       @NonNull TextView tableMaintenanceName, @NonNull TextView tableOtherAmount,
@@ -61,7 +61,7 @@ public final class TableMiscBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -134,7 +134,7 @@ public final class TableMiscBinding implements ViewBinding {
         break missingId;
       }
 
-      return new TableMiscBinding((CardView) rootView, dateBox, tableDate, tableElectricityBill,
+      return new TableMiscBinding((FrameLayout) rootView, dateBox, tableDate, tableElectricityBill,
           tableGasBottle, tableMaintenanceAmount, tableMaintenanceName, tableOtherAmount,
           tableOtherWork);
     }

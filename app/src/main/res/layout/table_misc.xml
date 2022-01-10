@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,14 +14,17 @@
     app:cardBackgroundColor="@color/primary_color"
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
+    android:background="@color/white"
     android:layout_marginBottom="10dp"
-    app:cardCornerRadius="10dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
     >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/white"
         >
 
         <LinearLayout
@@ -34,6 +42,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Date: "
+                android:textColor="@color/dark_blue"
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="18sp"
                 />
 
@@ -43,6 +53,8 @@
                 android:layout_height="wrap_content"
                 android:text="18/07/2020"
                 android:textSize="17sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/times_new_roman"
                 android:layout_marginTop="0.5dp"
                 />
 
@@ -61,15 +73,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/times_new_roman"
                 android:text="Gas Bottle Bill(₹): "
+                android:textColor="@color/dark_blue"
                 android:textSize="18sp"
                 />
 
             <TextView
                 android:id="@+id/table_gas_bottle"
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/times_new_roman"
                 android:layout_height="wrap_content"
                 android:text="1000"
+                android:textColor="@color/black"
                 android:textSize="17sp"
                 android:layout_marginTop="0.5dp"
                 />
@@ -89,6 +105,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue"
+                android:fontFamily="@font/times_new_roman"
                 android:text="Electricity Bill(₹): "
                 android:textSize="18sp"
                 />
@@ -98,7 +116,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1000"
+                android:textColor="@color/black"
                 android:textSize="17sp"
+                android:fontFamily="@font/times_new_roman"
                 android:layout_marginTop="0.5dp"
                 />
 
@@ -118,6 +138,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Maintenance Details: "
+                android:textColor="@color/dark_blue"
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="18sp"
                 />
 
@@ -126,6 +148,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="light bill"
+                android:textColor="@color/black"
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="17sp"
                 android:layout_marginTop="0.5dp"
                 />
@@ -146,7 +170,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/times_new_roman"
                 android:text="Maintenance Amount(₹): "
+                android:textColor="@color/dark_blue"
                 android:textSize="18sp"
                 />
 
@@ -155,7 +181,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="100"
+                android:textColor="@color/black"
                 android:textSize="17sp"
+                android:fontFamily="@font/times_new_roman"
                 android:layout_marginTop="0.5dp"
                 />
 
@@ -175,6 +203,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Other Work type: "
+                android:textColor="@color/dark_blue"
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="18sp"
                 />
 
@@ -183,7 +213,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Other work"
+                android:fontFamily="@font/times_new_roman"
                 android:textSize="17sp"
+                android:textColor="@color/black"
                 android:layout_marginTop="0.5dp"
                 />
 
@@ -202,7 +234,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/times_new_roman"
                 android:text="Other Work(₹): "
+                android:textColor="@color/dark_blue"
                 android:textSize="18sp"
                 />
 
@@ -211,8 +245,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="500"
+                android:textColor="@color/black"
                 android:textSize="17sp"
                 android:layout_marginTop="0.5dp"
+                android:fontFamily="@font/times_new_roman"
                 />
 
         </LinearLayout>
@@ -222,3 +258,4 @@
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
+</FrameLayout>

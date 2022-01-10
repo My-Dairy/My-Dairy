@@ -9,6 +9,7 @@ public class DailyEntry {
            this.fat = fat;
            this.quantity = quantity;
            this.amount = amount;
+           //this.time = time;
     }
 
     public DailyEntry(String fat, String quantity, String amount, String date, String time) {

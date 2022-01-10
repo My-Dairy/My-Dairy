@@ -63,8 +63,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="18/07/2020"
+                android:textColor="@color/black"
                 android:textSize="19sp"
-                android:textColor="@color/dark_blue"
                 android:layout_marginTop="0.5dp"
                 android:fontFamily="@font/times_new_roman"
                 />
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:text="Fat          : "
                 android:textSize="18sp"
-                android:textColor="@color/black"
+                android:textColor="@color/dark_blue"
                 android:fontFamily="@font/times_new_roman"
                 />
 
@@ -97,8 +97,8 @@
                 android:layout_height="wrap_content"
                 android:text="----"
                 android:textSize="17sp"
-                android:layout_marginTop="0.5dp"
                 android:textColor="@color/black"
+                android:layout_marginTop="0.5dp"
                 android:fontFamily="@font/times_new_roman"
                 />
 
@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:text="Quantity : "
                 android:textSize="18sp"
-                android:textColor="@color/black"
+                android:textColor="@color/dark_blue"
                 android:fontFamily="@font/times_new_roman"
                 />
 
@@ -130,8 +130,8 @@
                 android:layout_height="wrap_content"
                 android:text="----"
                 android:textSize="17sp"
-                android:layout_marginTop="0.5dp"
                 android:textColor="@color/black"
+                android:layout_marginTop="0.5dp"
                 android:fontFamily="@font/times_new_roman"
                 />
 
@@ -150,9 +150,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Amount  : Rs. "
+                android:text="Amount  : "
                 android:textSize="18sp"
-                android:textColor="@color/black"
+                android:textColor="@color/dark_blue"
                 android:fontFamily="@font/times_new_roman"
                 />
 
@@ -162,8 +162,8 @@
                 android:layout_height="wrap_content"
                 android:text="------"
                 android:textSize="17sp"
-                android:layout_marginTop="0.5dp"
                 android:textColor="@color/black"
+                android:layout_marginTop="0.5dp"
                 android:fontFamily="@font/times_new_roman"
                 />
 

@@ -14,13 +14,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@color/secondary_color">
 
             <!-- Taking above frame. -->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="@color/white">
 
                 <!-- Divider in above frame. -->
                 <View
@@ -46,20 +48,21 @@
                     android:layout_marginTop="20dp"
                     android:text="@string/start_dte"
                     android:fontFamily="@font/times_new_roman"
-                    android:textColor="@color/black"
+                    android:textColor="@color/dark_blue"
                     android:layout_marginStart="20dp"
                     />
 
                 <EditText
                     android:id="@+id/start_dte_edit"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     app:layout_constraintRight_toLeftOf="@id/parititon"
                     app:layout_constraintTop_toBottomOf="@id/start_dte_txt"
                     app:layout_constraintLeft_toLeftOf="parent"
                     android:layout_marginTop="10dp"
                     android:hint="@string/ddmmyyyy"
                     android:focusableInTouchMode="false"
+                    android:background="@drawable/main_btn"
                     android:inputType="date"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="14sp"
@@ -78,18 +81,19 @@
                     android:layout_marginTop="15dp"
                     android:text="@string/end_dte"
                     android:fontFamily="@font/times_new_roman"
-                    android:textColor="@color/black"
+                    android:textColor="@color/dark_blue"
                     android:layout_marginStart="20dp"
                     />
 
                 <EditText
                     android:id="@+id/end_dte_edit"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     app:layout_constraintRight_toLeftOf="@id/parititon"
                     app:layout_constraintTop_toBottomOf="@id/end_dte_txt"
                     app:layout_constraintLeft_toLeftOf="parent"
                     android:layout_marginTop="10dp"
+                    android:background="@drawable/main_btn"
                     android:hint="@string/ddmmyyyy"
                     android:importantForAutofill="no"
                     android:focusableInTouchMode="false"

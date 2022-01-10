@@ -10,6 +10,7 @@ import android.app.DatePickerDialog;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -64,6 +65,7 @@ public class DailyEntryActivity extends AppCompatActivity {
         Quantity = (EditText) findViewById(R.id.quantity);
         Amount = (EditText) findViewById(R.id.amount);
         Save = (FloatingActionButton) findViewById(R.id.save_btn);
+        Time = (RadioGroup) findViewById(R.id.radiogrp);
 
         Save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,15 +154,25 @@ public class DailyEntryActivity extends AppCompatActivity {
         String quantity = Quantity.getText().toString();
         String amount = Amount.getText().toString();
 
+        Log.i("radiobtn: ",time);
 
-        if(date.trim().equals("")||fat.trim().equals("")||quantity.trim().equals("")||amount.trim().equals("")||time.equals(""))
+
+        if(date.trim().equals("")||fat.trim().equals("")||quantity.trim().equals("")||amount.trim().equals(""))
+        {
+            Log.i("date: ",date);
+            Log.i("fat: ",fat);
+            Log.i("quantity: ",quantity);
+            Log.i("amount: ",amount);
+            Log.i("radiobtn: ",time);
+            Toast.makeText(getApplicationContext(),"Please enter all the details properly.", Toast.LENGTH_SHORT).show();
+        }
+        else if(Time.getCheckedRadioButtonId()==-1)
         {
             Toast.makeText(getApplicationContext(),"Please enter all the details properly.", Toast.LENGTH_SHORT).show();
         }
         else
         {
             entry = new DailyEntry(fat, quantity, amount);
-
             database = FirebaseDatabase.getInstance();
             databaseReference = FirebaseDatabase.getInstance().getReference();
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -173,3 +185,4 @@ public class DailyEntryActivity extends AppCompatActivity {
         }
     }
 }
+

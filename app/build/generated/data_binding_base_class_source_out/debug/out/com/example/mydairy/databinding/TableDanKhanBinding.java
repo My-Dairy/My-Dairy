@@ -4,11 +4,11 @@ package com.example.mydairy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import com.example.mydairy.R;
 import java.lang.NullPointerException;
@@ -17,7 +17,7 @@ import java.lang.String;
 
 public final class TableDanKhanBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final LinearLayout dateBox;
@@ -40,7 +40,7 @@ public final class TableDanKhanBinding implements ViewBinding {
   @NonNull
   public final TextView tablePashudan;
 
-  private TableDanKhanBinding(@NonNull CardView rootView, @NonNull LinearLayout dateBox,
+  private TableDanKhanBinding(@NonNull FrameLayout rootView, @NonNull LinearLayout dateBox,
       @NonNull TextView pashuaharOtherAmt, @NonNull TextView pashuaharOtherType,
       @NonNull TextView tableDate, @NonNull TextView tableMakaiBhardo, @NonNull TextView tablePapdi,
       @NonNull TextView tablePashudan) {
@@ -56,7 +56,7 @@ public final class TableDanKhanBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -123,7 +123,7 @@ public final class TableDanKhanBinding implements ViewBinding {
         break missingId;
       }
 
-      return new TableDanKhanBinding((CardView) rootView, dateBox, pashuaharOtherAmt,
+      return new TableDanKhanBinding((FrameLayout) rootView, dateBox, pashuaharOtherAmt,
           pashuaharOtherType, tableDate, tableMakaiBhardo, tablePapdi, tablePashudan);
     }
     String missingId = rootView.getResources().getResourceName(id);
